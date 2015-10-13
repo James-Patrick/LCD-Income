@@ -1,13 +1,10 @@
 #import ea.py
 import random_rules
 
-import time
+import time, sys, getopt
 
 ''' Notes '''
 # After a while, we need to choose a number where the classifier is sufficiently experienced enough to be deleted if it's fitness is too low
-
-
-
 
 
 ''' (Not used)
@@ -32,8 +29,14 @@ FILENAME = 'adult.data'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
 NUM_CLASSIFIERS = 20
-VERBOSE = False
+LEARN_MODE    = 0
+CLASSIFY_MODE = 1
 
+verbose = False
+
+def make_verbose():
+	global verbose
+	verbose = True
 
 
 # A classifier. 
@@ -70,7 +73,7 @@ class Classifier:
 			self.experience += 1
 			if was_correct:
 				self.times_correct += 1 
-				self.accuracy = self.times_correct/self.experience
+				self.accuracy = self.times_correct * 1.0 / self.experience * 1.0
 			else:
 				self.times_wrong += 1
 			#self.accuracy =
@@ -92,7 +95,7 @@ class Classifier:
 	
 	# Prints the details of the classifier in a nice, easy-to-read manner.
 	def print_details(self):
-		if VERBOSE:
+		if verbose:
 			print("{0:<15s} : {1}".format("Classifier #", self.id))
 			print("{0:<15s} : {1}".format("Condition:", self.condition))
 			print("{0:<15s} : {1}".format("Action:", self.action))
@@ -118,12 +121,12 @@ class Environment:
 		self.dictionary = {}
 		for h in range(len(HEADINGS) - 1):
 			# Convert field to integer if it is numeric, otherwise keep it as a string (so it may handle discrete/continuous variables).
-			self.dictionary[HEADINGS[h]] = int(data[h]) if data[h].isnumeric() else data[h]
+			self.dictionary[HEADINGS[h]] = int(data[h]) if unicode(data[h]).isnumeric() else data[h]
 		self.correct_class = data[len(HEADINGS) - 1]
 	
 	# Prints the details of the environment in a nice, easy-to-read manner.
 	def print_details(self):
-		if VERBOSE:
+		if verbose:
 			for k, v in self.dictionary.items():
 				print("{0:<20s} : {1}".format(k, v))
 			print("----------------------------")
@@ -147,52 +150,96 @@ def create_classifiers():
 	
 
 	
-# One timestep. 
-def step(environment, classifiers):
-	match_set  = []		# The classifiers who have their conditions met in this timestep's environment
-	action_set = []		# The classifiers from the Match Set with the highest fitness
-	for c in classifiers:
-		c.classify(environment)
-	#print([c.classify(environment) for c in classifiers])
+
 
 	
 
-def main():
 
-	time_start = time.time()
 
-	environments = create_environments()
-	classifiers  = create_classifiers()	
+def main(argv):
+
+	def print_usage():
+		print('--------------------------')
+		print('lcs.py usage')
+		print('--------------------------')
+		print('Options:')
+		print('-v verbose (print output)')
+		print('-l Learn mode (default)')
+		print('-c Classify mode')
+
+	mode = LEARN_MODE
+
+	try:
+		opts, args = getopt.getopt(argv, "hvlc")
+	except getopt.GetoptError:
+		print_usage()
+		sys.exit(2)
 	
-	for c in classifiers:
-		c.print_details()
+	for opt, arg in opts:
+		if opt == '-h':
+			print_usage()
+			sys.exit()
+		elif opt == '-v':
+			make_verbose()
+		elif opt == '-l':
+			mode = LEARN_MODE
+		elif opt == '-c':
+			mode = CLASSIFY_MODE
+
+
+	def do_learn_mode():
+	
+		# One timestep. 
+		def step(environment, classifiers):
+			match_set  = []
+			action_set = []
+			for c in classifiers:
+				c.classify(environment)
+				
+				
+	
+		time_start = time.time()
+
+		environments = create_environments()
+		classifiers  = create_classifiers()	
 		
-	if VERBOSE:
-		print('------------------------------------') 
-	
-	
-	match_set  = []	# Any classifier that has its conditions satisfied by the environment
-	action_set = []
-	
-	# Look at all classifiers in the match set
-	# Look at the classifier in M with highest accuracy
-	# Action set = all classifiers with that same class label as action
-	# Reward = given when it is part of the action set
-	
-	# Prediction p , estimate payoff when rule is seen
-	# Accuracy relative to others
-	
-	
-	
-	
+		if verbose:
+			for c in classifiers:
+				c.print_details()
+			print('------------------------------------') 
 
-	for x in range(25000):		
-		step(environments[x], classifiers);
+		for x in range(len(environments)):		
+			step(environments[x], classifiers);
 
-	time_end = time.time()
-	total_time = time_end - time_start
-	print(total_time, "seconds")
+		time_end = time.time()
+		total_time = time_end - time_start
+		print(total_time, "seconds")
+	
+	
+	def do_classify_mode():
+		# Classify stuff.
+		print("This hasn't been made yet.")
+		
+	
+	if mode == LEARN_MODE:
+		do_learn_mode()
+	else:
+		do_classify_mode()
+	
 
 if __name__ == "__main__":
-    main()	
+    main(sys.argv[1:])	
 
+
+
+
+
+
+''' Notes '''
+# Look at all classifiers in the match set
+# Look at the classifier in M with highest accuracy
+# Action set = all classifiers with that same class label as action
+# Reward = given when it is part of the action set
+
+# Prediction p , estimate payoff when rule is seen
+# Accuracy relative to others
