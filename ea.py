@@ -1,9 +1,11 @@
+import math
+import random
+
 N_GENOME_CTS_ATTRIBUTES = 12
 LEARNING_RATE = 1/sqrt(N_GENOME_CTS_ATTRIBUTES)
-DONT_CARE_VALUE = -1
+EPSILON = 0.5
 
 class WORKCLASS(Enum):
-    DONT_CARE = -1
     PRIVATE = 0
     SELF_EMP_NOT_INC = 1
     SELF_EMP_INC = 2
@@ -14,26 +16,24 @@ class WORKCLASS(Enum):
     NEVER_WORKED = 7
 
 class EDUCATION(Enum):
-    DONT_CARE = -1
     BACHELORS = 0
     SOME_COLLEGE = 1
-    11TH = 2
+    _11TH = 2
     HS_GRAD = 3
     PROF_SCHOOL = 4
     ASSOC_ACDM = 5
     ASSOC_VOC = 6
-    9TH = 7
-    7TH_8TH = 8
-    12TH = 9
+    _9TH = 7
+    _7TH_8TH = 8
+    _12TH = 9
     MASTERS = 10
-    1ST_4TH = 11
-    10TH = 12
+    _1ST_4TH = 11
+    _10TH = 12
     DOCTORATE = 13
     5TH_6TH = 14
     PRESCHOOL = 15
 
 class MARITAL_STATUS(Enum):
-    DONT_CARE = -1
     MARRIED_CIV_SPOUSE = 0
     DIVORCED = 1
     NEVER_MARRIED = 2
@@ -43,7 +43,6 @@ class MARITAL_STATUS(Enum):
     MARRIED_AF_SPOUSE = 6
 
 class OCCUPATION(Enum):
-    DONT_CARE = -1
     TECH_SUPPORT = 0
     CRAFT_REPAIR = 1
     OTHER_SERVICE = 3
@@ -60,7 +59,6 @@ class OCCUPATION(Enum):
     ARMED_FORCES = 14
 
 class RELATIONSHIP(Enum):
-    DONT_CARE = -1
     WIFE = 0
     OWN_CHILD = 1
     HUSBAND = 2
@@ -69,7 +67,6 @@ class RELATIONSHIP(Enum):
     UNMARRIED = 5
 
 class RACE(Enum):
-    DONT_CARE = -1
     WHITE = 0
     ASIAN_PAC_ISLANDER = 1
     AMER_INDIAN_ESKIMO = 2
@@ -77,12 +74,10 @@ class RACE(Enum):
     BLACK = 4
 
 class SEX(Enum):
-    DONT_CARE = -1
     FEMALE = 0
     MALE = 1
 
 class NATIVE_COUNTRY(Enum):
-    DONT_CARE = -1
     UNITED_STATES = 0
     CAMBODIA = 1
     ENGLAND = 2
@@ -126,40 +121,54 @@ class NATIVE_COUNTRY(Enum):
     HOLAND_NETHERLANDS = 40
 
 class Rule(object):
-    def __init__(self, minage, maxage):
-        self.minage = minage
-        self.sigmaminage = sigmaminage
-        self.maxage = maxage
-        self.sigmamaxage
-        self.workclass
-        self.minfnlwgt
-        self.sigmaminfnlwgt
-        self.maxfnlwgt
-        self.sigmamaxfnlwgt
-        self.education
-        self.mineducationnum
-        self.sigmamineducationnum
-        self.maxeducationnum
-        self.sigmamaxeducationnum
-        self.maritalstatus
-        sef.occupation
-        self.relationship
-        self.race
-        sef.sex
-        self.mincapitalgain
-        self.sigmamincapitalgain
-        self.maxcapitalgain
-        self.sigmamaxcapitalgain
-        self.mincapitalloss
-        self.sigmamincapitalloss
-        self.maxcapitalloss
-        self.sigmamaxcapitalloss
-        self.minhoursperweek
-        self.sigmaminhoursperweek
-        self.maxhoursperweek
-        self.sigmamaxhoursperweek
-        self.nativecountry
-        self.classification
+    def __init__(self, data):
+        self.data = data
+        
+    def getMutantChild(self):
+        #create new rule object
+        child = Rule(self.data)
+        #iterate over the values in the dictionary
+        for key, value in child.data:
+            #mutate a continous value
+            if (continuous(key)):
+                value.sigmamax = max(value.sigmamax * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)
+                value.sigmamin = max(value.sigmamin * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)
+                value.min = max(int(value.min + sigmamax * random.normalvariate(0, 1)), 0)
+                value.max = max(int(value.max + sigmamax * random.normalvariate(0, 1)), value.min)
+            else:
+                #if not continuous, check probability and maybe add new entry
+                if(random.random() < LEARNING_RATE/value.length):
+                    newEntry = random.radint(0, maxEnumVal(key))
+                    #make sure its not a duplicate
+                    while(value.contains(newEntry):
+                          newEntry = random.radint(0, maxEnumVal(key))
+                    value.add(newEntry)
+                    #if we didnt add one, maybe we should remmove one
+                else if(random.random() < LEARNING_RATE/value.length and len(value) > 1):
+                    value.remove(random.radint(0, maxEnumVal(key))
+        #possibly add one value to the dictionary
+        if(random.random() < LEARNING_RATE/len(self.data)):
+            newKey = getRandomKey()
+            while (newKey in self.dict):
+                newKey = getRandomKey()
+            if continuous(key):
+                newValue = generateCtsInitial(newKey)
+            else:
+                newValue = random.radint(0, maxEnumVal(key))
+            self.data[newkey] = newValue
+        child.precition = self.prediction
+        return child
 
-
+#call if there is no rule that has a condition for the environment situation, dont cares tont count??
+def generateCoverRule(enforceCondition, condition, enforceAction, action):
     
+
+
+# check if they key corresponds to a continuous value
+def continuous():
+
+#return the maximum enumeraion integer corresponding to the given key
+def maxEnumVal(key):
+
+#get a random key value
+def getRandomKey():
