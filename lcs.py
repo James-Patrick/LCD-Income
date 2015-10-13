@@ -1,6 +1,5 @@
 #import ea.py
 import random_rules
-import random
 
 ''' Notes '''
 # After a while, we need to choose a number where the classifier is sufficiently experienced enough to be deleted if it's fitness is too low
@@ -42,22 +41,18 @@ class Classifier:
 		# self.condition = None
 		# self.action = None
 		self.condition = random_rules.generate_condition()
-		self.action = random.choice(CLASS_LABELS)
-		self.prediction = 0.0
-		self.fitness = 0.0
-		self.error = 0.0
-		self.experience = 0
-		self.times_correct = 0
-		self.times_wrong = 0
-		self.accuracy = 0.0
+		self.action = random_rules.generate_action(CLASS_LABELS)
+		self.prediction 	= 0.0
+		self.fitness 		= 0.0
+		self.error			= 0.0
+		self.experience 	= 0
+		self.times_correct 	= 0
+		self.times_wrong 	= 0
+		self.accuracy		= 0.0
 		self.rule = [self.condition, self.action]
 		
 		
 		#self.test = random_rules.generate_condition()
-		
-		
-	
-
 
 		
 	def classify(self, environment):
@@ -96,13 +91,13 @@ class Classifier:
 		print("{0:<15s} : {1}".format("Classifier #", self.id))
 		print("{0:<15s} : {1}".format("Condition:", self.condition))
 		print("{0:<15s} : {1}".format("Action:", self.action))
-		#print("{0:<15s} : {1}".format("Prediction:", self.prediction))
+	#	print("{0:<15s} : {1}".format("Prediction:", self.prediction))
 		print("{0:<15s} : {1}".format("Fitness:", self.fitness))
 		print("{0:<15s} : {1}".format("Experience:", self.experience))
 		print("{0:<15s} : {1}".format("Times Correct:", self.times_correct))
 		print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))
 		print("{0:<15s} : {1}".format("Accuracy:", self.accuracy * 100))
-		#print("{0:<15s} : {1}".format("Error:", self.error))		
+	#	print("{0:<15s} : {1}".format("Error:", self.error))		
 		print()
 		
 		
@@ -165,10 +160,28 @@ def main():
 		
 	print('------------------------------------')
 	
-	match_set  = []
+	match_set  = []	# Any classifier that has its conditions satisfied by the environment
 	action_set = []
 	
-	#environments[0].print_details()
+	# Look at all classifiers in the match set
+	# Look at the classifier in M with highest accuracy
+	# Action set = all classifiers with that same class label as action
+	# Reward = given when it is part of the action set
+	'''
+	[100, 100, 0]
+	
+	[50, 100, 0]
+	
+	[100, 0]
+	
+	...
+	'''
+	
+	# Prediction p , estimate payoff when rule is seen
+	# Accuracy relative to others
+	
+	
+	
 	
 
 	for x in range(25000):		

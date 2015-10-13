@@ -35,12 +35,13 @@ def generate_condition():
 				else:
 					condition[k] = random.choice(v)					# Select a random value if it's a discrete field such as "workclass"
 		return condition
-		
 	
 	while(len(condition.keys()) == 0):
 		condition = make_condition()
 	
 	return condition
 	
+def generate_action(class_labels):
+	return random.choice(class_labels)
 	
 
