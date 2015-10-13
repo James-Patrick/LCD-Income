@@ -1,6 +1,8 @@
 #import ea.py
 import random_rules
 
+import time
+
 ''' Notes '''
 # After a while, we need to choose a number where the classifier is sufficiently experienced enough to be deleted if it's fitness is too low
 
@@ -29,7 +31,8 @@ HEADINGS_DICT = {'age': 'continuous',
 FILENAME = 'adult.data'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-
+NUM_CLASSIFIERS = 20
+VERBOSE = False
 
 
 
@@ -62,6 +65,7 @@ class Classifier:
 					return False			# One condition of this classifier was not met				
 			return True		
 
+		# Updates the classifier's parameters based on whether it was correct or incorrect.
 		def update_classifier(was_correct):
 			self.experience += 1
 			if was_correct:
@@ -88,17 +92,18 @@ class Classifier:
 	
 	# Prints the details of the classifier in a nice, easy-to-read manner.
 	def print_details(self):
-		print("{0:<15s} : {1}".format("Classifier #", self.id))
-		print("{0:<15s} : {1}".format("Condition:", self.condition))
-		print("{0:<15s} : {1}".format("Action:", self.action))
-	#	print("{0:<15s} : {1}".format("Prediction:", self.prediction))
-		print("{0:<15s} : {1}".format("Fitness:", self.fitness))
-		print("{0:<15s} : {1}".format("Experience:", self.experience))
-		print("{0:<15s} : {1}".format("Times Correct:", self.times_correct))
-		print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))
-		print("{0:<15s} : {1}".format("Accuracy:", self.accuracy * 100))
-	#	print("{0:<15s} : {1}".format("Error:", self.error))		
-		print()
+		if VERBOSE:
+			print("{0:<15s} : {1}".format("Classifier #", self.id))
+			print("{0:<15s} : {1}".format("Condition:", self.condition))
+			print("{0:<15s} : {1}".format("Action:", self.action))
+		#	print("{0:<15s} : {1}".format("Prediction:", self.prediction))
+			print("{0:<15s} : {1}".format("Fitness:", self.fitness))
+			print("{0:<15s} : {1}".format("Experience:", self.experience))
+			print("{0:<15s} : {1}".format("Times Correct:", self.times_correct))
+			print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))
+			print("{0:<15s} : {1}".format("Accuracy:", self.accuracy * 100))
+		#	print("{0:<15s} : {1}".format("Error:", self.error))		
+			print()
 		
 		
 
@@ -118,10 +123,11 @@ class Environment:
 	
 	# Prints the details of the environment in a nice, easy-to-read manner.
 	def print_details(self):
-		for k, v in self.dictionary.items():
-			print("{0:<20s} : {1}".format(k, v))
-		print("----------------------------")
-		print("{0:<20s} : {1}".format("Correct class", self.correct_class))
+		if VERBOSE:
+			for k, v in self.dictionary.items():
+				print("{0:<20s} : {1}".format(k, v))
+			print("----------------------------")
+			print("{0:<20s} : {1}".format("Correct class", self.correct_class))
 		
 		
 # Creates a list of environments.
@@ -137,7 +143,7 @@ def create_environments():
 
 # Creates the initial population of classifiers, in the form of a list.
 def create_classifiers():
-	return [Classifier(x) for x in range(10)]	
+	return [Classifier(x) for x in range(NUM_CLASSIFIERS)]	
 	
 
 	
@@ -152,13 +158,18 @@ def step(environment, classifiers):
 	
 
 def main():
+
+	time_start = time.time()
+
 	environments = create_environments()
 	classifiers  = create_classifiers()	
 	
 	for c in classifiers:
 		c.print_details()
 		
-	print('------------------------------------')
+	if VERBOSE:
+		print('------------------------------------') 
+	
 	
 	match_set  = []	# Any classifier that has its conditions satisfied by the environment
 	action_set = []
@@ -167,15 +178,6 @@ def main():
 	# Look at the classifier in M with highest accuracy
 	# Action set = all classifiers with that same class label as action
 	# Reward = given when it is part of the action set
-	'''
-	[100, 100, 0]
-	
-	[50, 100, 0]
-	
-	[100, 0]
-	
-	...
-	'''
 	
 	# Prediction p , estimate payoff when rule is seen
 	# Accuracy relative to others
@@ -187,6 +189,9 @@ def main():
 	for x in range(25000):		
 		step(environments[x], classifiers);
 
+	time_end = time.time()
+	total_time = time_end - time_start
+	print(total_time, "seconds")
 
 if __name__ == "__main__":
     main()	
