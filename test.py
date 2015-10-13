@@ -33,6 +33,8 @@ def create_classifiers():
 	
 		
 
+def save_classification:
+	file = open('adult_classification.csv', "w" )
 
 environments = create_environments()
 
