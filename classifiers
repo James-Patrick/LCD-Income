@@ -1,0 +1,1000 @@
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6729, 'marital-status': 'Divorced', 'native-country': 'Taiwan', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 2048, 'workclass': 'Federal-gov', 'age': 29, 'capital-loss': 8804, 'native-country': 'Mexico'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 38, 'condition': {'education-num': 11, 'workclass': 'Federal-gov'}, 'accuracy': 0.39473684210526316}
+{'action': '<=50K', 'experience': 1382, 'condition': {'education': 'Assoc-voc'}, 'accuracy': 0.73878437047756873}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'capital-gain': 9357}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 77, 'race': 'White', 'capital-gain': 9908, 'native-country': 'Portugal', 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 23, 'condition': {'age': 78}, 'accuracy': 0.78260869565217395}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 209864, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 69, 'education': '10th', 'capital-loss': 9566}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 54, 'capital-gain': 5710}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 69, 'education': '10th', 'capital-loss': 9566}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 8, 'race': 'Black', 'capital-loss': 7156, 'native-country': 'Puerto-Rico', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'race': 'Other', 'capital-gain': 8784, 'native-country': 'Puerto-Rico', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'HS-grad', 'fnlwgt': 297731}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'education': 'Some-college', 'marital-status': 'Separated', 'race': 'Amer-Indian-Eskimo', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1062, 'condition': {'race': 'White', 'workclass': 'State-gov'}, 'accuracy': 0.28922495274102078}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'capital-loss': 1631, 'marital-status': 'Separated', 'native-country': 'India', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 7, 'condition': {'hours-per-week': 46, 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'State-gov', 'hours-per-week': 17, 'education': '11th', 'capital-loss': 1398, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'workclass': 'Self-emp-inc', 'education': 'Doctorate', 'fnlwgt': 247469, 'native-country': 'France'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 55, 'workclass': 'Private', 'marital-status': 'Never-married', 'native-country': 'Guatemala'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 280879, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 252564, 'native-country': 'Ecuador'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 433, 'condition': {'education-num': 8}, 'accuracy': 0.079136690647482008}
+{'action': '>50K', 'experience': 9, 'condition': {'hours-per-week': 35, 'workclass': 'Self-emp-inc', 'sex': 'Female'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4450, 'hours-per-week': 6, 'fnlwgt': 100034, 'native-country': 'Hong'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 9049, 'marital-status': 'Separated', 'occupation': 'Other-service'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 576, 'condition': {'education': 'Prof-school'}, 'accuracy': 0.73565217391304349}
+{'action': '>50K', 'experience': 24, 'condition': {'education': '10th', 'marital-status': 'Married-civ-spouse', 'relationship': 'Husband', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.16666666666666666}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'age': 70, 'education': '11th', 'capital-gain': 6541, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 285164}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1039, 'condition': {'race': 'Asian-Pac-Islander'}, 'accuracy': 0.26589595375722541}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'relationship': 'Unmarried', 'age': 48, 'race': 'Asian-Pac-Islander', 'education': 'Prof-school', 'fnlwgt': 171375, 'marital-status': 'Married-AF-spouse', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1491, 'condition': {'native-country': 'United-States', 'occupation': 'Transport-moving'}, 'accuracy': 0.20524899057873486}
+{'action': '>50K', 'experience': 1, 'condition': {'hours-per-week': 9, 'workclass': 'State-gov'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Assoc-acdm', 'native-country': 'Hungary', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'age': 69, 'education': '11th', 'capital-loss': 7139, 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 514, 'condition': {'education': '9th'}, 'accuracy': 0.94747081712062253}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 25, 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'hours-per-week': 48, 'race': 'Other', 'workclass': 'Self-emp-inc'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'sex': 'Female', 'race': 'Other', 'education-num': 7, 'fnlwgt': 276461, 'marital-status': 'Separated', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Assoc-voc', 'fnlwgt': 293261}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4821, 'education': 'Preschool', 'fnlwgt': 182625, 'marital-status': 'Married-civ-spouse', 'race': 'White'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '9th', 'native-country': 'Italy'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'race': 'White', 'education': '10th', 'native-country': 'Philippines', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'hours-per-week': 17, 'race': 'Asian-Pac-Islander', 'capital-gain': 4690}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 23, 'race': 'Asian-Pac-Islander', 'capital-gain': 2534, 'marital-status': 'Married-spouse-absent', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 743, 'condition': {'education-num': 7, 'sex': 'Male'}, 'accuracy': 0.93001345895020193}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'age': 50, 'education': 'Prof-school', 'marital-status': 'Married-spouse-absent', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'capital-loss': 7255}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6729, 'marital-status': 'Divorced', 'native-country': 'Taiwan', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'capital-gain': 6932, 'fnlwgt': 150752}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 2048, 'workclass': 'Federal-gov', 'age': 29, 'capital-loss': 8804, 'native-country': 'Mexico'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 333, 'condition': {'education': '5th-6th'}, 'accuracy': 0.048338368580060423}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 29, 'race': 'Black', 'fnlwgt': 110650, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8591, 'age': 60, 'capital-loss': 7938, 'native-country': 'France', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'race': 'Other', 'occupation': 'Tech-support'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'occupation': 'Armed-Forces', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'hours-per-week': 3, 'capital-loss': 6671}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4821, 'education': 'Preschool', 'fnlwgt': 182625, 'marital-status': 'Married-civ-spouse', 'race': 'White'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8704, 'fnlwgt': 176188, 'capital-loss': 9475}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 23, 'capital-loss': 1073, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 25, 'capital-gain': 9216, 'sex': 'Male', 'hours-per-week': 22, 'education-num': 12, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8272, 'race': 'Other', 'workclass': 'Private', 'native-country': 'Poland', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 977, 'marital-status': 'Married-spouse-absent', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 283991, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 226, 'condition': {'education-num': 10, 'workclass': 'Self-emp-inc'}, 'accuracy': 0.51327433628318586}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 31, 'fnlwgt': 185547, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Private', 'capital-loss': 7316}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 25, 'capital-gain': 8883, 'native-country': 'Laos'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 9626, 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 52, 'education': '1st-4th', 'workclass': 'Local-gov', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 252564, 'native-country': 'Ecuador'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6644, 'hours-per-week': 22, 'workclass': 'State-gov', 'age': 40, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 2, 'condition': {'native-country': 'Greece', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 30, 'condition': {'native-country': 'South', 'sex': 'Female'}, 'accuracy': 0.90000000000000002}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 1495, 'hours-per-week': 38, 'capital-loss': 6165, 'native-country': 'Cambodia', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1039, 'condition': {'race': 'Asian-Pac-Islander'}, 'accuracy': 0.26589595375722541}
+{'action': '<=50K', 'experience': 3, 'condition': {'education-num': 10, 'age': 73, 'sex': 'Male'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '11th', 'capital-loss': 8444, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 1789, 'relationship': 'Not-in-family', 'capital-gain': 6949, 'native-country': 'United-States', 'education-num': 10, 'education': '1st-4th', 'occupation': 'Machine-op-inspct'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 43, 'condition': {'education-num': 11, 'age': 36}, 'accuracy': 0.65116279069767447}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '7th-8th', 'workclass': 'Self-emp-inc', 'native-country': 'Columbia', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 168, 'condition': {'education': '1st-4th'}, 'accuracy': 0.042553191489361701}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 55, 'age': 59, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'hours-per-week': 33, 'race': 'White'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'capital-gain': 6541, 'education': '9th', 'fnlwgt': 251524, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'occupation': 'Prof-specialty', 'capital-loss': 5963, 'marital-status': 'Married-AF-spouse', 'relationship': 'Own-child', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'relationship': 'Not-in-family', 'age': 71, 'capital-loss': 8378, 'fnlwgt': 276959, 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'native-country': 'England', 'relationship': 'Unmarried', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 51, 'fnlwgt': 269523}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 284580, 'hours-per-week': 26, 'capital-loss': 6371, 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'occupation': 'Other-service', 'education': '12th', 'fnlwgt': 124739, 'marital-status': 'Married-spouse-absent', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'fnlwgt': 213615}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 14, 'condition': {'workclass': 'Without-pay'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 1039, 'condition': {'race': 'Asian-Pac-Islander'}, 'accuracy': 0.73435996150144367}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'capital-loss': 6487, 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 138, 'condition': {'hours-per-week': 52}, 'accuracy': 0.34782608695652173}
+{'action': '<=50K', 'experience': 8305, 'condition': {'relationship': 'Not-in-family'}, 'accuracy': 0.89692956050571948}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 60, 'race': 'White', 'capital-loss': 7451, 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'capital-gain': 933, 'workclass': 'Private', 'relationship': 'Other-relative', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'hours-per-week': 48, 'race': 'Other', 'workclass': 'Self-emp-inc'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 3789, 'race': 'White', 'fnlwgt': 216329, 'native-country': 'Cambodia', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'age': 44, 'marital-status': 'Married-civ-spouse', 'native-country': 'Guatemala'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Assoc-voc', 'fnlwgt': 293261}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 77, 'condition': {'education-num': 12, 'marital-status': 'Married-civ-spouse', 'sex': 'Female'}, 'accuracy': 0.51315789473684215}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 0, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-loss': 9563, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'hours-per-week': 46, 'capital-loss': 8680, 'age': 46}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 7157, 'native-country': 'Cuba'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'hours-per-week': 22, 'fnlwgt': 151671, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 10, 'education': 'Assoc-voc', 'workclass': 'Federal-gov', 'age': 69, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Asian-Pac-Islander', 'native-country': 'Nicaragua'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 5, 'condition': {'race': 'White', 'workclass': 'Never-worked'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 38, 'education': 'Doctorate', 'fnlwgt': 102876, 'marital-status': 'Married-civ-spouse', 'native-country': 'Portugal'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 17, 'age': 27, 'native-country': 'Greece'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Masters', 'capital-gain': 9140, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1062, 'condition': {'race': 'White', 'workclass': 'State-gov'}, 'accuracy': 0.28922495274102078}
+{'action': '<=50K', 'experience': 39, 'condition': {'hours-per-week': 3}, 'accuracy': 0.97435897435897434}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8591, 'age': 60, 'capital-loss': 7938, 'native-country': 'France', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 9, 'condition': {'native-country': 'Vietnam', 'relationship': 'Own-child', 'marital-status': 'Never-married'}, 'accuracy': 0.25}
+{'action': '>50K', 'experience': 4443, 'condition': {'marital-status': 'Divorced'}, 'accuracy': 0.10430277089434557}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 45, 'fnlwgt': 214342, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8704, 'fnlwgt': 176188, 'capital-loss': 9475}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Bachelors', 'workclass': 'Without-pay', 'marital-status': 'Never-married', 'race': 'Amer-Indian-Eskimo', 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'education': 'Bachelors'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 236, 'fnlwgt': 113699, 'capital-loss': 5845}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'education': 'Doctorate', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '10th', 'fnlwgt': 236986, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Private', 'capital-loss': 7316}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'marital-status': 'Married-civ-spouse', 'age': 40, 'native-country': 'South', 'relationship': 'Other-relative', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 8, 'race': 'Amer-Indian-Eskimo', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'capital-gain': 3737, 'hours-per-week': 39, 'capital-loss': 2357}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 55, 'race': 'Asian-Pac-Islander', 'workclass': 'State-gov', 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 16, 'education': 'Bachelors', 'fnlwgt': 163627, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'age': 79, 'occupation': 'Adm-clerical'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 1039, 'condition': {'race': 'Asian-Pac-Islander'}, 'accuracy': 0.26589595375722541}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'State-gov', 'hours-per-week': 24, 'race': 'Other', 'fnlwgt': 207806}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '7th-8th', 'workclass': 'Self-emp-inc', 'native-country': 'Columbia', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '11th', 'capital-loss': 8444, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 1789, 'relationship': 'Not-in-family', 'capital-gain': 6949, 'native-country': 'United-States', 'education-num': 10, 'education': '1st-4th', 'occupation': 'Machine-op-inspct'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 43, 'condition': {'education-num': 11, 'age': 36}, 'accuracy': 0.42857142857142855}
+{'action': '<=50K', 'experience': 5, 'condition': {'education-num': 10, 'native-country': 'Iran', 'sex': 'Male'}, 'accuracy': 0.75}
+{'action': '<=50K', 'experience': 77, 'condition': {'education-num': 12, 'marital-status': 'Married-civ-spouse', 'sex': 'Female'}, 'accuracy': 0.4935064935064935}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 686, 'fnlwgt': 127814, 'native-country': 'Poland'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 44, 'condition': {'race': 'Asian-Pac-Islander', 'workclass': 'Federal-gov'}, 'accuracy': 0.46511627906976744}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'capital-gain': 6541, 'education': '9th', 'fnlwgt': 251524, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 886, 'condition': {'education': 'Masters', 'relationship': 'Husband'}, 'accuracy': 0.2330316742081448}
+{'action': '>50K', 'experience': 100, 'condition': {'native-country': 'India'}, 'accuracy': 0.40000000000000002}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 115168, 'capital-loss': 8063}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6679, 'fnlwgt': 203685, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8409, 'capital-loss': 3539}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'race': 'Other', 'workclass': 'State-gov'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'hours-per-week': 58, 'education': 'Assoc-acdm', 'capital-loss': 838, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'race': 'Other', 'capital-loss': 7310, 'marital-status': 'Married-spouse-absent'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 198, 'condition': {'native-country': 'Philippines'}, 'accuracy': 0.30964467005076141}
+{'action': '<=50K', 'experience': 1, 'condition': {'education-num': 12, 'hours-per-week': 54}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 100, 'condition': {'native-country': 'India'}, 'accuracy': 0.61224489795918369}
+{'action': '<=50K', 'experience': 151, 'condition': {'age': 67}, 'accuracy': 0.76000000000000001}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 332, 'occupation': 'Other-service'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'workclass': 'Self-emp-inc', 'fnlwgt': 275638}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 10771, 'condition': {'sex': 'Female'}, 'accuracy': 0.10946058861758426}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'sex': 'Male', 'hours-per-week': 5, 'native-country': 'Puerto-Rico', 'education': 'Bachelors', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8480, 'hours-per-week': 9, 'workclass': 'State-gov', 'marital-status': 'Married-spouse-absent', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Private', 'fnlwgt': 288207}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 265219, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 366, 'condition': {'age': 56}, 'accuracy': 0.67759562841530052}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'capital-gain': 933, 'workclass': 'Private', 'relationship': 'Other-relative', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'education': '7th-8th', 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 24, 'capital-loss': 9824}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 26, 'race': 'Black', 'fnlwgt': 118360}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'capital-loss': 5803, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'White', 'fnlwgt': 193544, 'marital-status': 'Separated', 'native-country': 'Trinadad&Tobago'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3650, 'condition': {'occupation': 'Sales'}, 'accuracy': 0.73068493150684932}
+{'action': '>50K', 'experience': 245, 'condition': {'workclass': 'Federal-gov', 'marital-status': 'Never-married'}, 'accuracy': 0.102880658436214}
+{'action': '<=50K', 'experience': 3124, 'condition': {'race': 'Black'}, 'accuracy': 0.8761203585147247}
+{'action': '<=50K', 'experience': 7291, 'condition': {'education': 'Some-college'}, 'accuracy': 0.80976546427101903}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8223, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 415, 'condition': {'age': 54}, 'accuracy': 0.58454106280193241}
+{'action': '>50K', 'experience': 1067, 'condition': {'education-num': 12}, 'accuracy': 0.24882629107981222}
+{'action': '>50K', 'experience': 4, 'condition': {'age': 77, 'relationship': 'Not-in-family', 'sex': 'Male'}, 'accuracy': 0.25}
+{'action': '>50K', 'experience': 39, 'condition': {'hours-per-week': 3}, 'accuracy': 0.032258064516129031}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '10th', 'capital-loss': 720, 'native-country': 'France', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 9, 'condition': {'education': '11th', 'workclass': 'Federal-gov'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Assoc-acdm', 'capital-gain': 83, 'native-country': 'Laos', 'relationship': 'Own-child', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 179779}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'workclass': 'Federal-gov', 'native-country': 'Laos'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3446, 'condition': {'relationship': 'Unmarried'}, 'accuracy': 0.063298490127758414}
+{'action': '>50K', 'experience': 1298, 'condition': {'workclass': 'State-gov'}, 'accuracy': 0.27300850734725446}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 157738, 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 63, 'condition': {'marital-status': 'Married-civ-spouse', 'native-country': 'Canada'}, 'accuracy': 0.3968253968253968}
+{'action': '<=50K', 'experience': 25, 'condition': {'age': 41, 'education': 'Prof-school'}, 'accuracy': 0.125}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'race': 'Other', 'occupation': 'Tech-support'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 10, 'capital-loss': 4221, 'age': 64, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 300, 'condition': {'age': 61}, 'accuracy': 0.32764505119453924}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6644, 'hours-per-week': 22, 'workclass': 'State-gov', 'age': 40, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3237, 'condition': {'race': 'White', 'occupation': 'Sales'}, 'accuracy': 0.71455050973123257}
+{'action': '<=50K', 'experience': 12, 'condition': {'education-num': 9, 'age': 55, 'marital-status': 'Widowed'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 55, 'race': 'Asian-Pac-Islander', 'workclass': 'State-gov', 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 960, 'condition': {'workclass': 'Federal-gov'}, 'accuracy': 0.61354166666666665}
+{'action': '<=50K', 'experience': 0, 'condition': {'marital-status': 'Divorced', 'native-country': 'Holand-Netherlands'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'workclass': 'Never-worked', 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1039, 'condition': {'race': 'Asian-Pac-Islander'}, 'accuracy': 0.73435996150144367}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6685, 'age': 66, 'fnlwgt': 239119, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 19, 'race': 'White', 'capital-loss': 6210}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 212732}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'marital-status': 'Divorced', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1298, 'condition': {'workclass': 'State-gov'}, 'accuracy': 0.72804314329738062}
+{'action': '>50K', 'experience': 3, 'condition': {'education-num': 10, 'age': 73, 'sex': 'Male'}, 'accuracy': 0.66666666666666663}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 1927}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'occupation': 'Handlers-cleaners', 'race': 'Black', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 268, 'condition': {'education-num': 9, 'workclass': 'State-gov'}, 'accuracy': 0.81716417910447758}
+{'action': '>50K', 'experience': 4099, 'condition': {'occupation': 'Craft-repair'}, 'accuracy': 0.226806640625}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 5501, 'capital-loss': 1034}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 8771}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'race': 'Other', 'workclass': 'State-gov'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 6434}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'workclass': 'Without-pay'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'native-country': 'England', 'relationship': 'Unmarried', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'age': 34, 'education': '5th-6th', 'capital-gain': 255}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 14, 'condition': {'workclass': 'Without-pay'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 53, 'race': 'Other', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 151, 'condition': {'age': 67}, 'accuracy': 0.24503311258278146}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 9768, 'workclass': 'Self-emp-not-inc', 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 7291, 'condition': {'education': 'Some-college'}, 'accuracy': 0.19036508372220698}
+{'action': '>50K', 'experience': 0, 'condition': {'marital-status': 'Married-AF-spouse', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 59, 'condition': {'hours-per-week': 25, 'workclass': 'Self-emp-not-inc'}, 'accuracy': 0.81355932203389836}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 56, 'capital-gain': 7954, 'race': 'Other', 'native-country': 'Jamaica', 'fnlwgt': 182438, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 75, 'capital-loss': 7456, 'marital-status': 'Married-spouse-absent', 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 60, 'race': 'White', 'capital-loss': 7451, 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 366, 'condition': {'age': 56}, 'accuracy': 0.32960893854748602}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 8, 'capital-gain': 4380, 'native-country': 'Mexico', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 28, 'condition': {'native-country': 'Ecuador'}, 'accuracy': 0.14285714285714285}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'capital-gain': 7348, 'workclass': 'Local-gov', 'relationship': 'Not-in-family', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'age': 44, 'marital-status': 'Married-civ-spouse', 'native-country': 'Guatemala'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 31, 'workclass': 'Without-pay', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 24, 'capital-loss': 9824}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 37, 'hours-per-week': 1, 'race': 'Asian-Pac-Islander', 'native-country': 'Iran', 'education-num': 12, 'education': '7th-8th', 'fnlwgt': 177063, 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'capital-loss': 5803, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 4, 'condition': {'education': 'Preschool', 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 45, 'fnlwgt': 214342, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 415, 'condition': {'age': 54}, 'accuracy': 0.41686746987951806}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 1620, 'workclass': 'State-gov', 'native-country': 'Nicaragua'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 43, 'workclass': 'Federal-gov', 'native-country': 'Portugal'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'occupation': 'Protective-serv', 'capital-gain': 1516, 'native-country': 'Yugoslavia', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'age': 50, 'education': 'Prof-school', 'marital-status': 'Married-spouse-absent', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 5, 'condition': {'race': 'White', 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 38, 'education': 'Doctorate', 'fnlwgt': 102876, 'marital-status': 'Married-civ-spouse', 'native-country': 'Portugal'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3650, 'condition': {'occupation': 'Sales'}, 'accuracy': 0.26961053208996161}
+{'action': '<=50K', 'experience': 1067, 'condition': {'education-num': 12}, 'accuracy': 0.75164011246485474}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 51, 'fnlwgt': 190586, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'marital-status': 'Married-AF-spouse', 'native-country': 'Japan', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'workclass': 'Never-worked', 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'marital-status': 'Married-AF-spouse', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'workclass': 'Federal-gov', 'native-country': 'Laos'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '10th', 'capital-loss': 3758, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'education': 'Doctorate', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Assoc-voc', 'fnlwgt': 259370, 'occupation': 'Exec-managerial'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 26, 'condition': {'race': 'Other', 'relationship': 'Unmarried', 'sex': 'Female'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 149, 'condition': {'occupation': 'Priv-house-serv'}, 'accuracy': 0.007462686567164179}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Bachelors', 'capital-loss': 1790, 'native-country': 'Poland'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 51, 'fnlwgt': 269523}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-gain': 2634, 'marital-status': 'Never-married', 'native-country': 'France', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 5501, 'capital-loss': 1034}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1382, 'condition': {'education': 'Assoc-voc'}, 'accuracy': 0.26197387518142234}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 443}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1298, 'condition': {'workclass': 'State-gov'}, 'accuracy': 0.27300850734725446}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 1927}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 7517, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 23, 'condition': {'hours-per-week': 13}, 'accuracy': 0.11764705882352941}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 5995, 'capital-loss': 984, 'occupation': 'Tech-support'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6679, 'fnlwgt': 203685, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'age': 45, 'race': 'White', 'marital-status': 'Separated', 'native-country': 'Scotland'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Doctorate', 'capital-loss': 5074}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4529}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '5th-6th', 'fnlwgt': 274524}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 64, 'race': 'Amer-Indian-Eskimo', 'fnlwgt': 179342, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 233017, 'native-country': 'Cuba'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '10th', 'capital-loss': 3758, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 27816, 'condition': {'race': 'White'}, 'accuracy': 0.25585993672706359}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'fnlwgt': 266594, 'native-country': 'Ecuador', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4942}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 9219}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 3210, 'relationship': 'Unmarried', 'capital-gain': 1934, 'sex': 'Female', 'native-country': 'Dominican-Republic', 'fnlwgt': 144533}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 39, 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'hours-per-week': 21, 'education': 'Preschool', 'fnlwgt': 216750, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'native-country': 'Trinadad&Tobago', 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'education': 'Bachelors'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1382, 'condition': {'education-num': 11}, 'accuracy': 0.73878437047756873}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'workclass': 'Self-emp-not-inc', 'fnlwgt': 150912}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'age': 67, 'education': '10th', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'occupation': 'Armed-Forces', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 28, 'fnlwgt': 203739}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'workclass': 'Self-emp-inc', 'fnlwgt': 275638}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'age': 58, 'native-country': 'Jamaica'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'marital-status': 'Married-AF-spouse', 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'race': 'Amer-Indian-Eskimo', 'education': 'Assoc-acdm', 'capital-loss': 5165, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'age': 68, 'capital-gain': 7406, 'sex': 'Female', 'race': 'Black', 'capital-loss': 2429, 'fnlwgt': 249732, 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 13, 'condition': {'age': 42, 'race': 'Black', 'marital-status': 'Separated'}, 'accuracy': 0.14285714285714285}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'relationship': 'Unmarried', 'age': 39, 'race': 'Amer-Indian-Eskimo', 'education-num': 7, 'capital-loss': 5620}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'fnlwgt': 127661, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 270995, 'hours-per-week': 27, 'education': 'Assoc-acdm', 'capital-loss': 8663}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 23, 'capital-loss': 1073, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 281652}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 284580, 'hours-per-week': 26, 'capital-loss': 6371, 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 82, 'condition': {'race': 'Asian-Pac-Islander', 'relationship': 'Other-relative'}, 'accuracy': 0.92682926829268297}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 5093, 'native-country': 'Puerto-Rico', 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 273128, 'capital-loss': 3597}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 300, 'condition': {'age': 61}, 'accuracy': 0.68000000000000005}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 50, 'capital-gain': 5829}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 274, 'condition': {'education': 'Some-college', 'relationship': 'Unmarried', 'occupation': 'Adm-clerical'}, 'accuracy': 0.018867924528301886}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'fnlwgt': 175164, 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 17, 'age': 27, 'native-country': 'Greece'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 8, 'capital-gain': 4380, 'native-country': 'Mexico', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 5995, 'capital-loss': 984, 'occupation': 'Tech-support'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 10683, 'condition': {'marital-status': 'Never-married'}, 'accuracy': 0.95403912758588416}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-loss': 1255, 'native-country': 'Honduras'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 6434}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 14, 'condition': {'workclass': 'Without-pay'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'fnlwgt': 129749, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 14, 'fnlwgt': 102268, 'marital-status': 'Married-AF-spouse', 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1, 'condition': {'education-num': 12, 'hours-per-week': 54}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 2413, 'hours-per-week': 38, 'workclass': 'Private', 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 202763, 'education': '7th-8th', 'capital-loss': 5887, 'marital-status': 'Divorced', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 233742, 'age': 74, 'race': 'Black', 'capital-loss': 8953, 'native-country': 'Taiwan'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'education-num': 10, 'workclass': 'Without-pay', 'sex': 'Male'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 62, 'condition': {'age': 48, 'occupation': 'Adm-clerical'}, 'accuracy': 0.75806451612903225}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 7115}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 77, 'race': 'White', 'capital-gain': 9908, 'native-country': 'Portugal', 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 5, 'condition': {'age': 24, 'education': '5th-6th'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 39, 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'capital-gain': 4016, 'race': 'White', 'capital-loss': 5358, 'native-country': 'India'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 300, 'condition': {'age': 61}, 'accuracy': 0.32764505119453924}
+{'action': '<=50K', 'experience': 0, 'condition': {'relationship': 'Own-child', 'sex': 'Female', 'hours-per-week': 45, 'race': 'White', 'education': '7th-8th', 'fnlwgt': 136720}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6371, 'hours-per-week': 46, 'education': 'Masters', 'fnlwgt': 176199, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'race': 'Other', 'fnlwgt': 228627, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 7, 'condition': {'education': 'Doctorate', 'relationship': 'Own-child'}, 'accuracy': 0.5}
+{'action': '>50K', 'experience': 3, 'condition': {'education-num': 8, 'age': 54}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1382, 'condition': {'education-num': 11}, 'accuracy': 0.26197387518142234}
+{'action': '<=50K', 'experience': 12, 'condition': {'education-num': 7, 'age': 44}, 'accuracy': 0.75}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 234297, 'relationship': 'Own-child', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 9798, 'native-country': 'United-States', 'occupation': 'Prof-specialty'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'race': 'White', 'education': '10th', 'native-country': 'Philippines', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 1993, 'age': 64, 'workclass': 'Self-emp-not-inc', 'marital-status': 'Separated', 'native-country': 'Mexico'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 273453, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'fnlwgt': 254202, 'relationship': 'Wife', 'occupation': 'Prof-specialty'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 4248, 'relationship': 'Husband', 'sex': 'Male', 'native-country': 'Mexico', 'education': '11th', 'fnlwgt': 120069}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'workclass': 'Self-emp-inc', 'marital-status': 'Never-married', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 253105, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 727, 'native-country': 'Hungary', 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'relationship': 'Unmarried', 'age': 39, 'race': 'Amer-Indian-Eskimo', 'education-num': 7, 'capital-loss': 5620}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 59, 'marital-status': 'Never-married', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3124, 'condition': {'race': 'Black'}, 'accuracy': 0.1239193083573487}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 270995, 'hours-per-week': 27, 'education': 'Assoc-acdm', 'capital-loss': 8663}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 13123, 'condition': {'race': 'White', 'workclass': 'Private', 'sex': 'Male'}, 'accuracy': 0.70334527166044347}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-gain': 5944, 'hours-per-week': 33, 'workclass': 'Local-gov'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Masters', 'fnlwgt': 115362, 'marital-status': 'Married-spouse-absent', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'fnlwgt': 291516}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 154, 'condition': {'hours-per-week': 12, 'race': 'White'}, 'accuracy': 0.079470198675496692}
+{'action': '<=50K', 'experience': 23, 'condition': {'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.61904761904761907}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 281652}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 5093, 'native-country': 'Puerto-Rico', 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 53, 'education': 'Some-college', 'capital-loss': 4582}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 64, 'condition': {'hours-per-week': 6}, 'accuracy': 0.13559322033898305}
+{'action': '>50K', 'experience': 100, 'condition': {'workclass': 'Self-emp-inc', 'marital-status': 'Divorced'}, 'accuracy': 0.25}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'State-gov', 'fnlwgt': 149246}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Asian-Pac-Islander', 'fnlwgt': 178763}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 10771, 'condition': {'sex': 'Female'}, 'accuracy': 0.10946058861758426}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 25, 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'age': 49, 'race': 'Black', 'capital-gain': 2313, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'workclass': 'Self-emp-inc', 'native-country': 'Iran'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'education': 'Prof-school', 'marital-status': 'Married-civ-spouse', 'occupation': 'Machine-op-inspct'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Private', 'fnlwgt': 102278, 'education-num': 9, 'capital-loss': 5495, 'native-country': 'Italy'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 38, 'condition': {'education-num': 11, 'workclass': 'Federal-gov'}, 'accuracy': 0.63888888888888884}
+{'action': '<=50K', 'experience': 198, 'condition': {'native-country': 'Philippines'}, 'accuracy': 0.69191919191919193}
+{'action': '>50K', 'experience': 25, 'condition': {'marital-status': 'Widowed', 'occupation': 'Transport-moving'}, 'accuracy': 0.080000000000000002}
+{'action': '<=50K', 'experience': 23, 'condition': {'hours-per-week': 13}, 'accuracy': 0.91304347826086951}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'capital-gain': 9318, 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3446, 'condition': {'relationship': 'Unmarried'}, 'accuracy': 0.063298490127758414}
+{'action': '>50K', 'experience': 5068, 'condition': {'relationship': 'Own-child'}, 'accuracy': 0.013254203758654798}
+{'action': '<=50K', 'experience': 44, 'condition': {'race': 'Asian-Pac-Islander', 'workclass': 'Federal-gov'}, 'accuracy': 0.54545454545454541}
+{'action': '>50K', 'experience': 14, 'condition': {'workclass': 'Without-pay'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2, 'condition': {'hours-per-week': 43, 'occupation': 'Protective-serv', 'sex': 'Female'}, 'accuracy': 0.5}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'race': 'White', 'capital-gain': 7818}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 43, 'workclass': 'Federal-gov', 'native-country': 'Portugal'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 233742, 'age': 74, 'race': 'Black', 'capital-loss': 8953, 'native-country': 'Taiwan'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1187, 'condition': {'education': 'Masters', 'sex': 'Male'}, 'accuracy': 0.34317032040472173}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'capital-gain': 368}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8272, 'race': 'Other', 'workclass': 'Private', 'native-country': 'Poland', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'hours-per-week': 21, 'education': 'Preschool', 'fnlwgt': 216750, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'fnlwgt': 101894, 'relationship': 'Husband', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1175, 'condition': {'education-num': 7}, 'accuracy': 0.05163511187607573}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 14, 'capital-loss': 5421, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 11, 'condition': {'race': 'Amer-Indian-Eskimo', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 24, 'condition': {'native-country': 'Ireland'}, 'accuracy': 0.79166666666666663}
+{'action': '>50K', 'experience': 0, 'condition': {'occupation': 'Other-service', 'education': '12th', 'fnlwgt': 124739, 'marital-status': 'Married-spouse-absent', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Other', 'fnlwgt': 296547, 'occupation': 'Tech-support'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'age': 25, 'capital-gain': 8718, 'sex': 'Female', 'fnlwgt': 143454, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 12, 'condition': {'education-num': 7, 'age': 44}, 'accuracy': 0.42857142857142855}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'capital-gain': 156, 'fnlwgt': 148689, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 28, 'fnlwgt': 203739}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1187, 'condition': {'education': 'Masters', 'sex': 'Male'}, 'accuracy': 0.65711878685762426}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'fnlwgt': 134799}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'hours-per-week': 4, 'workclass': 'Self-emp-not-inc', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'fnlwgt': 254202, 'relationship': 'Wife', 'occupation': 'Prof-specialty'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 5046, 'workclass': 'Without-pay', 'capital-loss': 6983, 'marital-status': 'Married-spouse-absent'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '11th', 'capital-loss': 7054, 'marital-status': 'Married-AF-spouse', 'native-country': 'Ireland', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 21790, 'condition': {'sex': 'Male'}, 'accuracy': 0.30575060810500709}
+{'action': '>50K', 'experience': 1207, 'condition': {'education-num': 11, 'race': 'White'}, 'accuracy': 0.276578073089701}
+{'action': '<=50K', 'experience': 433, 'condition': {'education-num': 8}, 'accuracy': 0.92378752886836024}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 33, 'capital-gain': 3959, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 59, 'marital-status': 'Never-married', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-gain': 82, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1, 'condition': {'fnlwgt': 213615}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 23, 'race': 'Asian-Pac-Islander', 'capital-gain': 2534, 'marital-status': 'Married-spouse-absent', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 8771}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'age': 70, 'education': '11th', 'capital-gain': 6541, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 154, 'condition': {'hours-per-week': 12, 'race': 'White'}, 'accuracy': 0.92207792207792205}
+{'action': '>50K', 'experience': 258, 'condition': {'age': 62}, 'accuracy': 0.2648221343873518}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 37, 'education': 'Assoc-voc', 'capital-gain': 5392}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 53, 'education': 'Some-college', 'capital-loss': 4582}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 14, 'condition': {'workclass': 'Without-pay'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 148244, 'native-country': 'India', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 100, 'condition': {'workclass': 'Self-emp-inc', 'marital-status': 'Divorced'}, 'accuracy': 0.76000000000000001}
+{'action': '>50K', 'experience': 0, 'condition': {'sex': 'Female', 'hours-per-week': 34, 'race': 'Asian-Pac-Islander', 'education-num': 8, 'fnlwgt': 177090, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 23, 'workclass': 'State-gov', 'relationship': 'Husband', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 10771, 'condition': {'sex': 'Female'}, 'accuracy': 0.89062209842154128}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4267, 'workclass': 'State-gov', 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'capital-loss': 7816, 'native-country': 'Iran'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8923, 'hours-per-week': 29, 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-loss': 9563, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 305, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 9, 'condition': {'hours-per-week': 44, 'education': 'Assoc-voc', 'sex': 'Male'}, 'accuracy': 0.33333333333333331}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 19, 'education': 'Assoc-acdm', 'native-country': 'Jamaica', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'education': '7th-8th', 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 106, 'condition': {'education-num': 11, 'occupation': 'Sales'}, 'accuracy': 0.26470588235294118}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 21, 'age': 65, 'relationship': 'Own-child', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3446, 'condition': {'relationship': 'Unmarried'}, 'accuracy': 0.93673824724318044}
+{'action': '<=50K', 'experience': 24, 'condition': {'age': 32, 'workclass': 'Self-emp-inc'}, 'accuracy': 0.5}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'capital-gain': 9318, 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'age': 67, 'education': '10th', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 36, 'education': 'Assoc-voc', 'capital-gain': 5948}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 92, 'condition': {'education': '11th', 'occupation': 'Transport-moving'}, 'accuracy': 0.92391304347826086}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 19, 'race': 'White', 'capital-loss': 6210}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1062, 'condition': {'race': 'White', 'workclass': 'State-gov'}, 'accuracy': 0.71186440677966101}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 215113, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6119, 'workclass': 'Without-pay', 'capital-loss': 7861, 'occupation': 'Priv-house-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'fnlwgt': 266239, 'age': 26, 'capital-loss': 5618}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3089, 'condition': {'education-num': 9, 'marital-status': 'Never-married'}, 'accuracy': 0.015312916111850865}
+{'action': '>50K', 'experience': 2, 'condition': {'hours-per-week': 43, 'occupation': 'Protective-serv', 'sex': 'Female'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'race': 'White', 'capital-gain': 7818}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 258, 'condition': {'age': 62}, 'accuracy': 0.74031007751937983}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Preschool', 'capital-gain': 3748, 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 37, 'education': 'Assoc-voc', 'capital-gain': 5392}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'capital-gain': 368}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 5198, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1175, 'condition': {'education-num': 7}, 'accuracy': 0.94893617021276599}
+{'action': '<=50K', 'experience': 11, 'condition': {'race': 'Amer-Indian-Eskimo', 'marital-status': 'Separated'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'education': '10th', 'capital-loss': 1281}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'capital-loss': 8233}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '10th', 'fnlwgt': 236986, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'education': 'Some-college', 'marital-status': 'Separated', 'race': 'Amer-Indian-Eskimo', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 292059, 'hours-per-week': 55, 'capital-loss': 6172, 'age': 50, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4638, 'native-country': 'Ecuador'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 1536, 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 25, 'capital-gain': 8883, 'native-country': 'Laos'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 536, 'condition': {'education': 'Masters', 'sex': 'Female'}, 'accuracy': 0.33457943925233646}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'workclass': 'Self-emp-inc', 'education': 'Doctorate', 'fnlwgt': 247469, 'native-country': 'France'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 7, 'condition': {'hours-per-week': 46, 'relationship': 'Unmarried'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 14, 'condition': {'race': 'White', 'marital-status': 'Separated', 'occupation': 'Farming-fishing'}, 'accuracy': 0.14285714285714285}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'education': '11th', 'fnlwgt': 140256, 'native-country': 'Outlying-US(Guam-USVI-etc)'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 4443, 'condition': {'marital-status': 'Divorced'}, 'accuracy': 0.89579113211793837}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'hours-per-week': 3, 'capital-loss': 6671}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'fnlwgt': 134799}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 20, 'condition': {'hours-per-week': 1}, 'accuracy': 0.90000000000000002}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 285164}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Other', 'age': 53, 'education': 'Some-college', 'native-country': 'Haiti', 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 21790, 'condition': {'sex': 'Male'}, 'accuracy': 0.69426342358880222}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 7080, 'hours-per-week': 29, 'education': '1st-4th', 'fnlwgt': 277493, 'native-country': 'Taiwan'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 5619, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2, 'condition': {'hours-per-week': 32, 'age': 45, 'occupation': 'Prof-specialty'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 727, 'native-country': 'Hungary', 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 49, 'condition': {'race': 'Asian-Pac-Islander', 'workclass': 'Private', 'relationship': 'Unmarried'}, 'accuracy': 0.1111111111111111}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 30, 'race': 'White', 'age': 41, 'relationship': 'Own-child', 'occupation': 'Exec-managerial'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 886, 'condition': {'education': 'Masters', 'relationship': 'Husband'}, 'accuracy': 0.76749435665914223}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 115168, 'capital-loss': 8063}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 13123, 'condition': {'race': 'White', 'workclass': 'Private', 'sex': 'Male'}, 'accuracy': 0.29667733577198596}
+{'action': '>50K', 'experience': 5, 'condition': {'education-num': 8, 'race': 'Amer-Indian-Eskimo'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'hours-per-week': 9, 'workclass': 'State-gov'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 14, 'condition': {'workclass': 'Without-pay'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'age': 32, 'education': '10th', 'fnlwgt': 158628, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'fnlwgt': 253003, 'native-country': 'Honduras', 'relationship': 'Unmarried', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Private', 'fnlwgt': 288207}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 312, 'condition': {'age': 60}, 'accuracy': 0.67628205128205132}
+{'action': '<=50K', 'experience': 0, 'condition': {'sex': 'Female', 'hours-per-week': 34, 'race': 'Asian-Pac-Islander', 'education-num': 8, 'fnlwgt': 177090, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1491, 'condition': {'native-country': 'United-States', 'occupation': 'Transport-moving'}, 'accuracy': 0.79543930248155603}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-loss': 9902, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Asian-Pac-Islander', 'fnlwgt': 178763}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4267, 'workclass': 'State-gov', 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 514, 'condition': {'education': '9th'}, 'accuracy': 0.0533596837944664}
+{'action': '>50K', 'experience': 19, 'condition': {'education': 'Masters', 'occupation': 'Other-service'}, 'accuracy': 0.066666666666666666}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'capital-gain': 4296, 'native-country': 'Japan', 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1797, 'condition': {'education-num': 10, 'relationship': 'Not-in-family'}, 'accuracy': 0.066478873239436617}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'fnlwgt': 160449, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'marital-status': 'Married-civ-spouse', 'relationship': 'Husband', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 3751, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 24, 'condition': {'education': '10th', 'marital-status': 'Married-civ-spouse', 'relationship': 'Husband', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.91666666666666663}
+{'action': '<=50K', 'experience': 106, 'condition': {'education-num': 11, 'occupation': 'Sales'}, 'accuracy': 0.74528301886792447}
+{'action': '>50K', 'experience': 0, 'condition': {'marital-status': 'Married-AF-spouse', 'native-country': 'Japan', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 10771, 'condition': {'sex': 'Female'}, 'accuracy': 0.10946058861758426}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 46, 'race': 'Other', 'fnlwgt': 126444, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-gain': 7273, 'fnlwgt': 221262, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'hours-per-week': 17, 'race': 'Asian-Pac-Islander', 'capital-gain': 4690}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '1st-4th', 'marital-status': 'Never-married', 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 245, 'condition': {'workclass': 'Federal-gov', 'marital-status': 'Never-married'}, 'accuracy': 0.89795918367346939}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Preschool', 'workclass': 'Federal-gov', 'native-country': 'Mexico', 'relationship': 'Husband', 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Masters', 'fnlwgt': 115362, 'marital-status': 'Married-spouse-absent', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'fnlwgt': 266239, 'age': 26, 'capital-loss': 5618}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2, 'condition': {'workclass': 'Never-worked', 'sex': 'Female'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 6179}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'capital-gain': 6932, 'fnlwgt': 150752}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 267, 'condition': {'education-num': 9, 'age': 39}, 'accuracy': 0.75187969924812026}
+{'action': '>50K', 'experience': 5068, 'condition': {'relationship': 'Own-child'}, 'accuracy': 0.013254203758654798}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 209864, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'age': 32, 'education': '10th', 'fnlwgt': 158628, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 54, 'capital-gain': 5710}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 28, 'condition': {'native-country': 'Ecuador'}, 'accuracy': 0.92307692307692313}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 25, 'capital-gain': 9216, 'sex': 'Male', 'hours-per-week': 22, 'education-num': 12, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Private', 'relationship': 'Unmarried', 'age': 35, 'capital-gain': 8786, 'hours-per-week': 31, 'native-country': 'Hong', 'education': '1st-4th', 'fnlwgt': 152453}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3195, 'condition': {'workclass': 'Private', 'occupation': 'Craft-repair'}, 'accuracy': 0.77433489827856028}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 157738, 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 226, 'condition': {'education-num': 10, 'workclass': 'Self-emp-inc'}, 'accuracy': 0.49549549549549549}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'age': 46, 'capital-loss': 8032}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 292059, 'hours-per-week': 55, 'capital-loss': 6172, 'age': 50, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4638, 'native-country': 'Ecuador'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 9626, 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 7291, 'condition': {'education': 'Some-college'}, 'accuracy': 0.80976546427101903}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 5552}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'hours-per-week': 1, 'workclass': 'Private', 'marital-status': 'Divorced'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 64, 'race': 'Amer-Indian-Eskimo', 'fnlwgt': 179342, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 23, 'condition': {'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.43478260869565216}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'occupation': 'Protective-serv', 'marital-status': 'Separated', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 8949, 'native-country': 'Cuba'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 55, 'workclass': 'Private', 'marital-status': 'Never-married', 'native-country': 'Guatemala'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Other', 'age': 53, 'education': 'Some-college', 'native-country': 'Haiti', 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1, 'condition': {'hours-per-week': 56, 'age': 23, 'native-country': 'United-States'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 52, 'capital-loss': 8874}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 7157, 'native-country': 'Cuba'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 207809, 'capital-loss': 4354, 'marital-status': 'Divorced', 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 30, 'race': 'White', 'age': 41, 'relationship': 'Own-child', 'occupation': 'Exec-managerial'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'relationship': 'Not-in-family', 'age': 71, 'capital-loss': 8378, 'fnlwgt': 276959, 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '7th-8th', 'capital-gain': 2686, 'race': 'Asian-Pac-Islander'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 100, 'condition': {'native-country': 'India'}, 'accuracy': 0.40000000000000002}
+{'action': '>50K', 'experience': 1, 'condition': {'education-num': 10, 'workclass': 'Without-pay', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 693, 'condition': {'race': 'Asian-Pac-Islander', 'sex': 'Male'}, 'accuracy': 0.33670520231213874}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'sex': 'Male', 'hours-per-week': 5, 'native-country': 'Puerto-Rico', 'education': 'Bachelors', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 5786, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'capital-gain': 3341, 'workclass': 'Self-emp-not-inc', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 567, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'capital-loss': 6487, 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 168, 'condition': {'education': '1st-4th'}, 'accuracy': 0.042553191489361701}
+{'action': '<=50K', 'experience': 3797, 'condition': {'race': 'White', 'marital-status': 'Divorced'}, 'accuracy': 0.89254674743218332}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 192190, 'education': 'Masters', 'capital-loss': 7671, 'native-country': 'Cuba', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 138, 'condition': {'hours-per-week': 52}, 'accuracy': 0.66666666666666663}
+{'action': '>50K', 'experience': 59, 'condition': {'hours-per-week': 25, 'workclass': 'Self-emp-not-inc'}, 'accuracy': 0.19298245614035087}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 56, 'capital-gain': 7954, 'race': 'Other', 'native-country': 'Jamaica', 'fnlwgt': 182438, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'capital-loss': 9319, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'education': '7th-8th', 'native-country': 'Jamaica', 'relationship': 'Not-in-family', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 870}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 23, 'condition': {'education-num': 12, 'marital-status': 'Widowed'}, 'accuracy': 0.14999999999999999}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 0, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 3, 'education': '9th', 'native-country': 'Mexico', 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '9th', 'native-country': 'Italy'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 875, 'workclass': 'Private'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 333, 'condition': {'education': '5th-6th'}, 'accuracy': 0.95195195195195192}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 1495, 'hours-per-week': 38, 'capital-loss': 6165, 'native-country': 'Cambodia', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'native-country': 'Yugoslavia', 'education-num': 9, 'education': 'Some-college', 'fnlwgt': 293059, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'fnlwgt': 245044, 'native-country': 'Outlying-US(Guam-USVI-etc)'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'capital-loss': 7255}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 6179}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 8305, 'condition': {'relationship': 'Not-in-family'}, 'accuracy': 0.10315738732224633}
+{'action': '>50K', 'experience': 11, 'condition': {'occupation': 'Sales', 'race': 'Other', 'sex': 'Female'}, 'accuracy': 0.33333333333333331}
+{'action': '<=50K', 'experience': 48, 'condition': {'education-num': 7, 'marital-status': 'Separated'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'hours-per-week': 46, 'capital-loss': 8680, 'age': 46}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 870}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4295, 'fnlwgt': 104722, 'education-num': 7, 'capital-loss': 1774}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 308, 'condition': {'education-num': 9, 'age': 34}, 'accuracy': 0.8571428571428571}
+{'action': '<=50K', 'experience': 300, 'condition': {'age': 61}, 'accuracy': 0.68000000000000005}
+{'action': '<=50K', 'experience': 3446, 'condition': {'relationship': 'Unmarried'}, 'accuracy': 0.93673824724318044}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 5786, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'race': 'Other', 'capital-gain': 8784, 'native-country': 'Puerto-Rico', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-loss': 9902, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'age': 46, 'capital-loss': 8032}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 31, 'fnlwgt': 185547, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'marital-status': 'Married-civ-spouse', 'age': 40, 'native-country': 'South', 'relationship': 'Other-relative', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 1536, 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 67, 'capital-gain': 7599, 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'native-country': 'Ireland', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 7405, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 10771, 'condition': {'sex': 'Female'}, 'accuracy': 0.89062209842154128}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'capital-gain': 3737, 'hours-per-week': 39, 'capital-loss': 2357}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 30, 'condition': {'native-country': 'South', 'sex': 'Female'}, 'accuracy': 0.17647058823529413}
+{'action': '>50K', 'experience': 1, 'condition': {'hours-per-week': 1, 'workclass': 'Private', 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 16, 'education': 'Bachelors', 'fnlwgt': 163627, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Bachelors', 'workclass': 'Without-pay', 'marital-status': 'Never-married', 'race': 'Amer-Indian-Eskimo', 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 977, 'marital-status': 'Married-spouse-absent', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'fnlwgt': 113788, 'native-country': 'Puerto-Rico', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-gain': 139, 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 23, 'condition': {'age': 78}, 'accuracy': 0.23809523809523808}
+{'action': '>50K', 'experience': 0, 'condition': {'relationship': 'Own-child', 'sex': 'Female', 'hours-per-week': 45, 'race': 'White', 'education': '7th-8th', 'fnlwgt': 136720}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1, 'condition': {'hours-per-week': 56, 'age': 23, 'native-country': 'United-States'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 4, 'condition': {'age': 77, 'relationship': 'Not-in-family', 'sex': 'Male'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'native-country': 'El-Salvador'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 184323}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'hours-per-week': 33, 'race': 'White'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 52, 'condition': {'race': 'White', 'education': 'Masters', 'relationship': 'Own-child'}, 'accuracy': 0.11764705882352941}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'fnlwgt': 291516}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 100, 'condition': {'native-country': 'India'}, 'accuracy': 0.61224489795918369}
+{'action': '<=50K', 'experience': 576, 'condition': {'education': 'Prof-school'}, 'accuracy': 0.265625}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'hours-per-week': 58, 'education': 'Assoc-acdm', 'capital-loss': 838, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'race': 'Other', 'capital-loss': 7310, 'marital-status': 'Married-spouse-absent'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 813, 'condition': {'age': 29}, 'accuracy': 0.16625310173697269}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 115475, 'marital-status': 'Never-married', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 3210, 'relationship': 'Unmarried', 'capital-gain': 1934, 'sex': 'Female', 'native-country': 'Dominican-Republic', 'fnlwgt': 144533}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 312, 'condition': {'age': 60}, 'accuracy': 0.3289902280130293}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 332, 'occupation': 'Other-service'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'race': 'Other', 'capital-gain': 7741}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3797, 'condition': {'race': 'White', 'marital-status': 'Divorced'}, 'accuracy': 0.10765171503957784}
+{'action': '<=50K', 'experience': 10771, 'condition': {'sex': 'Female'}, 'accuracy': 0.89062209842154128}
+{'action': '>50K', 'experience': 8305, 'condition': {'relationship': 'Not-in-family'}, 'accuracy': 0.10315738732224633}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'native-country': 'Yugoslavia', 'education-num': 9, 'education': 'Some-college', 'fnlwgt': 293059, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 19, 'condition': {'education': 'Masters', 'occupation': 'Other-service'}, 'accuracy': 0.94736842105263153}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 3, 'fnlwgt': 121532}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1797, 'condition': {'education-num': 10, 'relationship': 'Not-in-family'}, 'accuracy': 0.9343350027824151}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8430, 'marital-status': 'Widowed', 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 9303, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4824, 'workclass': 'Without-pay', 'native-country': 'Scotland', 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 55, 'education': 'Some-college', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 26, 'race': 'Black', 'fnlwgt': 118360}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'education': '11th', 'fnlwgt': 140256, 'native-country': 'Outlying-US(Guam-USVI-etc)'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'White', 'fnlwgt': 193544, 'marital-status': 'Separated', 'native-country': 'Trinadad&Tobago'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'fnlwgt': 218316, 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 3789, 'race': 'White', 'fnlwgt': 216329, 'native-country': 'Cambodia', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 875, 'workclass': 'Private'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 265219, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 7517, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 10, 'education': 'Assoc-voc', 'workclass': 'Federal-gov', 'age': 69, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Asian-Pac-Islander', 'native-country': 'Nicaragua'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8223, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-gain': 9985, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1062, 'condition': {'race': 'White', 'workclass': 'State-gov'}, 'accuracy': 0.71186440677966101}
+{'action': '<=50K', 'experience': 8305, 'condition': {'relationship': 'Not-in-family'}, 'accuracy': 0.89692956050571948}
+{'action': '<=50K', 'experience': 11, 'condition': {'occupation': 'Sales', 'race': 'Other', 'sex': 'Female'}, 'accuracy': 0.81818181818181823}
+{'action': '>50K', 'experience': 9, 'condition': {'education': '11th', 'workclass': 'Federal-gov'}, 'accuracy': 0.1111111111111111}
+{'action': '<=50K', 'experience': 2, 'condition': {'native-country': 'Greece', 'relationship': 'Wife'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 9521}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'fnlwgt': 237945}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 38, 'capital-loss': 979}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 9, 'condition': {'native-country': 'Vietnam', 'relationship': 'Own-child', 'marital-status': 'Never-married'}, 'accuracy': 0.88888888888888884}
+{'action': '<=50K', 'experience': 10683, 'condition': {'marital-status': 'Never-married'}, 'accuracy': 0.95403912758588416}
+{'action': '>50K', 'experience': 26, 'condition': {'race': 'Other', 'relationship': 'Unmarried', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'native-country': 'Ireland', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 7405, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 179779}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'State-gov', 'hours-per-week': 24, 'race': 'Other', 'fnlwgt': 207806}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 8, 'race': 'Black', 'capital-loss': 7156, 'native-country': 'Puerto-Rico', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8430, 'marital-status': 'Widowed', 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 212732}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 2507, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 5, 'condition': {'education-num': 10, 'native-country': 'Iran', 'sex': 'Male'}, 'accuracy': 0.40000000000000002}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 52, 'capital-loss': 8874}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'native-country': 'El-Salvador'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 184323}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'occupation': 'Handlers-cleaners', 'race': 'Black', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 52, 'condition': {'race': 'White', 'education': 'Masters', 'relationship': 'Own-child'}, 'accuracy': 0.92307692307692313}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 5141, 'capital-loss': 4850}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4450, 'hours-per-week': 6, 'fnlwgt': 100034, 'native-country': 'Hong'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 8409, 'capital-loss': 3539}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'workclass': 'Local-gov', 'native-country': 'Nicaragua'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 20, 'condition': {'hours-per-week': 1}, 'accuracy': 0.15384615384615385}
+{'action': '>50K', 'experience': 0, 'condition': {'marital-status': 'Divorced', 'native-country': 'Cuba', 'occupation': 'Exec-managerial'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'workclass': 'Without-pay'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 2507, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 6598, 'workclass': 'Without-pay', 'marital-status': 'Widowed', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 56, 'education': '9th', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'race': 'Other', 'capital-gain': 7741}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 75, 'capital-loss': 7456, 'marital-status': 'Married-spouse-absent', 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 3, 'fnlwgt': 121532}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 2002, 'condition': {'occupation': 'Machine-op-inspct'}, 'accuracy': 0.12487512487512488}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'hours-per-week': 22, 'fnlwgt': 151671, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Black', 'education': '7th-8th', 'native-country': 'Jamaica', 'relationship': 'Not-in-family', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 9303, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 55, 'education': 'Some-college', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'HS-grad', 'fnlwgt': 297731}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Preschool', 'capital-gain': 3748, 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '10th', 'fnlwgt': 225199, 'native-country': 'Honduras', 'relationship': 'Own-child', 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-loss': 5790, 'relationship': 'Wife', 'occupation': 'Machine-op-inspct'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 14, 'capital-loss': 5421, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 333, 'condition': {'education': '5th-6th'}, 'accuracy': 0.048338368580060423}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'occupation': 'Protective-serv', 'capital-gain': 1516, 'native-country': 'Yugoslavia', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'fnlwgt': 278514, 'age': 48, 'capital-loss': 2979, 'native-country': 'United-States'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'fnlwgt': 245044, 'native-country': 'Outlying-US(Guam-USVI-etc)'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-gain': 9985, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'race': 'Amer-Indian-Eskimo', 'education': 'Assoc-acdm', 'capital-loss': 5165, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 267, 'condition': {'education-num': 9, 'age': 39}, 'accuracy': 0.25093632958801498}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '10th', 'capital-loss': 720, 'native-country': 'France', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 234297, 'relationship': 'Own-child', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1039, 'condition': {'race': 'Asian-Pac-Islander'}, 'accuracy': 0.73435996150144367}
+{'action': '>50K', 'experience': 0, 'condition': {'occupation': 'Prof-specialty', 'capital-loss': 5963, 'marital-status': 'Married-AF-spouse', 'relationship': 'Own-child', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 56, 'education': '9th', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 207809, 'capital-loss': 4354, 'marital-status': 'Divorced', 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 5552}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 5068, 'condition': {'relationship': 'Own-child'}, 'accuracy': 0.98677979479084454}
+{'action': '>50K', 'experience': 63, 'condition': {'marital-status': 'Married-civ-spouse', 'native-country': 'Canada'}, 'accuracy': 0.62295081967213117}
+{'action': '>50K', 'experience': 25, 'condition': {'age': 41, 'education': 'Prof-school'}, 'accuracy': 0.88}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 1618, 'age': 38, 'fnlwgt': 133102}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 12, 'condition': {'education-num': 9, 'age': 55, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3124, 'condition': {'race': 'Black'}, 'accuracy': 0.1239193083573487}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 273128, 'capital-loss': 3597}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 54, 'capital-gain': 4570, 'native-country': 'Jamaica'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 8, 'condition': {'hours-per-week': 16, 'age': 23}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'age': 49, 'race': 'Black', 'capital-gain': 2313, 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 5, 'condition': {'workclass': 'Local-gov', 'native-country': 'England'}, 'accuracy': 0.59999999999999998}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 281359, 'capital-loss': 5815}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '11th', 'capital-loss': 7054, 'marital-status': 'Married-AF-spouse', 'native-country': 'Ireland', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'capital-gain': 9357}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'marital-status': 'Divorced', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 567, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 686, 'fnlwgt': 127814, 'native-country': 'Poland'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-gain': 5944, 'hours-per-week': 33, 'workclass': 'Local-gov'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 268, 'condition': {'education-num': 9, 'workclass': 'State-gov'}, 'accuracy': 0.1891891891891892}
+{'action': '<=50K', 'experience': 4099, 'condition': {'occupation': 'Craft-repair'}, 'accuracy': 0.77335935594047334}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 5141, 'capital-loss': 4850}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3770, 'condition': {'occupation': 'Adm-clerical'}, 'accuracy': 0.8655172413793103}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 45, 'relationship': 'Husband', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 55, 'age': 59, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'marital-status': 'Divorced', 'native-country': 'Cuba', 'occupation': 'Exec-managerial'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4529}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '5th-6th', 'fnlwgt': 274524}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3446, 'condition': {'relationship': 'Unmarried'}, 'accuracy': 0.063298490127758414}
+{'action': '<=50K', 'experience': 643, 'condition': {'native-country': 'Mexico'}, 'accuracy': 0.94867807153965789}
+{'action': '<=50K', 'experience': 2404, 'condition': {'marital-status': 'Divorced', 'relationship': 'Not-in-family'}, 'accuracy': 0.87146422628951747}
+{'action': '<=50K', 'experience': 27816, 'condition': {'race': 'White'}, 'accuracy': 0.74416681646593563}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'fnlwgt': 266594, 'native-country': 'Ecuador', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4942}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 5, 'condition': {'age': 24, 'education': '5th-6th'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2002, 'condition': {'occupation': 'Machine-op-inspct'}, 'accuracy': 0.87556221889055474}
+{'action': '<=50K', 'experience': 9, 'condition': {'hours-per-week': 44, 'education': 'Assoc-voc', 'sex': 'Male'}, 'accuracy': 0.75}
+{'action': '>50K', 'experience': 1569, 'condition': {'race': 'Black', 'sex': 'Male'}, 'accuracy': 0.193359375}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8923, 'hours-per-week': 29, 'workclass': 'Never-worked'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Masters', 'capital-gain': 9140, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 37, 'hours-per-week': 1, 'race': 'Asian-Pac-Islander', 'native-country': 'Iran', 'education-num': 12, 'education': '7th-8th', 'fnlwgt': 177063, 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 82, 'condition': {'race': 'Asian-Pac-Islander', 'relationship': 'Other-relative'}, 'accuracy': 0.07407407407407407}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 33, 'capital-gain': 3959, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'native-country': 'Trinadad&Tobago', 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 20, 'education': 'Assoc-acdm', 'marital-status': 'Never-married', 'native-country': 'Portugal'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-loss': 5790, 'relationship': 'Wife', 'occupation': 'Machine-op-inspct'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 4, 'condition': {'education': 'Preschool', 'occupation': 'Craft-repair'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 3237, 'condition': {'race': 'White', 'occupation': 'Sales'}, 'accuracy': 0.28580266006804828}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 980, 'workclass': 'Self-emp-not-inc', 'fnlwgt': 215764, 'marital-status': 'Married-spouse-absent', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 1620, 'workclass': 'State-gov', 'native-country': 'Nicaragua'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'education': 'Bachelors', 'fnlwgt': 162232, 'marital-status': 'Separated', 'native-country': 'China'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'age': 34, 'education': '5th-6th', 'capital-gain': 255}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 7, 'age': 58, 'native-country': 'Jamaica'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'marital-status': 'Married-AF-spouse', 'occupation': 'Craft-repair'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6384, 'hours-per-week': 57, 'capital-loss': 8844, 'age': 58, 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 26, 'fnlwgt': 137534, 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 5116, 'native-country': 'Scotland'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 6598, 'workclass': 'Without-pay', 'marital-status': 'Widowed', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'age': 68, 'capital-gain': 7406, 'sex': 'Female', 'race': 'Black', 'capital-loss': 2429, 'fnlwgt': 249732, 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 13, 'condition': {'age': 42, 'race': 'Black', 'marital-status': 'Separated'}, 'accuracy': 0.92307692307692313}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Assoc-acdm', 'capital-gain': 83, 'native-country': 'Laos', 'relationship': 'Own-child', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'fnlwgt': 127661, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 192190, 'education': 'Masters', 'capital-loss': 7671, 'native-country': 'Cuba', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-gain': 7273, 'fnlwgt': 221262, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 813, 'condition': {'age': 29}, 'accuracy': 0.83517835178351785}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 236, 'fnlwgt': 113699, 'capital-loss': 5845}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 20, 'education': 'Assoc-acdm', 'marital-status': 'Never-married', 'native-country': 'Portugal'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 928, 'condition': {'occupation': 'Tech-support'}, 'accuracy': 0.30594594594594593}
+{'action': '>50K', 'experience': 886, 'condition': {'age': 34}, 'accuracy': 0.27426636568848761}
+{'action': '>50K', 'experience': 10683, 'condition': {'marital-status': 'Never-married'}, 'accuracy': 0.045982393706686643}
+{'action': '<=50K', 'experience': 64, 'condition': {'education': 'Some-college', 'marital-status': 'Widowed', 'relationship': 'Unmarried'}, 'accuracy': 0.953125}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'hours-per-week': 47, 'race': 'White', 'capital-loss': 3390}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 1618, 'age': 38, 'fnlwgt': 133102}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 7378, 'age': 79, 'race': 'Amer-Indian-Eskimo', 'fnlwgt': 235529, 'native-country': 'Iran'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Bachelors', 'capital-loss': 1790, 'native-country': 'Poland'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 295, 'condition': {'education': '10th', 'sex': 'Female'}, 'accuracy': 0.015957446808510637}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 50, 'capital-gain': 5829}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3124, 'condition': {'race': 'Black'}, 'accuracy': 0.8761203585147247}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 54, 'capital-gain': 4570, 'native-country': 'Jamaica'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 4248, 'relationship': 'Husband', 'sex': 'Male', 'native-country': 'Mexico', 'education': '11th', 'fnlwgt': 120069}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 10683, 'condition': {'marital-status': 'Never-married'}, 'accuracy': 0.045982393706686643}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 8, 'race': 'Amer-Indian-Eskimo', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 24, 'condition': {'age': 32, 'workclass': 'Self-emp-inc'}, 'accuracy': 0.59999999999999998}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 225068, 'relationship': 'Wife', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '1st-4th', 'capital-loss': 5476, 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Private', 'relationship': 'Unmarried', 'age': 35, 'capital-gain': 8786, 'hours-per-week': 31, 'native-country': 'Hong', 'education': '1st-4th', 'fnlwgt': 152453}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 10683, 'condition': {'marital-status': 'Never-married'}, 'accuracy': 0.045982393706686643}
+{'action': '>50K', 'experience': 3770, 'condition': {'occupation': 'Adm-clerical'}, 'accuracy': 0.13458985930448633}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 9768, 'workclass': 'Self-emp-not-inc', 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 151, 'condition': {'hours-per-week': 45, 'workclass': 'Self-emp-not-inc'}, 'accuracy': 0.39333333333333331}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 202763, 'education': '7th-8th', 'capital-loss': 5887, 'marital-status': 'Divorced', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-gain': 2634, 'marital-status': 'Never-married', 'native-country': 'France', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 643, 'condition': {'native-country': 'Mexico'}, 'accuracy': 0.053833605220228384}
+{'action': '<=50K', 'experience': 3, 'condition': {'fnlwgt': 213307}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'capital-gain': 4296, 'native-country': 'Japan', 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'capital-loss': 9319, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '10th', 'fnlwgt': 225199, 'native-country': 'Honduras', 'relationship': 'Own-child', 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 8480, 'hours-per-week': 9, 'workclass': 'State-gov', 'marital-status': 'Married-spouse-absent', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'occupation': 'Protective-serv', 'marital-status': 'Separated', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 9219}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1569, 'condition': {'race': 'Black', 'sex': 'Male'}, 'accuracy': 0.81070745697896751}
+{'action': '>50K', 'experience': 2404, 'condition': {'marital-status': 'Divorced', 'relationship': 'Not-in-family'}, 'accuracy': 0.12875}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6371, 'hours-per-week': 46, 'education': 'Masters', 'fnlwgt': 176199, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'race': 'Other', 'fnlwgt': 228627, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'capital-loss': 722, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'workclass': 'Self-emp-not-inc', 'fnlwgt': 150912}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Never-worked', 'fnlwgt': 237945}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 19, 'education': 'Assoc-acdm', 'native-country': 'Jamaica', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 980, 'workclass': 'Self-emp-not-inc', 'fnlwgt': 215764, 'marital-status': 'Married-spouse-absent', 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 52, 'education': '1st-4th', 'workclass': 'Local-gov', 'race': 'Other'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'fnlwgt': 278514, 'age': 48, 'capital-loss': 2979, 'native-country': 'United-States'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3, 'condition': {'workclass': 'Self-emp-inc', 'native-country': 'Thailand'}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'education': 'Bachelors', 'fnlwgt': 162232, 'marital-status': 'Separated', 'native-country': 'China'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 1993, 'age': 64, 'workclass': 'Self-emp-not-inc', 'marital-status': 'Separated', 'native-country': 'Mexico'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 6384, 'hours-per-week': 57, 'capital-loss': 8844, 'age': 58, 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 26, 'fnlwgt': 137534, 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-gain': 5116, 'native-country': 'Scotland'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2354, 'condition': {'hours-per-week': 50, 'sex': 'Male'}, 'accuracy': 0.51741716227697532}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 256331, 'education': 'Assoc-acdm', 'capital-loss': 7795, 'native-country': 'Ecuador'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'workclass': 'Self-emp-inc', 'marital-status': 'Never-married', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'age': 69, 'education': '11th', 'capital-loss': 7139, 'relationship': 'Unmarried'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 49, 'capital-loss': 1073}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'age': 22, 'fnlwgt': 291202}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 20, 'education': '7th-8th', 'age': 60, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 149, 'condition': {'occupation': 'Priv-house-serv'}, 'accuracy': 0.99328859060402686}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 53, 'race': 'Other', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 1298, 'condition': {'workclass': 'State-gov'}, 'accuracy': 0.72804314329738062}
+{'action': '<=50K', 'experience': 23, 'condition': {'education-num': 12, 'marital-status': 'Widowed'}, 'accuracy': 0.86956521739130432}
+{'action': '<=50K', 'experience': 928, 'condition': {'occupation': 'Tech-support'}, 'accuracy': 0.69504310344827591}
+{'action': '<=50K', 'experience': 886, 'condition': {'age': 34}, 'accuracy': 0.7273755656108597}
+{'action': '>50K', 'experience': 64, 'condition': {'education': 'Some-college', 'marital-status': 'Widowed', 'relationship': 'Unmarried'}, 'accuracy': 0.050847457627118647}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 283991, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 10, 'capital-loss': 4221, 'age': 64, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3124, 'condition': {'race': 'Black'}, 'accuracy': 0.1239193083573487}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'State-gov', 'fnlwgt': 149246}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 295, 'condition': {'education': '10th', 'sex': 'Female'}, 'accuracy': 0.98983050847457632}
+{'action': '<=50K', 'experience': 1116, 'condition': {'workclass': 'Self-emp-inc'}, 'accuracy': 0.44304932735426011}
+{'action': '>50K', 'experience': 960, 'condition': {'workclass': 'Federal-gov'}, 'accuracy': 0.38766980146290492}
+{'action': '>50K', 'experience': 0, 'condition': {'marital-status': 'Divorced', 'native-country': 'Holand-Netherlands'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 49, 'capital-loss': 1073}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 8, 'condition': {'hours-per-week': 16, 'age': 23}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6685, 'age': 66, 'fnlwgt': 239119, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 693, 'condition': {'race': 'Asian-Pac-Islander', 'sex': 'Male'}, 'accuracy': 0.6637806637806638}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'fnlwgt': 175164, 'occupation': 'Farming-fishing'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Private', 'fnlwgt': 102278, 'education-num': 9, 'capital-loss': 5495, 'native-country': 'Italy'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 233017, 'native-country': 'Cuba'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 25, 'condition': {'marital-status': 'Widowed', 'occupation': 'Transport-moving'}, 'accuracy': 0.95833333333333337}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 225068, 'relationship': 'Wife', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'age': 65, 'race': 'Amer-Indian-Eskimo', 'capital-gain': 9364}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 8, 'condition': {'race': 'Amer-Indian-Eskimo', 'workclass': 'Local-gov', 'relationship': 'Not-in-family'}, 'accuracy': 0.5}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 56, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 12, 'capital-loss': 1255, 'native-country': 'Honduras'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 5068, 'condition': {'relationship': 'Own-child'}, 'accuracy': 0.98677979479084454}
+{'action': '>50K', 'experience': 62, 'condition': {'age': 48, 'occupation': 'Adm-clerical'}, 'accuracy': 0.25423728813559321}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Assoc-voc', 'fnlwgt': 259370, 'occupation': 'Exec-managerial'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 61, 'race': 'Amer-Indian-Eskimo', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 151, 'condition': {'hours-per-week': 45, 'workclass': 'Self-emp-not-inc'}, 'accuracy': 0.60927152317880795}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 14, 'fnlwgt': 102268, 'marital-status': 'Married-AF-spouse', 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 273453, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 2413, 'hours-per-week': 38, 'workclass': 'Private', 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 52, 'capital-gain': 3328}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1, 'condition': {'age': 79, 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 256331, 'education': 'Assoc-acdm', 'capital-loss': 7795, 'native-country': 'Ecuador'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 7115}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 4295, 'fnlwgt': 104722, 'education-num': 7, 'capital-loss': 1774}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 5198, 'relationship': 'Other-relative'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 547}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'capital-gain': 7348, 'workclass': 'Local-gov', 'relationship': 'Not-in-family', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3195, 'condition': {'workclass': 'Private', 'occupation': 'Craft-repair'}, 'accuracy': 0.2259479786900658}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 31, 'workclass': 'Without-pay', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 281359, 'capital-loss': 5815}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 24, 'condition': {'native-country': 'Ireland'}, 'accuracy': 0.26315789473684209}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'capital-loss': 722, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 70, 'condition': {'age': 33, 'relationship': 'Own-child'}, 'accuracy': 0.94285714285714284}
+{'action': '<=50K', 'experience': 3, 'condition': {'education-num': 8, 'age': 54}, 'accuracy': 1.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 45, 'relationship': 'Husband', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'capital-loss': 1631, 'marital-status': 'Separated', 'native-country': 'India', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 536, 'condition': {'education': 'Masters', 'sex': 'Female'}, 'accuracy': 0.66604477611940294}
+{'action': '>50K', 'experience': 7291, 'condition': {'education': 'Some-college'}, 'accuracy': 0.19036508372220698}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 11, 'capital-gain': 156, 'fnlwgt': 148689, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 14, 'condition': {'race': 'White', 'marital-status': 'Separated', 'occupation': 'Farming-fishing'}, 'accuracy': 0.9285714285714286}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 9798, 'native-country': 'United-States', 'occupation': 'Prof-specialty'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1116, 'condition': {'workclass': 'Self-emp-inc'}, 'accuracy': 0.55734767025089604}
+{'action': '<=50K', 'experience': 3, 'condition': {'workclass': 'Self-emp-inc', 'native-country': 'Thailand'}, 'accuracy': 0.66666666666666663}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 20, 'education': '7th-8th', 'age': 60, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'workclass': 'Self-emp-inc', 'native-country': 'Iran'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 2541, 'condition': {'workclass': 'Self-emp-not-inc'}, 'accuracy': 0.28548895899053628}
+{'action': '>50K', 'experience': 2354, 'condition': {'hours-per-week': 50, 'sex': 'Male'}, 'accuracy': 0.48278793030174244}
+{'action': '<=50K', 'experience': 1207, 'condition': {'education-num': 11, 'race': 'White'}, 'accuracy': 0.72410936205468102}
+{'action': '>50K', 'experience': 433, 'condition': {'education-num': 8}, 'accuracy': 0.079136690647482008}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 51, 'fnlwgt': 190586, 'marital-status': 'Divorced'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'education': '1st-4th'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 253105, 'relationship': 'Own-child'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 433, 'condition': {'education-num': 8}, 'accuracy': 0.92378752886836024}
+{'action': '<=50K', 'experience': 49, 'condition': {'race': 'Asian-Pac-Islander', 'workclass': 'Private', 'relationship': 'Unmarried'}, 'accuracy': 0.89795918367346939}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 29, 'capital-gain': 9209}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 3, 'condition': {'fnlwgt': 213307}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 9, 'capital-gain': 82, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 2, 'condition': {'hours-per-week': 53, 'education': '1st-4th'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 9049, 'marital-status': 'Separated', 'occupation': 'Other-service'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'fnlwgt': 113788, 'native-country': 'Puerto-Rico', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'hours-per-week': 3, 'education': '9th', 'native-country': 'Mexico', 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 1149}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 10, 'hours-per-week': 47, 'race': 'White', 'capital-loss': 3390}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 64, 'condition': {'hours-per-week': 6}, 'accuracy': 0.875}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 148244, 'native-country': 'India', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3124, 'condition': {'race': 'Black'}, 'accuracy': 0.8761203585147247}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 23, 'workclass': 'State-gov', 'relationship': 'Husband', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2, 'condition': {'hours-per-week': 53, 'education': '1st-4th'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-inc', 'capital-loss': 7816, 'native-country': 'Iran'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education': '7th-8th', 'capital-gain': 2686, 'race': 'Asian-Pac-Islander'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 274, 'condition': {'education': 'Some-college', 'relationship': 'Unmarried', 'occupation': 'Adm-clerical'}, 'accuracy': 0.98175182481751821}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 305, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 1, 'condition': {'education': 'Prof-school', 'marital-status': 'Married-civ-spouse', 'occupation': 'Machine-op-inspct'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'marital-status': 'Married-civ-spouse', 'relationship': 'Husband', 'occupation': 'Protective-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 4824, 'workclass': 'Without-pay', 'native-country': 'Scotland', 'occupation': 'Armed-Forces'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Local-gov', 'age': 22, 'fnlwgt': 291202}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'marital-status': 'Never-married', 'native-country': 'Yugoslavia', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 46, 'race': 'Other', 'fnlwgt': 126444, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 11, 'age': 65, 'race': 'Amer-Indian-Eskimo', 'capital-gain': 9364}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'age': 56, 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 36, 'education': 'Assoc-voc', 'capital-gain': 5948}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 92, 'condition': {'education': '11th', 'occupation': 'Transport-moving'}, 'accuracy': 0.097222222222222224}
+{'action': '>50K', 'experience': 0, 'condition': {'education': 'Preschool', 'workclass': 'Federal-gov', 'native-country': 'Mexico', 'relationship': 'Husband', 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Doctorate', 'capital-loss': 5074}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-loss': 9521}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'fnlwgt': 129749, 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3089, 'condition': {'education-num': 9, 'marital-status': 'Never-married'}, 'accuracy': 0.98510844933635477}
+{'action': '<=50K', 'experience': 333, 'condition': {'education': '5th-6th'}, 'accuracy': 0.95195195195195192}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 52, 'capital-gain': 3328}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'fnlwgt': 101894, 'relationship': 'Husband', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 48, 'condition': {'education-num': 7, 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 5, 'condition': {'workclass': 'Local-gov', 'native-country': 'England'}, 'accuracy': 0.66666666666666663}
+{'action': '<=50K', 'experience': 5, 'condition': {'education-num': 8, 'race': 'Amer-Indian-Eskimo'}, 'accuracy': 1.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 547}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'capital-gain': 4016, 'race': 'White', 'capital-loss': 5358, 'native-country': 'India'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'age': 45, 'race': 'White', 'marital-status': 'Separated', 'native-country': 'Scotland'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Federal-gov', 'education': '10th', 'capital-loss': 1281}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'capital-loss': 8233}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'sex': 'Female', 'race': 'Other', 'education-num': 7, 'fnlwgt': 276461, 'marital-status': 'Separated', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 3446, 'condition': {'relationship': 'Unmarried'}, 'accuracy': 0.93673824724318044}
+{'action': '<=50K', 'experience': 7, 'condition': {'education': 'Doctorate', 'relationship': 'Own-child'}, 'accuracy': 0.8571428571428571}
+{'action': '>50K', 'experience': 70, 'condition': {'age': 33, 'relationship': 'Own-child'}, 'accuracy': 0.075471698113207544}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 7, 'capital-gain': 3341, 'workclass': 'Self-emp-not-inc', 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Other', 'fnlwgt': 296547, 'occupation': 'Tech-support'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'workclass': 'Self-emp-not-inc', 'age': 25, 'capital-gain': 8718, 'sex': 'Female', 'fnlwgt': 143454, 'marital-status': 'Widowed'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Black', 'workclass': 'Local-gov', 'native-country': 'Nicaragua'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 10683, 'condition': {'marital-status': 'Never-married'}, 'accuracy': 0.95403912758588416}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'State-gov', 'hours-per-week': 17, 'education': '11th', 'capital-loss': 1398, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'marital-status': 'Never-married', 'native-country': 'Yugoslavia', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'fnlwgt': 280879, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 2541, 'condition': {'workclass': 'Self-emp-not-inc'}, 'accuracy': 0.71507280598189693}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 5046, 'workclass': 'Without-pay', 'capital-loss': 6983, 'marital-status': 'Married-spouse-absent'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 7080, 'hours-per-week': 29, 'education': '1st-4th', 'fnlwgt': 277493, 'native-country': 'Taiwan'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 5619, 'marital-status': 'Married-civ-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 2, 'condition': {'hours-per-week': 32, 'age': 45, 'occupation': 'Prof-specialty'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 168, 'condition': {'education': '1st-4th'}, 'accuracy': 0.9642857142857143}
+{'action': '<=50K', 'experience': 9, 'condition': {'hours-per-week': 35, 'workclass': 'Self-emp-inc', 'sex': 'Female'}, 'accuracy': 0.88888888888888884}
+{'action': '<=50K', 'experience': 168, 'condition': {'education': '1st-4th'}, 'accuracy': 0.9642857142857143}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 29, 'capital-gain': 9209}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 308, 'condition': {'education-num': 9, 'age': 34}, 'accuracy': 0.1461794019933555}
+{'action': '<=50K', 'experience': 0, 'condition': {'capital-gain': 7378, 'age': 79, 'race': 'Amer-Indian-Eskimo', 'fnlwgt': 235529, 'native-country': 'Iran'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 743, 'condition': {'education-num': 7, 'sex': 'Male'}, 'accuracy': 0.070748299319727898}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Other', 'capital-gain': 139, 'relationship': 'Not-in-family'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 67, 'capital-gain': 7599, 'occupation': 'Handlers-cleaners'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 1149}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 115475, 'marital-status': 'Never-married', 'sex': 'Female'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 8, 'fnlwgt': 253003, 'native-country': 'Honduras', 'relationship': 'Unmarried', 'marital-status': 'Separated'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'workclass': 'Without-pay', 'relationship': 'Unmarried', 'age': 48, 'race': 'Asian-Pac-Islander', 'education': 'Prof-school', 'fnlwgt': 171375, 'marital-status': 'Married-AF-spouse', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 61, 'race': 'Amer-Indian-Eskimo', 'occupation': 'Sales'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 9, 'fnlwgt': 218316, 'occupation': 'Adm-clerical'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 38, 'capital-loss': 979}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': 'Assoc-acdm', 'native-country': 'Hungary', 'relationship': 'Wife'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 8949, 'native-country': 'Cuba'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education-num': 10, 'fnlwgt': 160449, 'marital-status': 'Never-married'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 3751, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'hours-per-week': 4, 'workclass': 'Self-emp-not-inc', 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'race': 'Amer-Indian-Eskimo', 'marital-status': 'Married-AF-spouse'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'education-num': 8, 'education': '1st-4th'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '1st-4th', 'capital-loss': 5476, 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-loss': 443}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 8, 'condition': {'race': 'Amer-Indian-Eskimo', 'workclass': 'Local-gov', 'relationship': 'Not-in-family'}, 'accuracy': 0.875}
+{'action': '>50K', 'experience': 0, 'condition': {'age': 29, 'race': 'Black', 'fnlwgt': 110650, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'education': '1st-4th', 'marital-status': 'Never-married', 'relationship': 'Husband'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'fnlwgt': 215113, 'sex': 'Male'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 0, 'condition': {'capital-gain': 6119, 'workclass': 'Without-pay', 'capital-loss': 7861, 'occupation': 'Priv-house-serv'}, 'accuracy': 0.0}
+{'action': '<=50K', 'experience': 0, 'condition': {'hours-per-week': 21, 'age': 65, 'relationship': 'Own-child', 'occupation': 'Transport-moving'}, 'accuracy': 0.0}
+{'action': '>50K', 'experience': 2, 'condition': {'workclass': 'Never-worked', 'sex': 'Female'}, 'accuracy': 0.0}

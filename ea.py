@@ -2,27 +2,6 @@ import math
 import random
 from enum import Enum
 
-AGEMIN = 20
-AGEMAX = 60
-AGEDEV = 10
-
-FNLMIN = 100000 
-FNLMAX = 400000
-FNLDEV = 50000
-
-EDUMIN = 6
-EDUMAX = 12
-EDUDEV = 3
-
-CAPITALMIN = 10000
-CAPITALMAX = 24000
-CAPITALDEV = 4000
-
-HOURSMIN = 8
-HOURSMAX = 40
-HOURSDEV = 4
-
-
 N_GENOME_CTS_ATTRIBUTES = 12
 LEARNING_RATE = 1/math.sqrt(N_GENOME_CTS_ATTRIBUTES)
 EPSILON = 0.5
@@ -156,7 +135,6 @@ class CtsValue(object):
 class Rule(object):
     def __init__(self, data):
         self.data = data
-        self.prediction = false
         
     def getMutantChild(self):
         #create new rule object
@@ -192,36 +170,5 @@ class Rule(object):
         child.precition = self.prediction
         return child
 
-def generateCtsInitial(key):
-    minBound = 0
-    maxBound = 0
-    sigmamax = 0
-    sigmamin = 0
-    if (key == 'AGE'):
-        sigmamax = AGEDEV
-        sigmamin = AGEDEV
-        minBound = random.normalvariate(AGEMIN, AGEDEV)
-        maxBound = random.normalvariate(AGEMAX, AGEDEV)
-    elif (key == 'FNLWGT'):
-        sigmamax = FNLDEV
-        sigmamin = FNLDEV
-        minBound = random.normalvariate(FNLMIN, FNLDEV)
-        maxBound = random.normalvariate(FNLMAX, FNLDEV)
-    elif (key == 'EDUCATION_NUM'):
-        sigmamax = EDUDEV
-        sigmamin = EDUDEV
-        minBound = random.normalvariate(EDUMIN, EDUDEV)
-        maxBound = random.normalvariate(EDUMAX, EDUDEV)
-    elif ((key == 'CAPITAL_GAIN') or (key == 'CAPITAL_LOSS')):
-        sigmamax = CAPITALDEV
-        sigmamin = CAPITALDEV
-        minBound = random.normalvariate(CAPITALMIN, CAPITALDEV)
-        maxBound = random.normalvariate(CAPITALMAX, CAPITALDEV)
-    elif (key == 'HOURS_PER_WEEK'):
-        sigmamax = HOURSDEV
-        sigmamin = HOURSDEV
-        minBound = random.normalvariate(HOURSMIN, HOURSDEV)
-        maxBound = random.normalvariate(HOURSMAX, HOURSDEV)
-        
-        
-    return CtsValue(axBount, sigmamax, minBound, sigmamin)
+def generateCtsInitial(newKey):
+    return

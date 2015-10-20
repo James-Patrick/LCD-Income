@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random
 
 def generate_condition():
@@ -32,8 +33,12 @@ def generate_condition():
 			if r < PROBABILITY:	
 				if k in CONTINUOUS_FIELDS:
 					condition[k] = random.randrange(v[0], v[1])		# Select randomly between min-max if it's a continuous field such as "age"
+					
+					# Pick random minimum and maximum
+
+
 				else:
-					condition[k] = random.choice(v)					# Select a random value if it's a discrete field such as "workclass"
+					condition[k] = random.choice(v)				# Select a random value if it's a discrete field such as "workclass"
 		return condition
 	
 	while(len(condition.keys()) == 0):

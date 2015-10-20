@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 #import ea.py
 import random_rules
 
-import time, sys, getopt
+import time, sys, getopt, ast
 
 ''' Notes '''
 # After a while, we need to choose a number where the classifier is sufficiently experienced enough to be deleted if it's fitness is too low
@@ -28,9 +29,10 @@ HEADINGS_DICT = {'age': 'continuous',
 FILENAME = 'adult.data'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-NUM_CLASSIFIERS = 20
+NUM_CLASSIFIERS = 500
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
+CLASSIFIERS_FILE = "classifiers"
 
 verbose = False
 
@@ -39,34 +41,62 @@ def make_verbose():
 	verbose = True
 
 
+
+
+
 # A classifier. 
 # Contains a condition, an action, a fitness value
 class Classifier:
-	def __init__(self, id):
-		self.id = id
-		# self.condition = None
-		# self.action = None
-		self.condition = random_rules.generate_condition()
-		self.action = random_rules.generate_action(CLASS_LABELS)
-		self.prediction 	= 0.0
-		self.fitness 		= 0.0
-		self.error			= 0.0
-		self.experience 	= 0
-		self.times_correct 	= 0
-		self.times_wrong 	= 0
-		self.accuracy		= 0.0
-		self.rule = [self.condition, self.action]
-		
+	__all__ = set()
+	def __init__(self, condition = None, action = None, duplicate = True, from_dict = False):
+
+
+		if from_dict:
+			self.read_from_dictionary(from_dict)
+		else:
+
+		  if condition:
+			  self.condition = condition
+		  else:
+			  self.condition = random_rules.generate_condition()
+		  if action:
+			  self.action = action
+		  else:
+			  self.action = random_rules.generate_action(CLASS_LABELS)
+		  
+		  self.prediction 	= 0.0
+		  self.fitness 		= 0.0
+		  self.error			= 0.0
+		  self.experience 	= 0
+		  self.times_correct 	= 0
+		  self.times_wrong 	= 0
+		  self.accuracy		= 0.0
+
+		# Duplicate this classifier, creating the same classifier but for the inverse rule
+		if duplicate:
+			
+			def flipped_action(action):
+				if action == '<=50K':
+					return '>50K'
+				else:
+					return '<=50K'
+				
+			dc = Classifier(self.condition, flipped_action(self.action), False)
+
+			
+		self.__class__.__all__.add(self)
 		
 		#self.test = random_rules.generate_condition()
 
-		
-	def classify(self, environment):
-		def check_condition(environment):
-			for k, v in self.condition.items():
-				if environment.dictionary[k] != v:
-					return False			# One condition of this classifier was not met				
-			return True		
+	# Checks if condition is met in environment
+	def check_condition(self, environment):
+		for k, v in self.condition.items():
+			if environment.dictionary[k] != v:
+				return False			# One condition of this classifier was not met				
+		return True	
+
+	# Learns from the environment. Checks whether the rule held by the classifier is correct or not, depending on whether its conditions are met in the environment
+	def learn(self, environment):
 
 		# Updates the classifier's parameters based on whether it was correct or incorrect.
 		def update_classifier(was_correct):
@@ -81,22 +111,23 @@ class Classifier:
 		# If this classifier has met all its conditions on the environment, add +1 experience points and return the classifier's action
 		# (which in this case is either <= 50K or > 50K)
 		
-		if check_condition(environment):
-			# Check if correct or not
+		if self.check_condition(environment):
 			was_correct = (self.action == environment.correct_class)	
 			update_classifier(was_correct)
-			
-			self.print_details()
-			
-			#
-			return self.action
-		else:
-			return None
+			#self.print_details()
+#			return self.action
+#		else:
+#			return None
 	
+
+	def classify(self, environment):
+		if self.check_condition(environment):
+			return (self.accuracy, self.action)
+
 	# Prints the details of the classifier in a nice, easy-to-read manner.
 	def print_details(self):
 		if verbose:
-			print("{0:<15s} : {1}".format("Classifier #", self.id))
+		#	print("{0:<15s} : {1}".format("Classifier #", self.id))
 			print("{0:<15s} : {1}".format("Condition:", self.condition))
 			print("{0:<15s} : {1}".format("Action:", self.action))
 		#	print("{0:<15s} : {1}".format("Prediction:", self.prediction))
@@ -104,12 +135,28 @@ class Classifier:
 			print("{0:<15s} : {1}".format("Experience:", self.experience))
 			print("{0:<15s} : {1}".format("Times Correct:", self.times_correct))
 			print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))
-			print("{0:<15s} : {1}".format("Accuracy:", self.accuracy * 100))
+			print("{0:<15s1} : {1}".format("Accuracy:", self.accuracy * 100))
 		#	print("{0:<15s} : {1}".format("Error:", self.error))		
 			print()
-		
-		
+	
+	# Outputs the classifier's info as a dictionary
+	def to_dictionary(self):
+		to_dict = {}
+	#	to_dict["id"] = self.id
+		to_dict["condition"] = self.condition
+		to_dict["action"] = self.action
+		to_dict["accuracy"] = self.accuracy
+		to_dict["experience"] = self.experience	  
+		return to_dict
 
+	# Inputs the classifiers info from a dictionary
+	def read_from_dictionary(self, from_dict):
+	#	self.id = from_dict["id"]
+		self.condition = from_dict["condition"]
+		self.action = from_dict["action"]
+		self.accuracy = from_dict["accuracy"]
+		self.experience	= from_dict["experience"]
+		
 		
 		
 # One environment (a dictionary that maps field names to their values).	
@@ -126,34 +173,12 @@ class Environment:
 	
 	# Prints the details of the environment in a nice, easy-to-read manner.
 	def print_details(self):
-		if verbose:
+		if verbose:			#match_set  = []
+			#action_set = []
 			for k, v in self.dictionary.items():
 				print("{0:<20s} : {1}".format(k, v))
 			print("----------------------------")
 			print("{0:<20s} : {1}".format("Correct class", self.correct_class))
-		
-		
-# Creates a list of environments.
-# Environments are stored as objects, which contain a dictionary, and a correct_class.
-def create_environments():	
-	with open(FILENAME, "r") as file:		
-		data = [f.replace(' ', '').rstrip().split(',') for f in file.readlines()]
-	
-	return [Environment(d) for d in data]
-	
-	
-	
-
-# Creates the initial population of classifiers, in the form of a list.
-def create_classifiers():
-	return [Classifier(x) for x in range(NUM_CLASSIFIERS)]	
-	
-
-	
-
-
-	
-
 
 
 def main(argv):
@@ -171,7 +196,8 @@ def main(argv):
 
 	try:
 		opts, args = getopt.getopt(argv, "hvlc")
-	except getopt.GetoptError:
+	except getopt.GetoptError:			#match_set  = []
+			#action_set = []
 		print_usage()
 		sys.exit(2)
 	
@@ -187,21 +213,38 @@ def main(argv):
 			mode = CLASSIFY_MODE
 
 
+	# Creates a list of environments.
+	# Environments are stored as objects, which contain a dictionary, and a correct_class.
+	def create_environments():	
+		with open(FILENAME, "r") as file:		
+			data = [f.replace(' ', '').rstrip().split(',') for f in file.readlines()]
+		
+		return [Environment(d) for d in data]
+
+	environments = create_environments()
+
 	def do_learn_mode():
-	
+
+		# Creates the initial population of classifiers, in the form of a list.
+		def create_classifiers():
+			for x in range(NUM_CLASSIFIERS):
+			  Classifier()
+			return Classifier.__all__
+
+		# Writes all classifiers to a file, in dictionary format
+		def write_classifiers(classifiers, output_file):
+			for c in classifiers:
+				output_file.write(str(c.to_dictionary()))
+				output_file.write('\n')
+
 		# One timestep. 
 		def step(environment, classifiers):
-			match_set  = []
-			action_set = []
 			for c in classifiers:
-				c.classify(environment)
+				c.learn(environment)
 				
-				
-	
 		time_start = time.time()
-
-		environments = create_environments()
-		classifiers  = create_classifiers()	
+	
+		classifiers  = create_classifiers()
 		
 		if verbose:
 			for c in classifiers:
@@ -214,11 +257,50 @@ def main(argv):
 		time_end = time.time()
 		total_time = time_end - time_start
 		print(total_time, "seconds")
-	
-	
+
+		output_file = open(CLASSIFIERS_FILE, "w")
+		write_classifiers(classifiers, output_file)		
+
+		
 	def do_classify_mode():
-		# Classify stuff.
-		print("This hasn't been made yet.")
+
+		def read_classifiers():
+			print("Reading classifiers...")			
+			with open(CLASSIFIERS_FILE, "r") as file:
+				classifier_dict = [ast.literal_eval(l) for l in file.readlines()]
+
+			return [Classifier(from_dict = k) for k in classifier_dict]
+
+		# One timestep. 
+		def step(environment, classifiers, total_correct, total_seen):
+			match_set = []
+			for c in classifiers:
+				cl = c.classify(environment)			# [classifier, action, accuracy]
+				if cl:
+					match_set.append(cl)
+			
+			sorted_set = sorted(match_set, key=lambda tup: tup[1])
+			if len(sorted_set) > 0:
+
+			  action = sorted_set[0][1]
+			  if action == environment.correct_class:
+				  correct = "Correct!"
+				  total_correct += 1
+			  else:
+				  correct = "Fail    "
+			 
+			  print("Action:", sorted_set[0][1], " | Accuracy:", "%.2f" % (sorted_set[0][0] * 100), "% |", correct, "{", total_correct, total_seen, "(", "%.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100), ") }")
+			else:
+				"No classification can be made."
+			return total_correct
+
+		classifiers = read_classifiers()
+		
+		total_correct = 0
+		total_seen = 0
+		for x in range(len(environments)):		
+			total_seen += 1
+			total_correct = step(environments[x], classifiers, total_correct, total_seen);		  
 		
 	
 	if mode == LEARN_MODE:
