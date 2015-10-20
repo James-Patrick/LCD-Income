@@ -1,9 +1,14 @@
 import math
 import random
+from enum import Enum
 
 N_GENOME_CTS_ATTRIBUTES = 12
-LEARNING_RATE = 1/sqrt(N_GENOME_CTS_ATTRIBUTES)
+LEARNING_RATE = 1/math.sqrt(N_GENOME_CTS_ATTRIBUTES)
 EPSILON = 0.5
+
+CTS_ATTRIBUTES = ['AGE','FNLWGT','EDUCATION_NUM','CAPITAL_GAIN','CAPITAL_LOSS','HOURS_PER_WEEK']
+ENUM_ATTRIBUTES = {'WORKCLASS':7, 'EDUCATION':15,'MARITAL_STATUS':6,'OCCUPATION':14,'RELATIONSHIP':5,'RACE':4,'SEX':1,'NATIVE_COUNTRY':40}
+ALL_ATTRIBUTES = CTS_ATTRIBUTES + list(ENUM_ATTRIBUTES.keys())
 
 class WORKCLASS(Enum):
     PRIVATE = 0
@@ -30,7 +35,7 @@ class EDUCATION(Enum):
     _1ST_4TH = 11
     _10TH = 12
     DOCTORATE = 13
-    5TH_6TH = 14
+    _5TH_6TH = 14
     PRESCHOOL = 15
 
 class MARITAL_STATUS(Enum):
@@ -120,6 +125,13 @@ class NATIVE_COUNTRY(Enum):
     HONG = 39
     HOLAND_NETHERLANDS = 40
 
+class CtsValue(object):
+    def __init__(self, maxBound, sigmamax, minBound, sigmamin):
+        self.maxBound = maxBound
+        self.sigmamax = sigmamax
+        self.minBound = minBound
+        self.sigmamin = sigmamin
+
 class Rule(object):
     def __init__(self, data):
         self.data = data
@@ -130,45 +142,33 @@ class Rule(object):
         #iterate over the values in the dictionary
         for key, value in child.data:
             #mutate a continous value
-            if (continuous(key)):
+            if (key in CTS_ATTRIBUTES):
                 value.sigmamax = max(value.sigmamax * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)
                 value.sigmamin = max(value.sigmamin * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)
-                value.min = max(int(value.min + sigmamax * random.normalvariate(0, 1)), 0)
-                value.max = max(int(value.max + sigmamax * random.normalvariate(0, 1)), value.min)
+                value.minBound = max(int(value.minBound + sigmamax * random.normalvariate(0, 1)), 0)
+                value.maxBound = max(int(value.maxBound + sigmamax * random.normalvariate(0, 1)), value.minBound)
             else:
                 #if not continuous, check probability and maybe add new entry
                 if(random.random() < LEARNING_RATE/value.length):
                     newEntry = random.radint(0, maxEnumVal(key))
                     #make sure its not a duplicate
-                    while(value.contains(newEntry):
-                          newEntry = random.radint(0, maxEnumVal(key))
+                    while(value.contains(newEntry)):
+                          newEntry = random.radint(0, ENUM_ATTRIBUTES[KEY])
                     value.add(newEntry)
                     #if we didnt add one, maybe we should remmove one
-                else if(random.random() < LEARNING_RATE/value.length and len(value) > 1):
-                    value.remove(random.radint(0, maxEnumVal(key))
-        #possibly add one value to the dictionary
-        if(random.random() < LEARNING_RATE/len(self.data)):
-            newKey = getRandomKey()
+                elif(random.random() < LEARNING_RATE/value.length and len(value) > 1):
+                    value.remove(random.radint(0, ENUM_ATTRIBUTES[key]))
+        if (random.random() < LEARNING_RATE/len(self.data)):
+            newKey = random.randint(0, len(ALL_ATTRIBULTS))
             while (newKey in self.dict):
-                newKey = getRandomKey()
-            if continuous(key):
+                newKey = random.randint(0, len(ALL_ATTRIBULTS))
+            if (key in CTS_ATTRIBUTES):
                 newValue = generateCtsInitial(newKey)
             else:
-                newValue = random.radint(0, maxEnumVal(key))
-            self.data[newkey] = newValue
+                newValue = random.radint(0, ENUM_ATTRIBUTES[KEY])
+            child.data[newkey] = newValue
         child.precition = self.prediction
         return child
 
-#call if there is no rule that has a condition for the environment situation, dont cares tont count??
-def generateCoverRule(enforceCondition, condition, enforceAction, action):
-    
-
-
-# check if they key corresponds to a continuous value
-def continuous():
-
-#return the maximum enumeraion integer corresponding to the given key
-def maxEnumVal(key):
-
-#get a random key value
-def getRandomKey():
+def generateCtsInitial(newKey):
+    return
