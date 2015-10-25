@@ -2,7 +2,9 @@
 import random
 import ea
 
-def generate_condition(requred, action):
+
+
+def generate_condition():
 
 	PROBABILITY = 0.2		# The chance that a field will be included in the condition
 
@@ -63,6 +65,12 @@ def enumVal(name, index):
                 return SEX(index)
         elif (name == 'NATIVE_COUNTRY'):
                 return NATIVE_COUNTRY(index)                                                      
+
+
+def generateCtsInitial(newKey):
+    return
+
+def sourceTexttoEnum(category, name):
 	
 def generate_action(class_labels):
 	return random.choice(class_labels)
