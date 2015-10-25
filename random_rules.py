@@ -32,21 +32,10 @@ def generate_condition(requred, action):
 		for k, v in ADULT_FIELDS.items():	
 			r = random.random()
 			if r < PROBABILITY:	
-<<<<<<< HEAD
 				if k in CTS_ATTRIBUTES:
 					condition[k] = generateCtsInitial(k)		# Select randomly between min-max if it's a continuous field such as "age"
 				else:
-					condition[k] = enumVal(k, random.randint(0, len(v))			# Select a random value if it's a discrete field such as "workclass"
-=======
-				if k in CONTINUOUS_FIELDS:
-					condition[k] = random.randrange(v[0], v[1])		# Select randomly between min-max if it's a continuous field such as "age"
-					
-					# Pick random minimum and maximum
-
-
-				else:
-					condition[k] = random.choice(v)				# Select a random value if it's a discrete field such as "workclass"
->>>>>>> origin/master
+					condition[k] = enumVal(k, random.randint(0, len(v)))			# Select a random value if it's a discrete field such as "workclass"
 		return condition
 
 	
@@ -58,25 +47,22 @@ def generate_condition(requred, action):
 	return Rule(condition)
 
 def enumVal(name, index):
-        if (name = 'WORKCLASS'):
+        if (name == 'WORKCLASS'):
                 return WORKCLASS(index)
-        elif (name = 'EDUCATION'):
+        elif (name == 'EDUCATION'):
                 return EDUCATION(index)
-        elif (name = 'MARITAL_STATUS'):
+        elif (name == 'MARITAL_STATUS'):
                 return MARITAL_STATUS(index)
-        elif (name = 'OCCUPATION'):
+        elif (name == 'OCCUPATION'):
                 return OCCUPATION(index)
-         elif (name = 'RELATIONSHIP'):
+        elif (name == 'RELATIONSHIP'):
                 return RELATIONSHIP(index)
-         elif (name = 'RACE'):
+        elif (name == 'RACE'):
                 return RACE(index)
-         elif (name = 'SEX'):
+        elif (name == 'SEX'):
                 return SEX(index)
-         elif (name = 'NATIVE_COUNTRY'):
+        elif (name == 'NATIVE_COUNTRY'):
                 return NATIVE_COUNTRY(index)                                                      
 	
 def generate_action(class_labels):
 	return random.choice(class_labels)
-
-	
-
