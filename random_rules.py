@@ -3,6 +3,13 @@ import random
 import ea
 
 
+workclassText = ["Private", "Self-emp-not-inc", "Self-emp-inc", "Federal-gov", "Local-gov", "State-gov", "Without-pay", "Never-worked"]
+educationText = ["Bachelors", "Some-college", "11th", "HS-grad", "Prof-school", "Assoc-acdm", "Assoc-voc", "9th", "7th-8th", "12th", "Masters", "1st-4th", "10th", "Doctorate", "5th-6th", "Preschool"]
+maritalText = ["Married-civ-spouse", "Divorced", "Never-married", "Separated", "Widowed", "Married-spouse-absent", "Married-AF-spouse"]
+relationshipText = ["Tech-support", "Craft-repair", "Other-service", "Sales", "Exec-managerial", "Prof-specialty", "Handlers-cleaners", "Machine-op-inspct", "Adm-clerical", "Farming-fishing", "Transport-moving", "Priv-house-serv", "Protective-serv", "Armed-Forces"]
+raceText = ["White", "Asian-Pac-Islander", "Amer-Indian-Eskimo", "Other", "Black"]
+sexText = ["Female", "Male"]
+nativeCountryText = ["United-States", "Cambodia", "England", "Puerto-Rico", "Canada", "Germany", "Outlying-US(Guam-USVI-etc)", "India", "Japan", "Greece", "South", "China", "Cuba", "Iran", "Honduras", "Philippines", "Italy", "Poland", "Jamaica", "Vietnam", "Mexico", "Portugal", "Ireland", "France", "Dominican-Republic", "Laos", "Ecuador", "Taiwan", "Haiti", "Columbia", "Hungary", "Guatemala", "Nicaragua", "Scotland", "Thailand", "Yugoslavia", "El-Salvador", "Trinadad&Tobago", "Peru", "Hong", "Holand-Netherlands"]
 
 def generate_condition():
 
@@ -66,11 +73,26 @@ def enumVal(name, index):
         elif (name == 'NATIVE_COUNTRY'):
                 return NATIVE_COUNTRY(index)                                                      
 
-
-def generateCtsInitial(newKey):
-    return
-
 def sourceTexttoEnum(category, name):
+
+        if (name == 'WORKCLASS'):
+                return WORKCLASS(workclassText.index(name))
+        elif (name == 'EDUCATION'):
+                return EDUCATION(educationText.index(name))
+        elif (name == 'MARITAL_STATUS'):
+                return MARITAL_STATUS(maritalText.index(name))
+        elif (name == 'OCCUPATION'):
+                return OCCUPATION(occupationText.index(name))
+        elif (name == 'RELATIONSHIP'):
+                return RELATIONSHIP(relationshipText.index(name))
+        elif (name == 'RACE'):
+                return RACE(raceText.index(name))
+        elif (name == 'SEX'):
+                return SEX(sexText.index(name))
+        elif (name == 'NATIVE_COUNTRY'):
+                return NATIVE_COUNTRY(nativeCountryText.index(name))
+        
+        return
 	
 def generate_action(class_labels):
 	return random.choice(class_labels)

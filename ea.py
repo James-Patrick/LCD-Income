@@ -10,6 +10,27 @@ CTS_ATTRIBUTES = ['AGE','FNLWGT','EDUCATION_NUM','CAPITAL_GAIN','CAPITAL_LOSS','
 ENUM_ATTRIBUTES = {'WORKCLASS':7, 'EDUCATION':15,'MARITAL_STATUS':6,'OCCUPATION':14,'RELATIONSHIP':5,'RACE':4,'SEX':1,'NATIVE_COUNTRY':40}
 ALL_ATTRIBUTES = CTS_ATTRIBUTES + list(ENUM_ATTRIBUTES.keys())
 
+AGEMIN = 20
+AGEMAX = 60
+AGEDEV = 10
+
+FNLMIN = 100000 
+FNLMAX = 400000
+FNLDEV = 50000
+
+EDUMIN = 6
+EDUMAX = 12
+EDUDEV = 3
+
+CAPITALMIN = 10000
+CAPITALMAX = 24000
+CAPITALDEV = 4000
+
+HOURSMIN = 8
+HOURSMAX = 40
+HOURSDEV = 4
+
+
 class WORKCLASS(Enum):
     PRIVATE = 0
     SELF_EMP_NOT_INC = 1
@@ -170,5 +191,36 @@ class Rule(object):
         child.precition = self.prediction
         return child
 
-def generateCtsInitial(newKey):
-    return
+def generateCtsInitial(key):
+    minBound = 0
+    maxBound = 0
+    sigmamax = 0
+    sigmamin = 0
+    if (key == 'AGE'):
+        sigmamax = AGEDEV
+        sigmamin = AGEDEV
+        minBound = random.normalvariate(AGEMIN, AGEDEV)
+        maxBound = random.normalvariate(AGEMAX, AGEDEV)
+    elif (key == 'FNLWGT'):
+        sigmamax = FNLDEV
+        sigmamin = FNLDEV
+        minBound = random.normalvariate(FNLMIN, FNLDEV)
+        maxBound = random.normalvariate(FNLMAX, FNLDEV)
+    elif (key == 'EDUCATION_NUM'):
+        sigmamax = EDUDEV
+        sigmamin = EDUDEV
+        minBound = random.normalvariate(EDUMIN, EDUDEV)
+        maxBound = random.normalvariate(EDUMAX, EDUDEV)
+    elif ((key == 'CAPITAL_GAIN') or (key == 'CAPITAL_LOSS')):
+        sigmamax = CAPITALDEV
+        sigmamin = CAPITALDEV
+        minBound = random.normalvariate(CAPITALMIN, CAPITALDEV)
+        maxBound = random.normalvariate(CAPITALMAX, CAPITALDEV)
+    elif (key == 'HOURS_PER_WEEK'):
+        sigmamax = HOURSDEV
+        sigmamin = HOURSDEV
+        minBound = random.normalvariate(HOURSMIN, HOURSDEV)
+        maxBound = random.normalvariate(HOURSMAX, HOURSDEV)
+        
+        
+    return CtsValue(axBount, sigmamax, minBound, sigmamin)
