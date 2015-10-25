@@ -43,8 +43,6 @@ def make_verbose():
 
 
 
-
-
 # A classifier. 
 # Contains a condition, an action, a fitness value
 class Classifier:
