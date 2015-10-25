@@ -26,7 +26,8 @@ HEADINGS_DICT = {'age': 'continuous',
 			'salary':'class-label'}
 '''
 
-FILENAME = 'adult.data'
+LEARNING_FILENAME = 'adult.data'
+TESTING_FILENAME  = 'adult.test.txt'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
 NUM_CLASSIFIERS = 500
@@ -85,8 +86,6 @@ class Classifier:
 
 			
 		self.__class__.__all__.add(self)
-		
-		#self.test = random_rules.generate_condition()
 
 	# Checks if condition is met in environment
 	def check_condition(self, environment):
@@ -215,15 +214,17 @@ def main(argv):
 
 	# Creates a list of environments.
 	# Environments are stored as objects, which contain a dictionary, and a correct_class.
-	def create_environments():	
-		with open(FILENAME, "r") as file:		
+	def create_environments(file):	
+		with open(file, "r") as file:		
 			data = [f.replace(' ', '').rstrip().split(',') for f in file.readlines()]
 		
 		return [Environment(d) for d in data]
 
-	environments = create_environments()
+	
 
 	def do_learn_mode():
+	
+		environments = create_environments(LEARNING_FILENAME)
 
 		# Creates the initial population of classifiers, in the form of a list.
 		def create_classifiers():
@@ -262,8 +263,8 @@ def main(argv):
 		write_classifiers(classifiers, output_file)		
 
 		
-	def do_classify_mode():
-
+	def do_classify_mode():		
+	
 		def read_classifiers():
 			print("Reading classifiers...")			
 			with open(CLASSIFIERS_FILE, "r") as file:
@@ -294,6 +295,8 @@ def main(argv):
 				"No classification can be made."
 			return total_correct
 
+		environments = create_environments(TESTING_FILENAME)	
+			
 		classifiers = read_classifiers()
 		
 		total_correct = 0
