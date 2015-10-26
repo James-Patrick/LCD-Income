@@ -1,8 +1,18 @@
 # -*- coding: utf-8 -*-
-#import ea.py
-import random_rules
 
-import time, sys, getopt, ast
+# Note: You must run 'pip install enum34' before this will work on Python versions < 3.4.
+# By Michael Stewart, James Patrick and Brandon Papalia.
+
+from global_variables import *
+import random_rules
+import lcs_enums
+import ea
+
+
+import time, sys, getopt, ast, random#, copy
+
+
+
 
 ''' Notes '''
 # After a while, we need to choose a number where the classifier is sufficiently experienced enough to be deleted if it's fitness is too low
@@ -27,13 +37,15 @@ HEADINGS_DICT = {'age': 'continuous',
 '''
 
 LEARNING_FILENAME = 'adult.data'
-TESTING_FILENAME  = 'adult.test.txt'
+TESTING_FILENAME  = 'adult.test.txt' #'adult.data'# 'adult.test.txt'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-NUM_CLASSIFIERS = 500
+NUM_CLASSIFIERS = 30
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
 CLASSIFIERS_FILE = "classifiers"
+MUTATE_CHANCE = 0 #0.1
+
 
 verbose = False
 
@@ -54,22 +66,27 @@ class Classifier:
 			self.read_from_dictionary(from_dict)
 		else:
 
-		  if condition:
-			  self.condition = condition
-		  else:
-			  self.condition = random_rules.generate_condition()
-		  if action:
-			  self.action = action
-		  else:
-			  self.action = random_rules.generate_action(CLASS_LABELS)
-		  
-		  self.prediction 	= 0.0
-		  self.fitness 		= 0.0
-		  self.error			= 0.0
-		  self.experience 	= 0
-		  self.times_correct 	= 0
-		  self.times_wrong 	= 0
-		  self.accuracy		= 0.0
+			if condition:
+				self.condition = condition
+			else:
+				self.condition = random_rules.generate_condition()
+			if action:
+				self.action = action
+			else:
+				self.action = random_rules.generate_action(CLASS_LABELS)
+
+			self.prediction 	= 0.0
+			self.fitness 		= 0.0
+			self.error			= 0.0
+			self.experience 	= 0
+			self.times_correct 	= 0
+			self.times_wrong 	= 0
+			self.accuracy		= 0.0
+			
+			
+			
+			
+			#ea.getMutantChild(self.condition)
 
 		# Duplicate this classifier, creating the same classifier but for the inverse rule
 		if duplicate:
@@ -81,15 +98,26 @@ class Classifier:
 					return '<=50K'
 				
 			dc = Classifier(self.condition, flipped_action(self.action), False)
-
-			
+		
 		self.__class__.__all__.add(self)
 
 	# Checks if condition is met in environment
 	def check_condition(self, environment):
 		for k, v in self.condition.items():
-			if environment.dictionary[k] != v:
-				return False			# One condition of this classifier was not met				
+			
+			# If continuous, check whether the value is within minBound and maxBound.
+			# If discrete, check whether the classifier's field matches the environment's field.
+			if k in CTS_ATTRIBUTES:
+				if environment.dictionary[k] < v[0] or environment.dictionary[k] > v[1]:
+					return False
+			else:
+				# The field may contain one or more values. These are ints, or lists (I assume it's faster this way)
+				if isinstance(v, int):
+					if environment.dictionary[k] != v:
+						return False			# One condition of this classifier was not met	
+				else:
+					if environment.dictionary[k] not in v:
+						return False
 		return True	
 
 	# Learns from the environment. Checks whether the rule held by the classifier is correct or not, depending on whether its conditions are met in the environment
@@ -101,9 +129,12 @@ class Classifier:
 			if was_correct:
 				self.times_correct += 1 
 				self.accuracy = self.times_correct * 1.0 / self.experience * 1.0
+				# Mutate!
+				if(random.random() < MUTATE_CHANCE):
+					ch = Classifier(ea.getMutantChild(self.condition), self.action)
 			else:
 				self.times_wrong += 1
-			#self.accuracy =
+
 			
 		# If this classifier has met all its conditions on the environment, add +1 experience points and return the classifier's action
 		# (which in this case is either <= 50K or > 50K)
@@ -132,7 +163,9 @@ class Classifier:
 			print("{0:<15s} : {1}".format("Experience:", self.experience))
 			print("{0:<15s} : {1}".format("Times Correct:", self.times_correct))
 			print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))
-			print("{0:<15s1} : {1}".format("Accuracy:", self.accuracy * 100))
+			
+			print("{0:<15s} : {1}".format("Accuracy:", self.accuracy * 100))
+
 		#	print("{0:<15s} : {1}".format("Error:", self.error))		
 			print()
 	
@@ -149,6 +182,7 @@ class Classifier:
 	# Inputs the classifiers info from a dictionary
 	def read_from_dictionary(self, from_dict):
 	#	self.id = from_dict["id"]
+
 		self.condition = from_dict["condition"]
 		self.action = from_dict["action"]
 		self.accuracy = from_dict["accuracy"]
@@ -161,12 +195,23 @@ class Classifier:
 #   {'education': 'HS-grad', 'workclass': 'Local-gov', 'age': 67 ...}
 # self.correct_class = The correct class label for this particular environment.
 class Environment:
-	def __init__(self, data):
+	def __init__(self, data):	
 		self.dictionary = {}
+		
 		for h in range(len(HEADINGS) - 1):
 			# Convert field to integer if it is numeric, otherwise keep it as a string (so it may handle discrete/continuous variables).
-			self.dictionary[HEADINGS[h]] = int(data[h]) if unicode(data[h]).isnumeric() else data[h]
+			h_uppercase = HEADINGS[h].upper().replace('-', '_')
+			if data[h] == "?":
+				self.dictionary[h_uppercase] = "?"
+			else:				
+				if h_uppercase in CTS_ATTRIBUTES:
+					self.dictionary[h_uppercase] = int(data[h])
+				else:
+					self.dictionary[h_uppercase] = 	lcs_enums.sourceTexttoEnum(h_uppercase, data[h]).value
+			
+			
 		self.correct_class = data[len(HEADINGS) - 1]
+		#self.print_details()
 	
 	# Prints the details of the environment in a nice, easy-to-read manner.
 	def print_details(self):
@@ -179,6 +224,7 @@ class Environment:
 
 
 def main(argv):
+
 
 	def print_usage():
 		print('--------------------------')
@@ -215,7 +261,7 @@ def main(argv):
 	def create_environments(file):	
 		with open(file, "r") as file:		
 			data = [f.replace(' ', '').rstrip().split(',') for f in file.readlines()]
-		
+
 		return [Environment(d) for d in data]
 
 	
@@ -236,11 +282,14 @@ def main(argv):
 				output_file.write(str(c.to_dictionary()))
 				output_file.write('\n')
 
-		# One timestep. 
+		# One timestep. Returns the updated list of classifiers
 		def step(environment, classifiers):
-			for c in classifiers:
+			for c in classifiers.copy():
 				c.learn(environment)
-				
+			
+			#classifiers = Classifier.__all__
+			#return classifiers		# Have to refresh the list every step
+			
 		time_start = time.time()
 	
 		classifiers  = create_classifiers()
@@ -251,8 +300,12 @@ def main(argv):
 			print('------------------------------------') 
 
 		for x in range(len(environments)):		
+			#new_classifiers = step(environments[x], classifiers);
+			#classifiers = copy.deepcopy(new_classifiers)
 			step(environments[x], classifiers);
+			classifiers = Classifier.__all__
 
+		print("Num classifiers: ", len(classifiers))
 		time_end = time.time()
 		total_time = time_end - time_start
 		print(total_time, "seconds")
@@ -278,30 +331,40 @@ def main(argv):
 				if cl:
 					match_set.append(cl)
 			
-			sorted_set = sorted(match_set, key=lambda tup: tup[1])
+			
+			sorted_set = sorted(match_set, key=lambda tup: tup[0], reverse = True)
 			if len(sorted_set) > 0:
 
-			  action = sorted_set[0][1]
-			  if action == environment.correct_class:
-				  correct = "Correct!"
-				  total_correct += 1
-			  else:
-				  correct = "Fail    "
-			 
-			  print("Action:", sorted_set[0][1], " | Accuracy:", "%.2f" % (sorted_set[0][0] * 100), "% |", correct, "{", total_correct, total_seen, "(", "%.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100), ") }")
+				action = sorted_set[0][1]
+				if action == environment.correct_class:
+					correct = "Correct!"
+					total_correct += 1
+				else:
+					correct = "Fail    "
+				if verbose:
+					print("Action:", sorted_set[0][1], " | Accuracy:", "%.2f" % (sorted_set[0][0] * 100), "% |", correct, "{", total_correct, total_seen, "(", "%.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100), ") }")
 			else:
 				"No classification can be made."
 			return total_correct
 
+
 		environments = create_environments(TESTING_FILENAME)	
 			
 		classifiers = read_classifiers()
-		
+	
+
+		time_start = time.time()
+	
 		total_correct = 0
 		total_seen = 0
 		for x in range(len(environments)):		
 			total_seen += 1
 			total_correct = step(environments[x], classifiers, total_correct, total_seen);		  
+			
+		print(total_correct, total_seen, "(", "%.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100), ") }")
+		time_end = time.time()
+		total_time = time_end - time_start
+		print(total_time, "seconds")			
 		
 	
 	if mode == LEARN_MODE:
