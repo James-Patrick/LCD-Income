@@ -77,7 +77,7 @@ class Classifier:
 
 			self.prediction 	= 0.0
 			self.fitness 		= 0.0
-			self.error			= 0.0
+			self.error		= 0.0
 			self.experience 	= 0
 			self.times_correct 	= 0
 			self.times_wrong 	= 0

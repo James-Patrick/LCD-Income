@@ -94,6 +94,13 @@ def generateCtsInitial(key):
         sigmamin = HOURSDEV
         minBound = random.normalvariate(HOURSMIN, HOURSDEV)
         maxBound = random.normalvariate(HOURSMAX, HOURSDEV)
+
+    if (maxBound < minBound):
+        temp = maxBound
+        maxBound = minBound
+        minBound = temp
+
+    
         
         
     return [minBound, maxBound, sigmamin, sigmamax]
