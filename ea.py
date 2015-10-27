@@ -30,6 +30,7 @@ HOURSDEV = 4
 # Takes a child, in the form of a dictionary (conditions) and mutates it.
 def getMutantChild(child):
 	#iterate over the values in the dictionary
+	
 	for key, value in child.items():
 		#mutate a continous value
 		if (key in CTS_ATTRIBUTES):
@@ -50,16 +51,21 @@ def getMutantChild(child):
 				#if we didnt add one, maybe we should remove one
 			elif(random.random() < LEARNING_RATE/value.length and len(value) > 1):
 				value.remove(random.randint(0, ENUM_ATTRIBUTES[key]))
-
-	if (random.random() < LEARNING_RATE/len(child)):
+	#print('hi 3')
+	#print(child)
+	if (random.random() < LEARNING_RATE/len(child) and len(child) < len(ALL_ATTRIBUTES)):
 		newKey = ALL_ATTRIBUTES[random.randint(0, len(ALL_ATTRIBUTES) - 1)]
+		#print(newKey)
+		#print('hi (before while)')
 		while (newKey in child):
 			newKey = ALL_ATTRIBUTES[random.randint(0, len(ALL_ATTRIBUTES) - 1)]
+		#print('hi (after while)')
 		if (newKey in CTS_ATTRIBUTES):
 			newValue = generateCtsInitial(newKey)
 		else:
 			newValue = random.randint(0, ENUM_ATTRIBUTES[newKey])
 		child[newKey] = newValue
+	#print('hi 4')
 	return child
 	
 

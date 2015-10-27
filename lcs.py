@@ -40,11 +40,15 @@ LEARNING_FILENAME = 'adult.data'
 TESTING_FILENAME  = 'adult.test.txt' #'adult.data'# 'adult.test.txt'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-NUM_CLASSIFIERS = 200
+NUM_CLASSIFIERS = 300
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
 CLASSIFIERS_FILE = "classifiers"
-MUTATE_CHANCE = 0
+MAX_CLASSIFIERS = 1000
+COUNT = 0
+
+classifiers = []
+total_deleted = 0
 
 
 verbose = False
@@ -82,8 +86,11 @@ class Classifier:
 			self.times_correct 	= 0
 			self.times_wrong 	= 0
 			self.accuracy		= 0.0
+			self.lifetime		= 0
+			self.last_mutated	= 0
 			
-			
+			global classifiers
+			classifiers.append(self)
 			
 			
 			#ea.getMutantChild(self.condition)
@@ -120,6 +127,24 @@ class Classifier:
 						return False
 		return True	
 
+	def mutate(self):
+		global classifiers		
+		if len(classifiers) < MAX_CLASSIFIERS:			
+			if (self.experience > 499 and self.experience % 500 == 0 and self.accuracy > 0.8):
+				classifiers.append(Classifier(ea.getMutantChild(self.condition), self.action))
+
+	
+	def check_delete(self):
+		global total_deleted
+		global classifiers
+		if (self.experience > 99 and self.experience % 100 == 0 and self.accuracy < 0.5):
+			total_deleted += 1
+			classifiers.remove(self)
+		if (self.lifetime > 10000 and self.experience < 10):
+			total_deleted += 1
+			classifiers.remove(self)
+
+		
 	# Learns from the environment. Checks whether the rule held by the classifier is correct or not, depending on whether its conditions are met in the environment
 	def learn(self, environment):
 
@@ -132,6 +157,7 @@ class Classifier:
 				# Mutate!
 				#if(random.random() < MUTATE_CHANCE):
 				#	ch = Classifier(ea.getMutantChild(self.condition), self.action)
+				self.mutate()
 			else:
 				self.times_wrong += 1
 
@@ -142,12 +168,16 @@ class Classifier:
 		if self.check_condition(environment):
 			was_correct = (self.action == environment.correct_class)	
 			update_classifier(was_correct)
+		
+		self.check_delete()
+		self.lifetime = self.lifetime + 1
+		
 			#self.print_details()
 #			return self.action
 #		else:
 #			return None
 	
-
+	
 	def classify(self, environment):
 		if self.check_condition(environment):
 			return (self.accuracy, self.action)
@@ -177,6 +207,7 @@ class Classifier:
 		to_dict["action"] = self.action
 		to_dict["accuracy"] = self.accuracy
 		to_dict["experience"] = self.experience	  
+		to_dict["lifetime"] = self.lifetime
 		return to_dict
 
 	# Inputs the classifiers info from a dictionary
@@ -268,23 +299,26 @@ def main(argv):
 
 	def do_learn_mode():
 	
+		
 		environments = create_environments(LEARNING_FILENAME)
 
 		# Creates the initial population of classifiers, in the form of a list.
 		def create_classifiers():
 			for x in range(NUM_CLASSIFIERS):
 			  Classifier()
-			return Classifier.__all__
+			#return Classifier.__all__
 
 		# Writes all classifiers to a file, in dictionary format
-		def write_classifiers(classifiers, output_file):
-			for c in classifiers:
+		def write_classifiers(output_file, new_classifiers):
+			#global classifiers
+			for c in new_classifiers:
 				output_file.write(str(c.to_dictionary()))
 				output_file.write('\n')
 
 		# One timestep. Returns the updated list of classifiers
-		def step(environment, classifiers):
-			for c in classifiers.copy():
+		def step(environment):
+			global classifiers
+			for c in classifiers:
 				c.learn(environment)
 			
 			#classifiers = Classifier.__all__
@@ -292,7 +326,9 @@ def main(argv):
 			
 		time_start = time.time()
 	
-		classifiers  = create_classifiers()
+		global classifiers
+		
+		create_classifiers()
 		count = 0
 		
 		if verbose:
@@ -300,27 +336,35 @@ def main(argv):
 				c.print_details()
 			print('------------------------------------') 
                 
+		count = 0
 		for x in range(len(environments)):		
 			#new_classifiers = step(environments[x], classifiers);
 			#classifiers = copy.deepcopy(new_classifiers)
-			count = count + 1
-			step(environments[x], classifiers)
-			if (count == 100):
-				for i in range(len(classifiers)):
-					if (classifiers[i].experience > 100 and classifiers[i].accuracy > 0.75):
-						Classifier(ea.getMutantChild(classifiers[i].condition),classifiers[i].action)
-					if (classifiers[i].experience > 100 and classifiers[i].accuracy < 0.25):
-							del classifiers[i]
-				count = 0
-			classifiers = Classifier.__all__
+
+			step(environments[x])
+			count += 1
+			
+			if count % 500 == 0:
+			
+				print("--------------------------", count, "--------------------------")
+				print(len(classifiers))
+		
 
 		print("Num classifiers: ", len(classifiers))
+		print("Total deleted: ", total_deleted)
 		time_end = time.time()
 		total_time = time_end - time_start
 		print(total_time, "seconds")
 
 		output_file = open(CLASSIFIERS_FILE, "w")
-		write_classifiers(classifiers, output_file)		
+		print("Tidying up...")
+		print(len(classifiers))
+		for c in classifiers:
+			if c.experience < 10 or c.accuracy < 0.5:
+				classifiers.remove(c)
+				del c
+		print(len(classifiers))
+		write_classifiers(output_file, classifiers)		
 
 		
 	def do_classify_mode():		
