@@ -40,11 +40,11 @@ LEARNING_FILENAME = 'adult.data'
 TESTING_FILENAME  = 'adult.test.txt' #'adult.data'# 'adult.test.txt'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-NUM_CLASSIFIERS = 30
+NUM_CLASSIFIERS = 200
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
 CLASSIFIERS_FILE = "classifiers"
-MUTATE_CHANCE = 0 #0.1
+MUTATE_CHANCE = 0
 
 
 verbose = False
@@ -130,8 +130,8 @@ class Classifier:
 				self.times_correct += 1 
 				self.accuracy = self.times_correct * 1.0 / self.experience * 1.0
 				# Mutate!
-				if(random.random() < MUTATE_CHANCE):
-					ch = Classifier(ea.getMutantChild(self.condition), self.action)
+				#if(random.random() < MUTATE_CHANCE):
+				#	ch = Classifier(ea.getMutantChild(self.condition), self.action)
 			else:
 				self.times_wrong += 1
 
@@ -293,16 +293,25 @@ def main(argv):
 		time_start = time.time()
 	
 		classifiers  = create_classifiers()
+		count = 0
 		
 		if verbose:
 			for c in classifiers:
 				c.print_details()
 			print('------------------------------------') 
-
+                
 		for x in range(len(environments)):		
 			#new_classifiers = step(environments[x], classifiers);
 			#classifiers = copy.deepcopy(new_classifiers)
-			step(environments[x], classifiers);
+			count = count + 1
+			step(environments[x], classifiers)
+			if (count == 100):
+				for i in range(len(classifiers)):
+					if (classifiers[i].experience > 100 and classifiers[i].accuracy > 0.75):
+						Classifier(ea.getMutantChild(classifiers[i].condition),classifiers[i].action)
+					if (classifiers[i].experience > 100 and classifiers[i].accuracy < 0.25):
+							del classifiers[i]
+				count = 0
 			classifiers = Classifier.__all__
 
 		print("Num classifiers: ", len(classifiers))
