@@ -7,8 +7,9 @@ from global_variables import *
 
 def generate_condition():
 
-	PROBABILITY = 0.2		# The chance that a field will be included in the condition
-
+	PROBABILITY = 0.1		# The chance that a field will be included in the condition
+	
+	'''
 	ADULT_FIELDS = {
 		"AGE": [19, 80],
 		"WORKCLASS": ["Private", "Self-emp-not-inc", "Self-emp-inc", "Federal-gov", "Local-gov", "State-gov", "Without-pay", "Never-worked"],
@@ -25,25 +26,22 @@ def generate_condition():
 		"HOURS_PER_WEEK": [0, 60],
 		"NATIVE_COUNTRY": ["United-States", "Cambodia", "England", "Puerto-Rico", "Canada", "Germany", "Outlying-US(Guam-USVI-etc)", "India", "Japan", "Greece", "South", "China", "Cuba", "Iran", "Honduras", "Philippines", "Italy", "Poland", "Jamaica", "Vietnam", "Mexico", "Portugal", "Ireland", "France", "Dominican-Republic", "Laos", "Ecuador", "Taiwan", "Haiti", "Columbia", "Hungary", "Guatemala", "Nicaragua", "Scotland", "Thailand", "Yugoslavia", "El-Salvador", "Trinadad&Tobago", "Peru", "Hong", "Holand-Netherlands"]
 	}
-	
+	'''
 	#CONTINUOUS_FIELDS = ["age", "fnlwgt", "education-num", "capital-gain", "capital-loss", "hours-per-week"]
 	
 	condition = {}
 	
-	def make_condition():
-		
-		for k, v in ADULT_FIELDS.items():	
-			r = random.random()
-			if r < PROBABILITY:	
-				if k in CTS_ATTRIBUTES:
-					condition[k] = ea.generateCtsInitial(k)		# Select randomly between min-max if it's a continuous field such as "age"
-				else:
-					condition[k] = random.randint(0, ENUM_ATTRIBUTES[k])    #lcs_enums.enumVal(k, random.randint(0, len(v) - 1)).value			# Select a random value if it's a discrete field such as "workclass"
+	def make_condition(num_keys):
+		attributes = random.sample(ALL_ATTRIBUTES, num_keys)		
+		for k in attributes:	
+			if k in CTS_ATTRIBUTES:
+				condition[k] = ea.generateCtsInitial(k)		# Select randomly between min-max if it's a continuous field such as "age"
+			else:
+				condition[k] = random.randint(0, ENUM_ATTRIBUTES[k])    #lcs_enums.enumVal(k, random.randint(0, len(v) - 1)).value			# Select a random value if it's a discrete field such as "workclass"
 		return condition
 
-	while(len(condition.keys()) == 0):
-		condition = make_condition()
-	
+	num_keys = int(abs(random.gauss(0, 1))) + 1
+	condition = make_condition(num_keys)	
 	return condition	# Returns a dictionary ie {"WORKCLASS": 2}
 
 

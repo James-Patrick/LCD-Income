@@ -9,7 +9,13 @@ import lcs_enums
 import ea
 
 
-import time, sys, getopt, ast, random, copy
+import time, sys, getopt, ast, random, copy, math
+
+
+
+''' Colorama (for nicer output) '''
+from colorama import init, Fore
+init()
 
 
 
@@ -40,13 +46,18 @@ LEARNING_FILENAME = 'adult.data'
 TESTING_FILENAME  = 'adult.test.txt' #'adult.data'# 'adult.test.txt'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-NUM_CLASSIFIERS = 300
+NUM_CLASSIFIERS = 1000
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
 CLASSIFIERS_FILE = "classifiers"
-MAX_CLASSIFIERS = 10000
+MAX_CLASSIFIERS = 999999
 COUNT = 0
+USING_EA = False
 
+LEARNING_TIMES = 3
+
+ACCURACY_CUTOFF = 0.40		# Accuracy required to mutate/be deleted (if unsufficient)
+EXPERIENCE_CUTOFF = 120		# Amount of experience required to mutate
 
 classifiers = []
 total_deleted = 0
@@ -57,7 +68,6 @@ verbose = False
 def make_verbose():
 	global verbose
 	verbose = True
-
 
 
 # A classifier. 
@@ -88,7 +98,7 @@ class Classifier:
 			self.times_wrong 	= 0
 			self.accuracy		= 0.0
 			self.lifetime		= 0
-			self.last_mutated	= 0
+			self.has_mutated 	= False
 			
 			global total_classifiers
 			self.id = total_classifiers
@@ -96,6 +106,13 @@ class Classifier:
 			
 			global classifiers
 			classifiers.append(self)
+			
+			if verbose:
+				if self.action == ">50K":
+					sys.stdout.write(Fore.CYAN + '.')
+				else:
+					sys.stdout.write(Fore.YELLOW + '.')
+				sys.stdout.write(Fore.WHITE)
 			
 			
 			#ea.getMutantChild(self.condition)
@@ -126,35 +143,47 @@ class Classifier:
 				if environment.dictionary[k] < v[0] or environment.dictionary[k] > v[1]:
 					return False
 			else:
-				# The field may contain one or more values. These are ints, or lists (I assume it's faster this way)
-				if isinstance(v, int):
-					if environment.dictionary[k] != v:
-						return False			# One condition of this classifier was not met	
-				else:
-					if environment.dictionary[k] not in v:
-						return False
+				if environment.dictionary[k] != v:
+					return False
 		return True	
 
 	def mutate(self):
+	
+		def create_child():
+			new_condition = ea.getMutantChild(copy.deepcopy(self.condition))
+			new_action	  = copy.deepcopy(self.action)
+			c = Classifier(new_condition, new_action)
+		
 		global classifiers		
 		if len(classifiers) < MAX_CLASSIFIERS:			
-			if (self.experience > 599 and self.experience % 600 == 0 and self.accuracy > 0.88):
-				eaa = ea.getMutantChild(copy.deepcopy(self.condition))
-				aaa = copy.deepcopy(self.action)
-				c = Classifier(eaa, aaa)
-				#classifiers.append(c)
-				#classifiers.append(Classifier(ea.getMutantChild(self.condition), self.action))
+			if (self.experience > EXPERIENCE_CUTOFF and self.accuracy > ACCURACY_CUTOFF):
+			
+				if not self.has_mutated:
+			
+					create_child()
+					self.has_mutated = True					
+
+				# Give it a second chance to mutate (more if it's >50K)!
+				r = random.random()
+				if r < (750.0/math.pow(len(classifiers), 2)) and self.action == ">50K":
+					create_child()
+				if r < (50.0/math.pow(len(classifiers), 2)) and self.action == "<=50K":
+					create_child()		
+						
+							
+							
+					
 
 	
 	def check_delete(self):
 		global total_deleted
 		global classifiers
-		if (self.experience > 99 and self.experience % 100 == 0 and self.accuracy < 0.6):
+		if (self.experience > (EXPERIENCE_CUTOFF * 2) and self.accuracy < ACCURACY_CUTOFF) or (self.lifetime > 1000 and self.experience < 5):
 			total_deleted += 1
-			classifiers.remove(self)
-		if (self.lifetime > 1000 and self.experience < 5):
-			total_deleted += 1
-			classifiers.remove(self)
+			classifiers.remove(self)	
+			if verbose:
+				sys.stdout.write(Fore.RED + '.')
+				sys.stdout.write(Fore.WHITE)		
 
 		
 	# Learns from the environment. Checks whether the rule held by the classifier is correct or not, depending on whether its conditions are met in the environment
@@ -169,7 +198,8 @@ class Classifier:
 				# Mutate!
 				#if(random.random() < MUTATE_CHANCE):
 				#	ch = Classifier(ea.getMutantChild(self.condition), self.action)
-				self.mutate()
+				if USING_EA:
+					self.mutate()
 			else:
 				self.times_wrong += 1
 
@@ -330,7 +360,7 @@ def main(argv):
 
 		# One timestep. Returns the updated list of classifiers
 		def step(environment):
-			global classifiers
+			global classifiers			
 			for c in classifiers:
 				c.learn(environment)
 			
@@ -344,23 +374,29 @@ def main(argv):
 		create_classifiers()
 		count = 0
 		
-		if verbose:
-			for c in classifiers:
-				c.print_details()
-			print('------------------------------------') 
+		#if verbose:
+		#	for c in classifiers:
+		#		c.print_details()
+		#	print('------------------------------------') 
 
-		count = 0
-		for x in range(len(environments)):		
-			#new_classifiers = step(environments[x], classifiers);
-			#classifiers = copy.deepcopy(new_classifiers)
-
-			step(environments[x])
-			count += 1
-			
-			if count % 500 == 0:
-			
-				print("--------------------------", count, "--------------------------")
-				print(len(classifiers))
+		
+		for x in xrange(LEARNING_TIMES):
+			count = 0
+			print "\n\n------------------------------"
+			print "Learning", x + 1, "/", LEARNING_TIMES
+			print "------------------------------"
+			for x in range(len(environments)):		
+				#new_classifiers = step(environments[x], classifiers);
+				#classifiers = copy.deepcopy(new_classifiers)
+		
+				#sys.stdout.write("X")
+				step(environments[x])
+				count += 1
+				#sys.stdout.write(Fore.WHITE + "X")
+				if count % 500 == 0:
+					print "\n"
+					print "\nStep:", count, "\tClassifiers:", len(classifiers)
+					print "\n"
 		
 
 		print("Num classifiers: ", len(classifiers))
@@ -372,12 +408,12 @@ def main(argv):
 		output_file = open(CLASSIFIERS_FILE, "w")
 		print("Tidying up...")
 		print(len(classifiers))
+		final_classifiers = list()
 		for c in classifiers:
-			if c.experience < 10 or c.accuracy < 0.5:
-				classifiers.remove(c)
-				del c
-		print(len(classifiers))
-		write_classifiers(output_file, classifiers)		
+			if not (c.experience < EXPERIENCE_CUTOFF or c.accuracy < ACCURACY_CUTOFF):
+				final_classifiers.append(c)
+		print(len(final_classifiers))
+		write_classifiers(output_file, final_classifiers)		
 
 		
 	def do_classify_mode():		
@@ -386,12 +422,11 @@ def main(argv):
 			print("Reading classifiers...")			
 			with open(CLASSIFIERS_FILE, "r") as file:
 				classifier_dict = [ast.literal_eval(l) for l in file.readlines()]
-
 			return [Classifier(from_dict = k) for k in classifier_dict]
 
 		
 		# One timestep. 
-		def step(environment, classifiers, total_correct, total_seen):
+		def step(environment, classifiers, total_seen, total_correct, total_incorrect, total_missed):
 			match_set = []
 			for c in classifiers:
 				cl = c.classify(environment)			# [classifier, action, accuracy]
@@ -401,34 +436,65 @@ def main(argv):
 			
 			sorted_set = sorted(match_set, key=lambda tup: tup[0], reverse = True)
 			if len(sorted_set) > 0:
+				print_char = '.'
+				if environment.correct_class == ">50K":
+					print_char = '!'
 
 				action = sorted_set[0][1]
 				if action == environment.correct_class:
-					correct = "Correct!"
+					correct = True
 					total_correct += 1
+					if verbose:
+						sys.stdout.write(Fore.GREEN + print_char + Fore.WHITE)
 				else:
-					correct = "Fail    "
-				if verbose:
-					print("Action:", sorted_set[0][1], " | Accuracy:", "%.2f" % (sorted_set[0][0] * 100), "% |", correct, "{", total_correct, total_seen, "(", "%.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100), ") }")
+					correct = False
+					total_incorrect += 1
+					if verbose:
+						sys.stdout.write(Fore.RED + print_char + Fore.WHITE)
 			else:
-				"No classification can be made."
-			return total_correct
+				sys.stdout.write(" ")
+				total_missed += 1
+			return [total_correct, total_incorrect, total_missed]
 
 
 		environments = create_environments(TESTING_FILENAME)	
 			
 		classifiers = read_classifiers()
-	
+		
+		if verbose:
+			g50 = 0
+			l50 = 0
+			for c in classifiers:
+				if c.action == ">50K":
+					g50 += 1
+				else:
+					l50 += 1
+			print ">50K:\t", g50
+			print "<=50K:\t", l50
+			print "-------------------------"
+			time.sleep(3)
 
 		time_start = time.time()
 	
 		total_correct = 0
+		total_incorrect = 0
+		total_missed = 0
 		total_seen = 0
 		for x in range(len(environments)):		
 			total_seen += 1
-			total_correct = step(environments[x], classifiers, total_correct, total_seen);		  
+			cim = step(environments[x], classifiers, total_seen, total_correct, total_incorrect, total_missed);		
+			total_correct = cim[0]
+			total_incorrect = cim[1]
+			total_missed = cim[2]
 			
-		print(total_correct, total_seen, "(", "%.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100), ") }")
+		print("\n\n")
+		sys.stdout.write("Total:\t\t" + str(total_seen) + "\n")
+		sys.stdout.write("Correct:\t" + Fore.GREEN + str(total_correct) + Fore.WHITE + "\n")
+		sys.stdout.write("Incorrect:\t" + Fore.RED + str(total_incorrect) + Fore.WHITE + "\n")
+		sys.stdout.write("Missed:\t\t" + Fore.YELLOW + str(total_missed) + Fore.WHITE + "\n")		
+		print("-------------------------------------------------------")
+		print("Accuracy: %.5f" % (total_correct * 1.0 / total_seen * 1.0 * 100))
+		print("\n")
 		time_end = time.time()
 		total_time = time_end - time_start
 		print(total_time, "seconds")			
