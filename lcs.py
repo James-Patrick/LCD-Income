@@ -9,7 +9,7 @@ import lcs_enums
 import ea
 
 
-import time, sys, getopt, ast, random#, copy
+import time, sys, getopt, ast, random, copy
 
 
 
@@ -44,12 +44,13 @@ NUM_CLASSIFIERS = 300
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
 CLASSIFIERS_FILE = "classifiers"
-MAX_CLASSIFIERS = 1000
+MAX_CLASSIFIERS = 10000
 COUNT = 0
+
 
 classifiers = []
 total_deleted = 0
-
+total_classifiers = 0
 
 verbose = False
 
@@ -81,13 +82,17 @@ class Classifier:
 
 			self.prediction 	= 0.0
 			self.fitness 		= 0.0
-			self.error		= 0.0
+			self.error			= 0.0
 			self.experience 	= 0
 			self.times_correct 	= 0
 			self.times_wrong 	= 0
 			self.accuracy		= 0.0
 			self.lifetime		= 0
 			self.last_mutated	= 0
+			
+			global total_classifiers
+			self.id = total_classifiers
+			total_classifiers += 1
 			
 			global classifiers
 			classifiers.append(self)
@@ -104,7 +109,10 @@ class Classifier:
 				else:
 					return '<=50K'
 				
-			dc = Classifier(self.condition, flipped_action(self.action), False)
+			dc = copy.deepcopy(self)
+			dc.action = flipped_action(self.action)
+
+			#dc = Classifier(self.condition, flipped_action(self.action), False)
 		
 		self.__class__.__all__.add(self)
 
@@ -130,17 +138,21 @@ class Classifier:
 	def mutate(self):
 		global classifiers		
 		if len(classifiers) < MAX_CLASSIFIERS:			
-			if (self.experience > 499 and self.experience % 500 == 0 and self.accuracy > 0.8):
-				classifiers.append(Classifier(ea.getMutantChild(self.condition), self.action))
+			if (self.experience > 599 and self.experience % 600 == 0 and self.accuracy > 0.88):
+				eaa = ea.getMutantChild(copy.deepcopy(self.condition))
+				aaa = copy.deepcopy(self.action)
+				c = Classifier(eaa, aaa)
+				#classifiers.append(c)
+				#classifiers.append(Classifier(ea.getMutantChild(self.condition), self.action))
 
 	
 	def check_delete(self):
 		global total_deleted
 		global classifiers
-		if (self.experience > 99 and self.experience % 100 == 0 and self.accuracy < 0.5):
+		if (self.experience > 99 and self.experience % 100 == 0 and self.accuracy < 0.6):
 			total_deleted += 1
 			classifiers.remove(self)
-		if (self.lifetime > 10000 and self.experience < 10):
+		if (self.lifetime > 1000 and self.experience < 5):
 			total_deleted += 1
 			classifiers.remove(self)
 
@@ -203,11 +215,12 @@ class Classifier:
 	def to_dictionary(self):
 		to_dict = {}
 	#	to_dict["id"] = self.id
+		to_dict["id"] = self.id
 		to_dict["condition"] = self.condition
 		to_dict["action"] = self.action
 		to_dict["accuracy"] = self.accuracy
 		to_dict["experience"] = self.experience	  
-		to_dict["lifetime"] = self.lifetime
+		to_dict["lifetime"] = self.lifetime		
 		return to_dict
 
 	# Inputs the classifiers info from a dictionary
@@ -335,7 +348,7 @@ def main(argv):
 			for c in classifiers:
 				c.print_details()
 			print('------------------------------------') 
-                
+
 		count = 0
 		for x in range(len(environments)):		
 			#new_classifiers = step(environments[x], classifiers);
@@ -376,6 +389,7 @@ def main(argv):
 
 			return [Classifier(from_dict = k) for k in classifier_dict]
 
+		
 		# One timestep. 
 		def step(environment, classifiers, total_correct, total_seen):
 			match_set = []

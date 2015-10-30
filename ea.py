@@ -2,6 +2,7 @@ import math
 import random
 import lcs_enums
 from global_variables import *
+import copy
 
 N_GENOME_CTS_ATTRIBUTES = 12
 LEARNING_RATE = 1/math.sqrt(N_GENOME_CTS_ATTRIBUTES)
@@ -13,11 +14,11 @@ AGEDEV = 10
 
 FNLMIN = 100000 
 FNLMAX = 400000
-FNLDEV = 50000
+FNLDEV = 30000
 
 EDUMIN = 6
-EDUMAX = 12
-EDUDEV = 3
+EDUMAX = 15
+EDUDEV = 2
 
 CAPITALMIN = 10000
 CAPITALMAX = 24000
@@ -25,7 +26,7 @@ CAPITALDEV = 4000
 
 HOURSMIN = 8
 HOURSMAX = 40
-HOURSDEV = 4
+HOURSDEV = 2
 
 # Takes a child, in the form of a dictionary (conditions) and mutates it.
 def getMutantChild(child):
@@ -41,16 +42,21 @@ def getMutantChild(child):
 		else:
 			#if not continuous, check probability and maybe add new entry		
 			vl = 1 if isinstance(value, int) else len(value)
-			if(random.random() < vl):
+			if(random.random() < LEARNING_RATE/vl):
+				
 				if isinstance(value, int):
-					value = [value]	# Turns it into a list if it's an integer
+					value2 = [value]	# Turns it into a list if it's an integer
 				newEntry = random.randint(0, ENUM_ATTRIBUTES[key])				
-				while(newEntry in value): #make sure it's not a duplicate
+				while(newEntry in value2): #make sure it's not a duplicate
 					newEntry = random.randint(0, ENUM_ATTRIBUTES[key])
-				value.append(newEntry)
+				value2.append(newEntry)
+				value = copy.deepcopy(value2)
+				# doesn't work
 				#if we didnt add one, maybe we should remove one
-			elif(random.random() < LEARNING_RATE/value.length and len(value) > 1):
+
+			elif(random.random() < LEARNING_RATE/vl and vl > 1):
 				value.remove(random.randint(0, ENUM_ATTRIBUTES[key]))
+				print('hello')
 	#print('hi 3')
 	#print(child)
 	if (random.random() < LEARNING_RATE/len(child) and len(child) < len(ALL_ATTRIBUTES)):
