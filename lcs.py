@@ -52,12 +52,13 @@ CLASSIFY_MODE = 1
 CLASSIFIERS_FILE = "classifiers"
 MAX_CLASSIFIERS = 999999
 COUNT = 0
-USING_EA = False
+USING_EA = True
+USING_IR = True		# Using imbalanced ratio (weight the minority class higher during classification)
 
 LEARNING_TIMES = 3
 
-ACCURACY_CUTOFF = 0.40		# Accuracy required to mutate/be deleted (if unsufficient)
-EXPERIENCE_CUTOFF = 120		# Amount of experience required to mutate
+ACCURACY_CUTOFF = 0.25		# Accuracy required to mutate/be deleted (if unsufficient)
+EXPERIENCE_CUTOFF = 75		# Amount of experience required to mutate
 
 classifiers = []
 total_deleted = 0
@@ -114,9 +115,6 @@ class Classifier:
 					sys.stdout.write(Fore.YELLOW + '.')
 				sys.stdout.write(Fore.WHITE)
 			
-			
-			#ea.getMutantChild(self.condition)
-
 		# Duplicate this classifier, creating the same classifier but for the inverse rule
 		if duplicate:
 			
@@ -164,11 +162,11 @@ class Classifier:
 					self.has_mutated = True					
 
 				# Give it a second chance to mutate (more if it's >50K)!
-				r = random.random()
-				if r < (750.0/math.pow(len(classifiers), 2)) and self.action == ">50K":
-					create_child()
-				if r < (50.0/math.pow(len(classifiers), 2)) and self.action == "<=50K":
-					create_child()		
+				#r = random.random()
+				#if r < (750.0/math.pow(len(classifiers), 2)) and self.action == ">50K":
+				#	create_child()
+				#if r < (50.0/math.pow(len(classifiers), 2)) and self.action == "<=50K":
+				#	create_child()		
 						
 							
 							

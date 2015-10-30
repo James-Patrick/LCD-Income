@@ -5,7 +5,7 @@ from global_variables import *
 import copy
 
 N_GENOME_CTS_ATTRIBUTES = 12
-LEARNING_RATE = 1.5/math.sqrt(N_GENOME_CTS_ATTRIBUTES)
+LEARNING_RATE = 1/math.sqrt(N_GENOME_CTS_ATTRIBUTES)
 EPSILON = 0.5
 
 AGEMIN = 20
@@ -40,36 +40,27 @@ def getMutantChild(child):
 			value[2] = max(value[2] * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)	# sigma min
 			value[3] = max(value[3] * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)	# sigma max
 		else:
-			'''
-			
-			I realised it's not very ideal to generate new options for one key...
-			For example, if you had a classifier with race = 0, and one with race = [0, 1], the one with [0, 1] would
-			have a higher accuracy because it accommodates more environments.
-			
-			'''
-			'''
+
 			#if not continuous, check probability and maybe add new entry		
-			vl = 1 if isinstance(value, int) else len(value)
-			if(random.random() < LEARNING_RATE/vl and vl < ENUM_ATTRIBUTES[key]):
-				new_value = value
-				if isinstance(value, int):
-					new_value = [value]	# Turns it into a list if it's an integer
+			#vl = 1 if isinstance(value, int) else len(value)
+			if random.random() < LEARNING_RATE: #and vl < ENUM_ATTRIBUTES[key]):
+				#new_value = value
+				#if isinstance(value, int):
+				#	new_value = [value]	# Turns it into a list if it's an integer
 				newEntry = random.randint(0, ENUM_ATTRIBUTES[key])				
-				while(newEntry in new_value): #make sure it's not a duplicate
+				while(child[key] == newEntry): #make sure it's not a duplicate
 					newEntry = random.randint(0, ENUM_ATTRIBUTES[key])
 				
-				new_value.append(newEntry)
+				#new_value.append(newEntry)
 				
-				child[key] = new_value
+				child[key] = newEntry
 				#if we didnt add one, maybe we should remove one
-			elif(random.random() < LEARNING_RATE/vl and vl > 1):
-				value.remove(value[random.randrange(vl)])
-				child[key] = value
-			'''
-			'''
-			So instead, I just modify one of the keys instead. This should make it explore more.
+			#elif(random.random() < LEARNING_RATE/vl and vl > 1):
+			#	value.remove(value[random.randrange(vl)])
+			#	child[key] = value
+
 			
-			'''			
+			# Also change an entire key occasionally
 			if(random.random() < LEARNING_RATE/len(child)):
 				changedKey = ALL_ATTRIBUTES[random.randint(0, len(ALL_ATTRIBUTES) - 1)]
 				while (changedKey in child):
@@ -80,6 +71,7 @@ def getMutantChild(child):
 					newValue = random.randint(0, ENUM_ATTRIBUTES[changedKey])
 				child.pop(key, None)
 				child[changedKey] = newValue
+				
 			
 	if (random.random() < LEARNING_RATE/len(child) and len(child) < len(ALL_ATTRIBUTES)):
 		newKey = ALL_ATTRIBUTES[random.randint(0, len(ALL_ATTRIBUTES) - 1)]
