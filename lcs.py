@@ -536,6 +536,9 @@ def main(argv):
 		LEARNING_TIMES = 1
 		trial_runs = 3
 
+		global USING_DUPLICATION
+		USING_DUPLICATION = True
+
 		def run_test(test_number, test_information):
 			print Fore.CYAN + "\n\n=================================================================================", Fore.WHITE
 			print "Running test", test_number
@@ -562,12 +565,12 @@ def main(argv):
 					print Fore.YELLOW + "Trial", y + 1, Fore.WHITE
 					do_learn_mode()
 					do_classify_mode()
-				avgs = ["{0:.3f}".format(float(sum(col))/len(col)) for col in zip(*average_results)]
+				avgs = ["{0:.4f}".format(float(sum(col))/len(col)) for col in zip(*average_results)]
 				avgs_string = str(NUM_CLASSIFIERS * 2) + "\t\t" + avgs[0] + "\t\t" + avgs[1] + "\t" + avgs[2] + "\t" + avgs[3] + "\t" + avgs[4] + "\t" + avgs[5] + "\t" + avgs[6] + "\t" + avgs[7] + "\n"
 				rf.write(avgs_string)
 			
 
-		NUM_CLASSIFIERS = 250 # duplicated to 500
+		NUM_CLASSIFIERS = 500 # duplicated to 500
 
 		''' Tests: '''
 		# Accuracy cutoff : 0.15

@@ -1,0 +1,39 @@
+# ini: The initial number of classifiers
+# fin: The final number of classifiers
+% err: The error percentage (1 - acc)
+% acc: The accuracy percentage
+l time: The time taken to learn from the training dataset
+l time: The time taken to classify the test dataset
+% majm: The percentages of misses that were meant to be the majority class
+% minm: The percentages of misses that were meant to be the minority class
+t missed: The number of environments that could not be classified (no relevant classifier available)
+
+The top line is without IR, and bottom with IR.
+================================================================================
+# ini	# fin		% err	% acc	l time	c time	maj m	min m	t missed
+================================================================================
+
+Accuracy cutoff: 0.15
+--------------------------------------------------------------------------------
+500		1318.333	0.207	0.793	62.428	21.384	0.004	0.996	0.000
+500		1274.667	0.186	0.814	60.782	21.838	0.128	0.872	0.000
+
+Accuracy cutoff: 0.3
+--------------------------------------------------------------------------------
+500		1059.667	0.203	0.797	48.734	16.942	0.005	0.995	0.000
+500		1018.667	0.189	0.811	46.484	16.923	0.098	0.902	0.000
+
+Accuracy cutoff: 0.45
+--------------------------------------------------------------------------------
+500		961.333		0.203	0.797	47.631	16.495	0.013	0.987	0.000
+500		971.000		0.187	0.813	49.945	17.880	0.112	0.888	0.000
+
+Accuracy cutoff: 0.6
+--------------------------------------------------------------------------------
+500		873.667		0.202	0.798	46.182	15.697	0.007	0.993	0.000
+500		784.333		0.204	0.796	42.054	14.267	0.045	0.955	0.000
+
+Accuracy cutoff: 0.75
+--------------------------------------------------------------------------------
+500		427.333		0.202	0.798	21.494	6.833	0.010	0.990	28.000
+500		417.667		0.203	0.797	20.328	6.692	0.006	0.994	10.000

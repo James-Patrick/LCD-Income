@@ -1,195 +1,424 @@
-{'experience': 3770, 'action': '<=50K', 'lifetime': 32559, 'id': 22058, 'condition': {'OCCUPATION': 8}, 'accuracy': 0.8655172413793103}
-{'experience': 31019, 'action': '<=50K', 'lifetime': 32560, 'id': 22061, 'condition': {'EDUCATION_NUM': [3.841768017254985, 14.264960939289796, 1, 1]}, 'accuracy': 0.771487523373525}
-{'experience': 333, 'action': '<=50K', 'lifetime': 32560, 'id': 22063, 'condition': {'EDUCATION': 14}, 'accuracy': 0.9519519519519519}
-{'experience': 28650, 'action': '<=50K', 'lifetime': 32559, 'id': 22069, 'condition': {'EDUCATION_NUM': [4.129047667411573, 13.701543111836758, 1, 1]}, 'accuracy': 0.7874271353275856}
-{'experience': 555, 'action': '>50K', 'lifetime': 32560, 'id': 22073, 'condition': {'CAPITAL_GAIN': [9575.67474096138, 23043.915670573744, 1000, 1000]}, 'accuracy': 0.9873873873873874}
-{'experience': 7468, 'action': '<=50K', 'lifetime': 32559, 'id': 22079, 'condition': {'HOURS_PER_WEEK': [7.770610364763617, 39.46605098286045, 0.5, 0.5]}, 'accuracy': 0.9055972147830744}
-{'experience': 418, 'action': '<=50K', 'lifetime': 32561, 'id': 22080, 'condition': {'MARITAL_STATUS': 5}, 'accuracy': 0.9186602870813397}
-{'experience': 3446, 'action': '<=50K', 'lifetime': 32560, 'id': 22083, 'condition': {'RELATIONSHIP': 5}, 'accuracy': 0.9367382472431804}
-{'experience': 10771, 'action': '<=50K', 'lifetime': 32561, 'id': 22084, 'condition': {'SEX': 0}, 'accuracy': 0.8906220984215413}
-{'experience': 555, 'action': '>50K', 'lifetime': 32559, 'id': 22087, 'condition': {'CAPITAL_GAIN': [9623.757573950355, 24939.930189862065, 1000, 1000]}, 'accuracy': 0.9873873873873874}
-{'experience': 659, 'action': '<=50K', 'lifetime': 32557, 'id': 22103, 'condition': {'AGE': [21.772983310513364, 65.16506397043129, 2, 2], 'EDUCATION': 12}, 'accuracy': 0.9074355083459787}
-{'experience': 554, 'action': '>50K', 'lifetime': 32560, 'id': 22105, 'condition': {'CAPITAL_GAIN': [10495.318051554304, 24024.841113516657, 1000, 1000]}, 'accuracy': 0.9873646209386282}
-{'experience': 494, 'action': '>50K', 'lifetime': 32559, 'id': 22109, 'condition': {'CAPITAL_GAIN': [11210.202018235128, 25074.872557487088, 1000, 1000]}, 'accuracy': 0.9979757085020243}
-{'experience': 2461, 'action': '<=50K', 'lifetime': 32559, 'id': 22115, 'condition': {'EDUCATION_NUM': [6.201794185396666, 11.556804991386779, 1, 1], 'RELATIONSHIP': 5}, 'accuracy': 0.9670865501828525}
-{'experience': 271, 'action': '<=50K', 'lifetime': 32558, 'id': 22122, 'condition': {'RACE': 3}, 'accuracy': 0.9077490774907749}
-{'experience': 3446, 'action': '<=50K', 'lifetime': 32560, 'id': 22124, 'condition': {'RELATIONSHIP': 5}, 'accuracy': 0.9367382472431804}
-{'experience': 10771, 'action': '<=50K', 'lifetime': 32559, 'id': 22131, 'condition': {'SEX': 0}, 'accuracy': 0.8906220984215413}
-{'experience': 426, 'action': '>50K', 'lifetime': 32560, 'id': 22134, 'condition': {'FNLWGT': [93257.38462525205, 339048.8195836233, 20000, 20000], 'CAPITAL_GAIN': [9866.325942981419, 24082.14876622082, 1000, 1000]}, 'accuracy': 0.9906103286384976}
-{'experience': 792, 'action': '<=50K', 'lifetime': 32559, 'id': 22139, 'condition': {'RELATIONSHIP': 5, 'SEX': 1}, 'accuracy': 0.8661616161616161}
-{'experience': 22540, 'action': '<=50K', 'lifetime': 32560, 'id': 22144, 'condition': {'HOURS_PER_WEEK': [8.19861332235412, 40.02454788942159, 0.5, 0.5]}, 'accuracy': 0.8251918896135587}
-{'experience': 10770, 'action': '<=50K', 'lifetime': 32558, 'id': 22159, 'condition': {'SEX': 0}, 'accuracy': 0.8906119416844647}
-{'experience': 7494, 'action': '<=50K', 'lifetime': 32559, 'id': 22163, 'condition': {'HOURS_PER_WEEK': [6.837885156952195, 39.41709229289624, 0.5, 0.5]}, 'accuracy': 0.9053909794502268}
-{'experience': 5949, 'action': '<=50K', 'lifetime': 32561, 'id': 22164, 'condition': {'HOURS_PER_WEEK': [8.93653457602104, 39.70250599571785, 0.5, 0.5], 'EDUCATION_NUM': [7.507523040561946, 14.226449849938536, 1, 1]}, 'accuracy': 0.9013279542780299}
-{'experience': 22684, 'action': '<=50K', 'lifetime': 32560, 'id': 22166, 'condition': {'HOURS_PER_WEEK': [7.416196825960209, 40.33253542506003, 0.5, 0.5]}, 'accuracy': 0.8258166909139003}
-{'experience': 10770, 'action': '<=50K', 'lifetime': 32560, 'id': 22168, 'condition': {'SEX': 0}, 'accuracy': 0.8906119416844647}
-{'experience': 413, 'action': '<=50K', 'lifetime': 32561, 'id': 22169, 'condition': {'MARITAL_STATUS': 2, 'WORKCLASS': 5}, 'accuracy': 0.9491525423728814}
-{'experience': 494, 'action': '>50K', 'lifetime': 32561, 'id': 22170, 'condition': {'CAPITAL_GAIN': [11494.583078895723, 23934.00007975611, 1000, 1000]}, 'accuracy': 0.9979757085020243}
-{'experience': 22683, 'action': '<=50K', 'lifetime': 32559, 'id': 22179, 'condition': {'HOURS_PER_WEEK': [7.261291221075189, 40.492068167901046, 0.5, 0.5]}, 'accuracy': 0.8258090115510096}
-{'experience': 27839, 'action': '<=50K', 'lifetime': 32560, 'id': 22181, 'condition': {'AGE': [14.79721203968528, 58.67735042317109, 2, 2], 'EDUCATION_NUM': [4.471226966759705, 14.528472740400675, 1, 1]}, 'accuracy': 0.7704935699403693}
-{'experience': 29859, 'action': '<=50K', 'lifetime': 32560, 'id': 22184, 'condition': {'EDUCATION_NUM': [5.153373367540679, 14.68570933304127, 1, 1]}, 'accuracy': 0.7648536405653427}
-{'experience': 7290, 'action': '<=50K', 'lifetime': 32557, 'id': 22190, 'condition': {'EDUCATION': 1, 'EDUCATION_NUM': [4.149814236554917, 15.257314572863987, 1, 1]}, 'accuracy': 0.8097393689986283}
-{'experience': 981, 'action': '<=50K', 'lifetime': 32558, 'id': 22212, 'condition': {'RELATIONSHIP': 4}, 'accuracy': 0.9622833843017329}
-{'experience': 418, 'action': '<=50K', 'lifetime': 32558, 'id': 22218, 'condition': {'MARITAL_STATUS': 5}, 'accuracy': 0.9186602870813397}
-{'experience': 1452, 'action': '<=50K', 'lifetime': 32560, 'id': 22220, 'condition': {'AGE': [17.418162562280354, 58.41582801702805, 2, 2], 'OCCUPATION': 10}, 'accuracy': 0.8037190082644629}
-{'experience': 559, 'action': '>50K', 'lifetime': 32561, 'id': 22221, 'condition': {'CAPITAL_GAIN': [9540.907784728322, 22355.656876562796, 1000, 1000]}, 'accuracy': 0.9874776386404294}
-{'experience': 5068, 'action': '<=50K', 'lifetime': 32561, 'id': 22222, 'condition': {'RELATIONSHIP': 1}, 'accuracy': 0.9867797947908445}
-{'experience': 14508, 'action': '<=50K', 'lifetime': 32560, 'id': 22227, 'condition': {'HOURS_PER_WEEK': [8.415496755831649, 40.00029061953864, 0.5, 0.5], 'FNLWGT': [128370.31325381689, 353802.0540413563, 20000, 20000]}, 'accuracy': 0.8260839594678431}
-{'experience': 370, 'action': '<=50K', 'lifetime': 32561, 'id': 22228, 'condition': {'EDUCATION': 7, 'SEX': 1}, 'accuracy': 0.9405405405405406}
-{'experience': 22685, 'action': '<=50K', 'lifetime': 32558, 'id': 22238, 'condition': {'HOURS_PER_WEEK': [7.538978998714988, 40.977038214823494, 0.5, 0.5]}, 'accuracy': 0.8258243695997178}
-{'experience': 433, 'action': '<=50K', 'lifetime': 32559, 'id': 22242, 'condition': {'EDUCATION': 9}, 'accuracy': 0.9237875288683602}
-{'experience': 555, 'action': '>50K', 'lifetime': 32560, 'id': 22244, 'condition': {'CAPITAL_GAIN': [10136.796952936167, 23149.66689249287, 1000, 1000]}, 'accuracy': 0.9873873873873874}
-{'experience': 10770, 'action': '<=50K', 'lifetime': 32560, 'id': 22247, 'condition': {'SEX': 0}, 'accuracy': 0.8907048008171604}
-{'experience': 7365, 'action': '<=50K', 'lifetime': 32559, 'id': 22253, 'condition': {'AGE': [19.679200956418235, 59.88371100925782, 2, 2], 'RELATIONSHIP': 3}, 'accuracy': 0.8935505770536321}
-{'experience': 555, 'action': '>50K', 'lifetime': 32559, 'id': 22262, 'condition': {'CAPITAL_GAIN': [9847.162609778876, 24644.150730818237, 1000, 1000]}, 'accuracy': 0.9873873873873874}
-{'experience': 7467, 'action': '<=50K', 'lifetime': 32559, 'id': 22280, 'condition': {'HOURS_PER_WEEK': [7.877391560942526, 39.98461109047455, 0.5, 0.5]}, 'accuracy': 0.9055845721173162}
-{'experience': 10770, 'action': '<=50K', 'lifetime': 32560, 'id': 22283, 'condition': {'SEX': 0}, 'accuracy': 0.8907048008171604}
-{'experience': 580, 'action': '>50K', 'lifetime': 32558, 'id': 22298, 'condition': {'CAPITAL_GAIN': [9222.851756714757, 23183.987372056734, 1000, 1000]}, 'accuracy': 0.9879310344827587}
-{'experience': 555, 'action': '>50K', 'lifetime': 32560, 'id': 22303, 'condition': {'CAPITAL_GAIN': [9869.230358978508, 25041.58815523861, 1000, 1000]}, 'accuracy': 0.9873873873873874}
-{'experience': 124, 'action': '<=50K', 'lifetime': 32561, 'id': 22304, 'condition': {'MARITAL_STATUS': 0, 'RELATIONSHIP': 4}, 'accuracy': 0.8548387096774194}
-{'experience': 28176, 'action': '<=50K', 'lifetime': 32445, 'id': 22307, 'condition': {'AGE': [14, 58, 2.434656187820136, 2.291348046464152], 'EDUCATION_NUM': [4, 14, 1.3284633519974298, 1.1624170063712405]}, 'accuracy': 0.7732031943212068}
-{'experience': 31241, 'action': '<=50K', 'lifetime': 32443, 'id': 22308, 'condition': {'EDUCATION_NUM': [3, 14, 0.9421226300908909, 0.6260418296217899]}, 'accuracy': 0.7733674775928298}
-{'experience': 28041, 'action': '<=50K', 'lifetime': 32443, 'id': 22309, 'condition': {'EDUCATION_NUM': [6, 13, 1.002914101795593, 0.9919919187764132]}, 'accuracy': 0.7845577746077033}
-{'experience': 27110, 'action': '<=50K', 'lifetime': 32443, 'id': 22310, 'condition': {'EDUCATION_NUM': [7, 13, 0.7435926725175099, 0.7083781813441]}, 'accuracy': 0.779445940462577}
-{'experience': 16758, 'action': '<=50K', 'lifetime': 32425, 'id': 22311, 'condition': {'HOURS_PER_WEEK': [8.178620972263783, 40.07277330116605, 0.5, 0.5], 'RACE': 0, 'EDUCATION_NUM': [7, 15, 0.7158394699612045, 0.9014678773258172]}, 'accuracy': 0.8039028465715821}
-{'experience': 6137, 'action': '<=50K', 'lifetime': 32419, 'id': 22312, 'condition': {'HOURS_PER_WEEK': [8, 39, 0.5, 0.6648835127699875], 'FNLWGT': [83139.21130170905, 388537.4257527704, 20000, 20000]}, 'accuracy': 0.9023953071533323}
-{'experience': 7531, 'action': '<=50K', 'lifetime': 32418, 'id': 22314, 'condition': {'HOURS_PER_WEEK': [6, 39, 0.6550115748561153, 0.6914473819912504]}, 'accuracy': 0.9049263046076218}
-{'experience': 22646, 'action': '<=50K', 'lifetime': 32419, 'id': 22315, 'condition': {'HOURS_PER_WEEK': [7, 41, 0.5, 0.5]}, 'accuracy': 0.825877677191433}
-{'experience': 23142, 'action': '<=50K', 'lifetime': 32338, 'id': 22322, 'condition': {'EDUCATION_NUM': [5, 12, 1.258116073657092, 0.7034880894125325]}, 'accuracy': 0.8338446912406551}
-{'experience': 24117, 'action': '<=50K', 'lifetime': 32341, 'id': 22323, 'condition': {'EDUCATION_NUM': [3, 12, 1.0148308234562695, 0.5]}, 'accuracy': 0.8382816387460607}
-{'experience': 15427, 'action': '<=50K', 'lifetime': 32333, 'id': 22324, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5608283918954525, 0.5], 'FNLWGT': [121342, 373256, 17036.598722449868, 24598.793485789065]}, 'accuracy': 0.824776351614158}
-{'experience': 688, 'action': '<=50K', 'lifetime': 32327, 'id': 22328, 'condition': {'WORKCLASS': 5, 'EDUCATION_NUM': [4, 11, 1.4058749061452966, 0.9032170264698044]}, 'accuracy': 0.8590116279069767}
-{'experience': 22623, 'action': '<=50K', 'lifetime': 32325, 'id': 22329, 'condition': {'EDUCATION_NUM': [6, 12, 0.7370843585814654, 0.8696316564113836]}, 'accuracy': 0.8311820351869861}
-{'experience': 22609, 'action': '<=50K', 'lifetime': 32285, 'id': 22333, 'condition': {'HOURS_PER_WEEK': [6, 41, 0.5, 0.5300335796724692]}, 'accuracy': 0.8260350318471338}
-{'experience': 28585, 'action': '<=50K', 'lifetime': 32279, 'id': 22334, 'condition': {'AGE': [17, 56, 1.0946884410529307, 2.4348562850053574]}, 'accuracy': 0.764168765743073}
-{'experience': 1495, 'action': '<=50K', 'lifetime': 32268, 'id': 22336, 'condition': {'OCCUPATION': 10, 'EDUCATION_NUM': [2, 14, 0.5, 1.0984062523210658], 'SEX': 1}, 'accuracy': 0.7939799331103679}
-{'experience': 829, 'action': '<=50K', 'lifetime': 32255, 'id': 22340, 'condition': {'WORKCLASS': 4, 'SEX': 0}, 'accuracy': 0.8152173913043478}
-{'experience': 5813, 'action': '<=50K', 'lifetime': 32226, 'id': 22344, 'condition': {'HOURS_PER_WEEK': [8, 39, 0.5, 0.5725499108142772], 'RACE': 0, 'EDUCATION_NUM': [5, 14, 0.7691085556365008, 0.6414452482610702]}, 'accuracy': 0.9057285394804748}
-{'experience': 22967, 'action': '<=50K', 'lifetime': 32207, 'id': 22346, 'condition': {'EDUCATION_NUM': [3, 11, 1.043655836716266, 0.5320780055916026]}, 'accuracy': 0.8423321431681616}
-{'experience': 22964, 'action': '<=50K', 'lifetime': 32203, 'id': 22347, 'condition': {'EDUCATION_NUM': [3, 11, 1.6017058888642022, 0.6632528265112163]}, 'accuracy': 0.8423986412925141}
-{'experience': 28960, 'action': '<=50K', 'lifetime': 32183, 'id': 22350, 'condition': {'EDUCATION_NUM': [4, 13, 0.5741609954024244, 0.8342829179224438]}, 'accuracy': 0.7906695673193135}
-{'experience': 20181, 'action': '<=50K', 'lifetime': 32178, 'id': 22351, 'condition': {'AGE': [17, 58, 2.0841702704095746, 2.4859894964231297], 'HOURS_PER_WEEK': [7.593258930552738, 40.53232202279389, 0.5, 0.5]}, 'accuracy': 0.8304757185332012}
-{'experience': 22570, 'action': '<=50K', 'lifetime': 32149, 'id': 22355, 'condition': {'HOURS_PER_WEEK': [5, 41, 0.6493537980152934, 0.5]}, 'accuracy': 0.8263104258053081}
-{'experience': 13952, 'action': '<=50K', 'lifetime': 32130, 'id': 22356, 'condition': {'AGE': [15, 56, 1.7125374587997488, 4.5754149686748065], 'EDUCATION_NUM': [2, 12, 1.8560489677735816, 1.083084774903292], 'SEX': 1}, 'accuracy': 0.796516628440367}
-{'experience': 13527, 'action': '<=50K', 'lifetime': 32094, 'id': 22359, 'condition': {'HOURS_PER_WEEK': [8.256591122054887, 40.21316616307166, 0.5, 0.5], 'SEX': 1}, 'accuracy': 0.7710504916093739}
-{'experience': 453, 'action': '<=50K', 'lifetime': 32086, 'id': 22361, 'condition': {'HOURS_PER_WEEK': [6, 38, 0.5, 1.0167871147604943], 'MARITAL_STATUS': 4}, 'accuracy': 0.9558498896247241}
-{'experience': 7393, 'action': '<=50K', 'lifetime': 32087, 'id': 22362, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.7755304192737035, 0.5499867317719835]}, 'accuracy': 0.9051805762207493}
-{'experience': 21505, 'action': '<=50K', 'lifetime': 32072, 'id': 22366, 'condition': {'EDUCATION_NUM': [3, 10, 0.6416761729440105, 1.316259150861514]}, 'accuracy': 0.8487258184523809}
-{'experience': 29189, 'action': '<=50K', 'lifetime': 32073, 'id': 22367, 'condition': {'EDUCATION_NUM': [3, 13, 0.5194800400670846, 1.1478264293345488]}, 'accuracy': 0.7924146909688913}
-{'experience': 22864, 'action': '<=50K', 'lifetime': 32066, 'id': 22368, 'condition': {'EDUCATION_NUM': [3, 11, 1.2740993432077405, 0.5]}, 'accuracy': 0.8422341774920177}
-{'experience': 9420, 'action': '<=50K', 'lifetime': 32056, 'id': 22369, 'condition': {'AGE': [19, 60, 1.7667345048316394, 1.7406607250422326], 'SEX': 0}, 'accuracy': 0.8834271154050324}
-{'experience': 19459, 'action': '<=50K', 'lifetime': 32026, 'id': 22373, 'condition': {'AGE': [19, 59, 2.6660429102655128, 3.9937830042353712], 'HOURS_PER_WEEK': [7, 40, 0.5, 0.8406885433301838]}, 'accuracy': 0.820690718470552}
-{'experience': 22435, 'action': '<=50K', 'lifetime': 32014, 'id': 22374, 'condition': {'HOURS_PER_WEEK': [5, 40, 1.0431081538365776, 0.5]}, 'accuracy': 0.8260675760007132}
-{'experience': 6404, 'action': '<=50K', 'lifetime': 32013, 'id': 22375, 'condition': {'HOURS_PER_WEEK': [9, 39, 0.7564082232097297, 0.6018620495284916], 'EDUCATION_NUM': [7, 15, 0.7715927446533145, 1.0488536130004311]}, 'accuracy': 0.9003747657713929}
-{'experience': 7432, 'action': '<=50K', 'lifetime': 32003, 'id': 22377, 'condition': {'HOURS_PER_WEEK': [6, 39, 0.7623735809870473, 0.5]}, 'accuracy': 0.9047362755651238}
-{'experience': 22360, 'action': '<=50K', 'lifetime': 31965, 'id': 22379, 'condition': {'EDUCATION_NUM': [6, 12, 0.9705520763864559, 0.7240016471093893]}, 'accuracy': 0.8311641844447426}
-{'experience': 22763, 'action': '<=50K', 'lifetime': 31929, 'id': 22381, 'condition': {'EDUCATION_NUM': [3, 11, 1.9575163237284106, 0.6931714120397985]}, 'accuracy': 0.8421052631578947}
-{'experience': 21406, 'action': '<=50K', 'lifetime': 31926, 'id': 22382, 'condition': {'EDUCATION_NUM': [3, 10, 0.7150670058190757, 1.058098549398464]}, 'accuracy': 0.8485867787900023}
-{'experience': 8925, 'action': '<=50K', 'lifetime': 31903, 'id': 22384, 'condition': {'AGE': [13, 57, 1.5292822364182632, 4.614442883482559], 'EDUCATION_NUM': [0, 13, 2.5413322181060587, 0.7402822426701403], 'SEX': 0}, 'accuracy': 0.9101299865531152}
-{'experience': 10449, 'action': '<=50K', 'lifetime': 31877, 'id': 22385, 'condition': {'MARITAL_STATUS': 2}, 'accuracy': 0.9537754809072638}
-{'experience': 7511, 'action': '<=50K', 'lifetime': 31867, 'id': 22387, 'condition': {'HOURS_PER_WEEK': [4, 39, 0.8755324018526044, 0.842863424487622]}, 'accuracy': 0.9048062841166289}
-{'experience': 19321, 'action': '<=50K', 'lifetime': 31858, 'id': 22388, 'condition': {'AGE': [14, 55, 1.7873932928298812, 4.9715005849915075], 'HOURS_PER_WEEK': [5, 40, 0.8155206381773864, 0.651948196558566]}, 'accuracy': 0.8350414078674948}
-{'experience': 633, 'action': '<=50K', 'lifetime': 31853, 'id': 22389, 'condition': {'EDUCATION': 12, 'EDUCATION_NUM': [4, 13, 0.8429825020874964, 0.5211096205706223], 'SEX': 1}, 'accuracy': 0.9083728278041074}
-{'experience': 8014, 'action': '<=50K', 'lifetime': 31852, 'id': 22390, 'condition': {'HOURS_PER_WEEK': [8, 41, 0.6903787460311157, 0.5], 'EDUCATION_NUM': [6.002838803843257, 15.622691709798909, 1, 1], 'SEX': 0}, 'accuracy': 0.9065268937975789}
-{'experience': 8579, 'action': '<=50K', 'lifetime': 31803, 'id': 22395, 'condition': {'FNLWGT': [76416, 363447, 19096.877513857227, 34819.62887164109], 'EDUCATION_NUM': [2, 14, 0.5, 0.562402035065945], 'SEX': 0}, 'accuracy': 0.8953135929121008}
-{'experience': 14152, 'action': '<=50K', 'lifetime': 31790, 'id': 22396, 'condition': {'EDUCATION_NUM': [2, 10, 1.4598938240084887, 0.5377115189232742], 'SEX': 1}, 'accuracy': 0.8020067834934992}
-{'experience': 20982, 'action': '<=50K', 'lifetime': 31774, 'id': 22397, 'condition': {'EDUCATION_NUM': [4, 10, 0.8476851911315139, 1.0987530871769144]}, 'accuracy': 0.846861446070254}
-{'experience': 9763, 'action': '<=50K', 'lifetime': 31706, 'id': 22401, 'condition': {'AGE': [16, 60, 1.497198793414344, 1.1976786573625031], 'SEX': 0}, 'accuracy': 0.8889571809055521}
-{'experience': 6029, 'action': '<=50K', 'lifetime': 31693, 'id': 22404, 'condition': {'AGE': [17, 54, 2.4099500656845017, 3.9870217706269515], 'HOURS_PER_WEEK': [4, 39, 0.5842394466256668, 0.6685160291029861]}, 'accuracy': 0.9190578868800796}
-{'experience': 3345, 'action': '<=50K', 'lifetime': 31610, 'id': 22407, 'condition': {'RELATIONSHIP': 5}, 'accuracy': 0.9369207772795217}
-{'experience': 787, 'action': '<=50K', 'lifetime': 31612, 'id': 22408, 'condition': {'EDUCATION_NUM': [6.236074693982743, 14.8223048728145, 1, 1], 'RELATIONSHIP': 4}, 'accuracy': 0.9593392630241423}
-{'experience': 5871, 'action': '<=50K', 'lifetime': 31567, 'id': 22412, 'condition': {'HOURS_PER_WEEK': [9, 38, 0.9516209818921296, 0.7254771021533167], 'EDUCATION_NUM': [8, 16, 0.9380689059068457, 0.5572466781815467]}, 'accuracy': 0.8891159938681655}
-{'experience': 7450, 'action': '<=50K', 'lifetime': 31465, 'id': 22416, 'condition': {'HOURS_PER_WEEK': [3, 39, 0.5, 0.618884205399224]}, 'accuracy': 0.9046979865771813}
-{'experience': 7050, 'action': '<=50K', 'lifetime': 31427, 'id': 22418, 'condition': {'FNLWGT': [113512, 340195, 12822.752076425691, 28672.553657479886], 'EDUCATION_NUM': [2, 14, 0.7484244328367875, 0.5], 'SEX': 0}, 'accuracy': 0.898992764931196}
-{'experience': 2487, 'action': '<=50K', 'lifetime': 31231, 'id': 22420, 'condition': {'RELATIONSHIP': 5, 'EDUCATION_NUM': [7, 12, 1.536666881543992, 0.9805307132036802]}, 'accuracy': 0.9662243667068757}
-{'experience': 2819, 'action': '<=50K', 'lifetime': 31136, 'id': 22421, 'condition': {'EDUCATION_NUM': [1, 8, 0.7554642484893288, 0.5], 'SEX': 1}, 'accuracy': 0.9251507626818021}
-{'experience': 5914, 'action': '<=50K', 'lifetime': 31087, 'id': 22422, 'condition': {'AGE': [11, 54, 4.760930393475666, 3.1480553321961304], 'HOURS_PER_WEEK': [3, 38, 0.6227364170488456, 0.5]}, 'accuracy': 0.9195130199526547}
-{'experience': 7313, 'action': '<=50K', 'lifetime': 30966, 'id': 22425, 'condition': {'HOURS_PER_WEEK': [3, 38, 0.5, 0.617073122852039]}, 'accuracy': 0.9055107343087652}
-{'experience': 5758, 'action': '<=50K', 'lifetime': 30956, 'id': 22426, 'condition': {'HOURS_PER_WEEK': [10, 38, 1.2519602121985431, 0.5582353475682816], 'EDUCATION_NUM': [8, 16, 0.7691239446742152, 0.5095370990104822]}, 'accuracy': 0.8890239666550885}
-{'experience': 940, 'action': '<=50K', 'lifetime': 30613, 'id': 22428, 'condition': {'RELATIONSHIP': 4}, 'accuracy': 0.9648936170212766}
-{'experience': 5237, 'action': '<=50K', 'lifetime': 30503, 'id': 22429, 'condition': {'AGE': [13, 46, 5.8775190730742795, 4.41083340989421], 'HOURS_PER_WEEK': [2, 38, 0.653655245918909, 0.5]}, 'accuracy': 0.9335497422188276}
-{'experience': 7213, 'action': '<=50K', 'lifetime': 30485, 'id': 22430, 'condition': {'HOURS_PER_WEEK': [3, 38, 0.5692310899767866, 0.5]}, 'accuracy': 0.9058644114792735}
-{'experience': 5255, 'action': '<=50K', 'lifetime': 30334, 'id': 22433, 'condition': {'HOURS_PER_WEEK': [10, 37, 1.6807809638159177, 0.5386551477458887], 'EDUCATION_NUM': [8, 16, 0.6098876035746222, 0.6099434105930667]}, 'accuracy': 0.8966698382492864}
-{'experience': 508, 'action': '<=50K', 'lifetime': 30166, 'id': 22434, 'condition': {'RELATIONSHIP': 3, 'EDUCATION_NUM': [1, 8, 0.7613945484224004, 0.5], 'SEX': 1}, 'accuracy': 0.9625984251968503}
-{'experience': 3514, 'action': '<=50K', 'lifetime': 30050, 'id': 22435, 'condition': {'HOURS_PER_WEEK': [2, 38, 0.5927531790402728, 0.5], 'MARITAL_STATUS': 2}, 'accuracy': 0.9903244166192373}
-{'experience': 2578, 'action': '<=50K', 'lifetime': 29959, 'id': 22436, 'condition': {'EDUCATION_NUM': [8, 13, 1.2273246309327956, 0.8710060992570655], 'RELATIONSHIP': 5}, 'accuracy': 0.9484096198603569}
-{'experience': 5137, 'action': '<=50K', 'lifetime': 29833, 'id': 22437, 'condition': {'AGE': [15, 46, 6.699859479196123, 4.6954253920220905], 'HOURS_PER_WEEK': [2, 38, 0.7379121595365242, 0.6116009695154421]}, 'accuracy': 0.9338135098306405}
-{'experience': 5714, 'action': '<=50K', 'lifetime': 29724, 'id': 22438, 'condition': {'HOURS_PER_WEEK': [10, 36, 1.553264497609493, 0.8064965240357721], 'EDUCATION_NUM': [6, 16, 0.6589550435087096, 0.694171861058526]}, 'accuracy': 0.9072453622681134}
-{'experience': 2210, 'action': '<=50K', 'lifetime': 29189, 'id': 22440, 'condition': {'AGE': [23, 40, 7.939691538342494, 6.185703540384245], 'HOURS_PER_WEEK': [1, 37, 1.1444272700269076, 0.5992592511620174]}, 'accuracy': 0.9135746606334841}
-{'experience': 5705, 'action': '<=50K', 'lifetime': 29136, 'id': 22441, 'condition': {'HOURS_PER_WEEK': [9, 37, 2.376623151237289, 0.8223370336265632], 'EDUCATION_NUM': [6, 15, 0.9932801022183058, 0.6940008389418886]}, 'accuracy': 0.9107800175284838}
-{'experience': 692, 'action': '<=50K', 'lifetime': 28979, 'id': 22443, 'condition': {'RELATIONSHIP': 5, 'SEX': 1}, 'accuracy': 0.8627167630057804}
-{'experience': 819, 'action': '<=50K', 'lifetime': 28864, 'id': 22445, 'condition': {'AGE': [17.392028654794526, 63.54698829522023, 2, 2], 'RELATIONSHIP': 4}, 'accuracy': 0.9658119658119658}
-{'experience': 5647, 'action': '<=50K', 'lifetime': 28687, 'id': 22447, 'condition': {'HOURS_PER_WEEK': [9, 37, 2.2753864352783983, 0.6872828933543461], 'EDUCATION_NUM': [5, 14, 0.7228052281992516, 1.2251192552267285]}, 'accuracy': 0.9183637329555516}
-{'experience': 5617, 'action': '<=50K', 'lifetime': 28219, 'id': 22448, 'condition': {'HOURS_PER_WEEK': [9, 37, 2.168783508151745, 0.655804067841621], 'EDUCATION_NUM': [1, 13, 0.5864932802530161, 1.5362666997891254]}, 'accuracy': 0.9286095780665836}
-{'experience': 510, 'action': '<=50K', 'lifetime': 28026, 'id': 22449, 'condition': {'AGE': [19, 67, 2.5774547365022764, 1.7199629864918937], 'EDUCATION': 12, 'FNLWGT': [80646.90297190403, 374030.19011859456, 20000, 20000]}, 'accuracy': 0.9196078431372549}
-{'experience': 3436, 'action': '<=50K', 'lifetime': 27780, 'id': 22450, 'condition': {'AGE': [17, 34, 11.880673186410101, 5.065795612981005], 'HOURS_PER_WEEK': [1, 36, 1.1493030283288295, 0.5465689932606508]}, 'accuracy': 0.9758440046565774}
-{'experience': 5709, 'action': '<=50K', 'lifetime': 27727, 'id': 22451, 'condition': {'HOURS_PER_WEEK': [9, 37, 1.8325287942808617, 0.539002080678015], 'EDUCATION_NUM': [1, 14, 0.5, 1.0601474834394509]}, 'accuracy': 0.9206516027325276}
-{'experience': 840, 'action': '<=50K', 'lifetime': 27720, 'id': 22452, 'condition': {'RELATIONSHIP': 4}, 'accuracy': 0.9654761904761905}
-{'experience': 645, 'action': '<=50K', 'lifetime': 27700, 'id': 22453, 'condition': {'RELATIONSHIP': 4, 'EDUCATION_NUM': [6, 12, 0.7549947517123007, 0.564384664246283]}, 'accuracy': 0.9689922480620154}
-{'experience': 533, 'action': '<=50K', 'lifetime': 27588, 'id': 22454, 'condition': {'EDUCATION': 12, 'EDUCATION_NUM': [4, 13, 0.5342642848567076, 0.5230763012482463], 'SEX': 1}, 'accuracy': 0.9118198874296435}
-{'experience': 433, 'action': '<=50K', 'lifetime': 27441, 'id': 22456, 'condition': {'AGE': [21.016108734228037, 58.03877121201226, 2, 2], 'WORKCLASS': 5, 'EDUCATION_NUM': [5, 10, 1.1624776332166098, 1.0659715726301924]}, 'accuracy': 0.8429561200923787}
-{'experience': 5717, 'action': '<=50K', 'lifetime': 27245, 'id': 22457, 'condition': {'HOURS_PER_WEEK': [8, 36, 2.0019000151836237, 0.5], 'EDUCATION_NUM': [1, 16, 0.5, 0.9625059257872867]}, 'accuracy': 0.9116669581948574}
-{'experience': 3128, 'action': '<=50K', 'lifetime': 27052, 'id': 22458, 'condition': {'AGE': [17, 32, 11.841498474728153, 5.285464274014609], 'HOURS_PER_WEEK': [1, 36, 1.3501002628965955, 0.5604077496311306]}, 'accuracy': 0.9811381074168798}
-{'experience': 481, 'action': '>50K', 'lifetime': 26858, 'id': 22459, 'condition': {'CAPITAL_GAIN': [8786, 21926, 519.6506449248391, 1078.4936194835068]}, 'accuracy': 0.9896049896049897}
-{'experience': 532, 'action': '>50K', 'lifetime': 26768, 'id': 22461, 'condition': {'CAPITAL_GAIN': [8178, 25674, 997.9044121056795, 582.2593027626009]}, 'accuracy': 0.9906015037593985}
-{'experience': 402, 'action': '>50K', 'lifetime': 26769, 'id': 22462, 'condition': {'CAPITAL_GAIN': [12011, 23483, 1311.2312496580564, 1290.1686410103243]}, 'accuracy': 1.0}
-{'experience': 262, 'action': '>50K', 'lifetime': 26769, 'id': 22464, 'condition': {'WORKCLASS': 0, 'CAPITAL_GAIN': [10550, 23689, 811.2566599060077, 1202.8792069148913]}, 'accuracy': 0.9885496183206107}
-{'experience': 5329, 'action': '<=50K', 'lifetime': 26753, 'id': 22467, 'condition': {'HOURS_PER_WEEK': [8, 35, 1.6455632525786414, 0.5], 'EDUCATION_NUM': [1, 14, 0.614453772029538, 0.7941906178763658]}, 'accuracy': 0.9243760555451305}
-{'experience': 5292, 'action': '<=50K', 'lifetime': 26256, 'id': 22468, 'condition': {'HOURS_PER_WEEK': [8, 35, 1.327956119030953, 0.5], 'EDUCATION_NUM': [0, 15, 0.7213337338204487, 1.0718072405616026]}, 'accuracy': 0.9196900982615268}
-{'experience': 407, 'action': '>50K', 'lifetime': 26132, 'id': 22469, 'condition': {'CAPITAL_GAIN': [11012, 25728, 1027.5900375261892, 718.0766141621439]}, 'accuracy': 1.0}
-{'experience': 392, 'action': '>50K', 'lifetime': 26132, 'id': 22470, 'condition': {'CAPITAL_GAIN': [12730, 24814, 1009.9749766132087, 821.3035726051605]}, 'accuracy': 1.0}
-{'experience': 1727, 'action': '<=50K', 'lifetime': 26125, 'id': 22471, 'condition': {'AGE': [21, 32, 6.982841266845897, 4.105310888382836], 'HOURS_PER_WEEK': [1, 36, 0.6791528619543414, 0.5]}, 'accuracy': 0.9664157498552403}
-{'experience': 713, 'action': '<=50K', 'lifetime': 25722, 'id': 22474, 'condition': {'AGE': [19, 66, 1.6109524089721226, 1.5409200023549188], 'RELATIONSHIP': 4}, 'accuracy': 0.9635343618513323}
-{'experience': 257, 'action': '>50K', 'lifetime': 25406, 'id': 22475, 'condition': {'FNLWGT': [104476, 312011, 15111.518615135952, 26735.73283883142], 'CAPITAL_GAIN': [11076, 24248, 1363.734722348797, 2439.389740078721]}, 'accuracy': 1.0}
-{'experience': 24357, 'action': '<=50K', 'lifetime': 25127, 'id': 22477, 'condition': {'EDUCATION_NUM': [3.42430065815181, 15.683343296566646, 1, 1]}, 'accuracy': 0.7619888323205781}
-{'experience': 8042, 'action': '<=50K', 'lifetime': 25023, 'id': 22478, 'condition': {'EDUCATION_NUM': [5, 16, 1.739337928065403, 0.9464848894715301], 'SEX': 0}, 'accuracy': 0.8901877875886084}
-{'experience': 592, 'action': '<=50K', 'lifetime': 24893, 'id': 22479, 'condition': {'RELATIONSHIP': 5, 'SEX': 1}, 'accuracy': 0.8682432432432432}
-{'experience': 7875, 'action': '<=50K', 'lifetime': 24714, 'id': 22480, 'condition': {'EDUCATION_NUM': [5, 15, 1.254932454412874, 1.6274975318765925], 'SEX': 0}, 'accuracy': 0.8935737871475743}
-{'experience': 408, 'action': '<=50K', 'lifetime': 24692, 'id': 22481, 'condition': {'EDUCATION_NUM': [0, 8, 0.5, 0.5], 'RELATIONSHIP': 3, 'SEX': 1}, 'accuracy': 0.9681372549019608}
-{'experience': 1470, 'action': '<=50K', 'lifetime': 24629, 'id': 22482, 'condition': {'AGE': [16, 31, 9.301730290272225, 5.145733438776009], 'HOURS_PER_WEEK': [0, 35, 0.6175942496244786, 0.8893984323418352], 'SEX': 0}, 'accuracy': 0.9850340136054422}
-{'experience': 8084, 'action': '<=50K', 'lifetime': 24414, 'id': 22484, 'condition': {'EDUCATION_NUM': [1, 17, 0.9384738033198167, 1.7359884493870175], 'SEX': 0}, 'accuracy': 0.892861561301497}
-{'experience': 335, 'action': '<=50K', 'lifetime': 24400, 'id': 22485, 'condition': {'HOURS_PER_WEEK': [6, 36, 0.5126255174116328, 1.1992275362122617], 'MARITAL_STATUS': 4}, 'accuracy': 0.9522388059701492}
-{'experience': 2812, 'action': '<=50K', 'lifetime': 24136, 'id': 22487, 'condition': {'RELATIONSHIP': 3, 'EDUCATION_NUM': [0, 15, 0.7095324632115427, 2.745533384628072], 'SEX': 0}, 'accuracy': 0.9324324324324325}
-{'experience': 270, 'action': '<=50K', 'lifetime': 23593, 'id': 22488, 'condition': {'EDUCATION': 7, 'SEX': 1}, 'accuracy': 0.9333333333333333}
-{'experience': 333, 'action': '<=50K', 'lifetime': 23296, 'id': 22490, 'condition': {'EDUCATION': 9}, 'accuracy': 0.918918918918919}
-{'experience': 2712, 'action': '<=50K', 'lifetime': 23284, 'id': 22491, 'condition': {'EDUCATION_NUM': [0, 15, 0.824730189637147, 2.615159525107128], 'RELATIONSHIP': 3, 'SEX': 0}, 'accuracy': 0.9343657817109144}
-{'experience': 400, 'action': '<=50K', 'lifetime': 23057, 'id': 22492, 'condition': {'AGE': [18, 67, 2.744026743176284, 1.1393690498839557], 'EDUCATION': 12, 'FNLWGT': [77470, 327199, 22207.72064488933, 18857.952223053206]}, 'accuracy': 0.93}
-{'experience': 734, 'action': '<=50K', 'lifetime': 22853, 'id': 22493, 'condition': {'AGE': [19, 33, 7.164780575336748, 6.521201472957199], 'HOURS_PER_WEEK': [0, 34, 0.7190755043451422, 0.6711426992412478], 'SEX': 1}, 'accuracy': 0.9836512261580381}
-{'experience': 204, 'action': '<=50K', 'lifetime': 22486, 'id': 22494, 'condition': {'EDUCATION': 12, 'EDUCATION_NUM': [3, 12, 0.5, 0.5], 'SEX': 0}, 'accuracy': 0.9901960784313726}
-{'experience': 1427, 'action': '<=50K', 'lifetime': 22366, 'id': 22495, 'condition': {'HOURS_PER_WEEK': [8.754900876603843, 40.27451256074783, 0.5, 0.5], 'RELATIONSHIP': 1, 'EDUCATION_NUM': [0, 15, 0.9792275927421819, 3.673297986579592], 'SEX': 0}, 'accuracy': 0.9887876664330764}
-{'experience': 426, 'action': '>50K', 'lifetime': 21894, 'id': 22496, 'condition': {'CAPITAL_GAIN': [7968, 25193, 739.1888396147568, 522.7204405340815]}, 'accuracy': 0.9929577464788732}
-{'experience': 636, 'action': '<=50K', 'lifetime': 21757, 'id': 22497, 'condition': {'AGE': [18, 67, 1.8302522142801638, 1.228731230668279], 'RELATIONSHIP': 4}, 'accuracy': 0.9622641509433962}
-{'experience': 311, 'action': '<=50K', 'lifetime': 21619, 'id': 22499, 'condition': {'EDUCATION': 9}, 'accuracy': 0.9163987138263665}
-{'experience': 371, 'action': '<=50K', 'lifetime': 21074, 'id': 22500, 'condition': {'AGE': [22, 60, 2.4979473412880915, 1.9107689452987426], 'WORKCLASS': 5, 'EDUCATION_NUM': [4, 11, 1.3563500324427975, 1.0466425187287702]}, 'accuracy': 0.8382749326145552}
-{'experience': 2546, 'action': '<=50K', 'lifetime': 20755, 'id': 22501, 'condition': {'HOURS_PER_WEEK': [7.923999817558429, 39.838758782809386, 0.5, 0.5], 'SEX': 0}, 'accuracy': 0.924980361351139}
-{'experience': 1598, 'action': '<=50K', 'lifetime': 20476, 'id': 22502, 'condition': {'HOURS_PER_WEEK': [9, 40, 0.5, 0.5], 'AGE': [17.07591823958942, 61.08531128814855, 2, 2], 'EDUCATION_NUM': [5, 19, 1.2282912541392468, 3.9186786662263016], 'RELATIONSHIP': 3, 'SEX': 0}, 'accuracy': 0.9524405506883604}
-{'experience': 5463, 'action': '<=50K', 'lifetime': 19905, 'id': 22503, 'condition': {'HOURS_PER_WEEK': [7, 40, 0.5, 0.5], 'SEX': 0}, 'accuracy': 0.9121201025265471}
-{'experience': 1904, 'action': '<=50K', 'lifetime': 19788, 'id': 22504, 'condition': {'RACE': 4}, 'accuracy': 0.8765756302521008}
-{'experience': 940, 'action': '<=50K', 'lifetime': 19703, 'id': 22505, 'condition': {'AGE': [11, 38, 9.998265858436522, 9.392627274765799], 'HOURS_PER_WEEK': [0, 33, 0.7297783179440267, 0.5425610375066802], 'SEX': 1}, 'accuracy': 0.9797872340425532}
-{'experience': 190, 'action': '<=50K', 'lifetime': 19576, 'id': 22506, 'condition': {'HOURS_PER_WEEK': [6, 40, 0.5, 0.8623852988446985], 'MARITAL_STATUS': 5}, 'accuracy': 0.9526315789473684}
-{'experience': 164, 'action': '<=50K', 'lifetime': 19307, 'id': 22507, 'condition': {'RELATIONSHIP': 3, 'HOURS_PER_WEEK': [9, 39, 0.5, 0.7958784896670039], 'AGE': [18, 59, 1.24943426340399, 1.1368374829956849], 'EDUCATION_NUM': [11, 15, 1.63705427316375, 3.3964378746151915], 'SEX': 0}, 'accuracy': 0.9634146341463414}
-{'experience': 302, 'action': '>50K', 'lifetime': 19269, 'id': 22508, 'condition': {'CAPITAL_GAIN': [13091, 24203, 1103.3870910994146, 1513.1306495101383]}, 'accuracy': 1.0}
-{'experience': 307, 'action': '>50K', 'lifetime': 19033, 'id': 22509, 'condition': {'CAPITAL_GAIN': [11399, 25929, 1314.166694273311, 1008.3710400657778]}, 'accuracy': 1.0}
-{'experience': 270, 'action': '<=50K', 'lifetime': 18650, 'id': 22510, 'condition': {'RELATIONSHIP': 3, 'EDUCATION_NUM': [0, 7, 0.5, 0.5], 'SEX': 1}, 'accuracy': 0.9703703703703703}
-{'experience': 302, 'action': '>50K', 'lifetime': 18577, 'id': 22512, 'condition': {'CAPITAL_GAIN': [11446, 25860, 1610.0604585644812, 1604.6964330049175]}, 'accuracy': 1.0}
-{'experience': 548, 'action': '<=50K', 'lifetime': 18073, 'id': 22513, 'condition': {'AGE': [17, 66, 1.3373548700451319, 1.8335154985840425], 'RELATIONSHIP': 4}, 'accuracy': 0.9616788321167883}
-{'experience': 238, 'action': '<=50K', 'lifetime': 17701, 'id': 22514, 'condition': {'HOURS_PER_WEEK': [6, 37, 0.5, 0.9027907918300428], 'MARITAL_STATUS': 4}, 'accuracy': 0.9495798319327731}
-{'experience': 1202, 'action': '<=50K', 'lifetime': 17435, 'id': 22515, 'condition': {'AGE': [12, 65, 11.851303833541717, 15.060607099015938], 'HOURS_PER_WEEK': [0, 33, 1.1068884998897015, 0.8056818487957854], 'SEX': 1}, 'accuracy': 0.9409317803660566}
-{'experience': 180, 'action': '>50K', 'lifetime': 17174, 'id': 22516, 'condition': {'WORKCLASS': 0, 'CAPITAL_GAIN': [9842, 22471, 963.6686091880682, 1150.957730678446]}, 'accuracy': 0.9944444444444445}
-{'experience': 272, 'action': '<=50K', 'lifetime': 16956, 'id': 22517, 'condition': {'AGE': [18, 66, 2.839893212473345, 1.472746785784589], 'EDUCATION': 12, 'FNLWGT': [106216, 321336, 25978.921100510972, 11307.22134400427]}, 'accuracy': 0.9301470588235294}
-{'experience': 322, 'action': '>50K', 'lifetime': 16189, 'id': 22518, 'condition': {'CAPITAL_GAIN': [8577, 24939, 1072.4145646785764, 451.67312573498185]}, 'accuracy': 0.9968944099378882}
-{'experience': 1257, 'action': '<=50K', 'lifetime': 15792, 'id': 22519, 'condition': {'AGE': [0, 76, 8.69130955440243, 10.015704259627674], 'HOURS_PER_WEEK': [0, 32, 0.8817055259566545, 0.8020188209588591], 'SEX': 1}, 'accuracy': 0.9236276849642004}
-{'experience': 1902, 'action': '<=50K', 'lifetime': 14834, 'id': 22521, 'condition': {'OCCUPATION': 1}, 'accuracy': 0.7712933753943217}
-{'experience': 1173, 'action': '<=50K', 'lifetime': 14440, 'id': 22523, 'condition': {'AGE': [0, 80, 7.843364419497333, 7.553762099064213], 'HOURS_PER_WEEK': [0, 32, 1.1258593035311573, 1.068152890520081], 'SEX': 1}, 'accuracy': 0.9215686274509803}
-{'experience': 169, 'action': '>50K', 'lifetime': 14410, 'id': 22524, 'condition': {'FNLWGT': [62550, 345334, 15025.948780516263, 27375.192507080246], 'CAPITAL_GAIN': [12101, 18766, 716.3604236833945, 1841.7669997024034]}, 'accuracy': 1.0}
-{'experience': 205, 'action': '<=50K', 'lifetime': 14024, 'id': 22525, 'condition': {'EDUCATION': 7, 'FNLWGT': [63289.232032275824, 410613.64043050824, 20000, 20000]}, 'accuracy': 0.9414634146341463}
-{'experience': 139, 'action': '<=50K', 'lifetime': 13470, 'id': 22528, 'condition': {'EDUCATION': 14}, 'accuracy': 0.9568345323741008}
-{'experience': 1087, 'action': '<=50K', 'lifetime': 13224, 'id': 22529, 'condition': {'AGE': [9, 82, 6.55384254732362, 5.7263119476588376], 'HOURS_PER_WEEK': [0, 33, 1.3399188336607637, 1.0674155107074468], 'SEX': 1}, 'accuracy': 0.921803127874885}
-{'experience': 202, 'action': '>50K', 'lifetime': 13194, 'id': 22530, 'condition': {'CAPITAL_GAIN': [12774, 25121, 1003.1874776892741, 1947.5604831786206]}, 'accuracy': 1.0}
-{'experience': 207, 'action': '>50K', 'lifetime': 13002, 'id': 22531, 'condition': {'CAPITAL_GAIN': [10909, 27147, 1310.8895954379366, 968.8316055197324]}, 'accuracy': 1.0}
-{'experience': 196, 'action': '>50K', 'lifetime': 12409, 'id': 22532, 'condition': {'CAPITAL_GAIN': [13533, 25149, 1817.7809332947272, 1320.9889591718552]}, 'accuracy': 1.0}
-{'experience': 104, 'action': '<=50K', 'lifetime': 12246, 'id': 22533, 'condition': {'EDUCATION': 12, 'EDUCATION_NUM': [2, 11, 0.6688773610617952, 0.5], 'SEX': 0}, 'accuracy': 1.0}
-{'experience': 501, 'action': '<=50K', 'lifetime': 11994, 'id': 22535, 'condition': {'AGE': [8, 78, 9.479086163902718, 6.504473310922181], 'MARITAL_STATUS': 0, 'HOURS_PER_WEEK': [0, 33, 0.8037652346502405, 1.0828664535723882]}, 'accuracy': 0.766}
-{'experience': 203, 'action': '>50K', 'lifetime': 10979, 'id': 22538, 'condition': {'CAPITAL_GAIN': [8938, 25157, 942.1257883908469, 367.50132111056826]}, 'accuracy': 1.0}
-{'experience': 372, 'action': '<=50K', 'lifetime': 9727, 'id': 22540, 'condition': {'AGE': [3, 71, 10.857235678373444, 6.892672799790415], 'MARITAL_STATUS': 0, 'HOURS_PER_WEEK': [0, 33, 0.5467269277723882, 1.2887539338764318]}, 'accuracy': 0.7669376693766937}
-{'experience': 209, 'action': '<=50K', 'lifetime': 7130, 'id': 22543, 'condition': {'HOURS_PER_WEEK': [9, 38, 0.5, 0.9118088603640492], 'SEX': 0, 'AGE': [17, 59, 1.3867185025741153, 1.399644176788195], 'RELATIONSHIP': 1, 'EDUCATION_NUM': [8, 15, 1.2572433209036686, 3.1794006248910454]}, 'accuracy': 0.9904306220095693}
+{'experience': 717, 'action': '<=50K', 'lifetime': 32560, 'id': 42264, 'condition': {'MARITAL_STATUS': 3, 'RACE': 0}, 'accuracy': 0.9205020920502092}
+{'experience': 5068, 'action': '<=50K', 'lifetime': 32560, 'id': 42266, 'condition': {'RELATIONSHIP': 1}, 'accuracy': 0.9867797947908445}
+{'experience': 10771, 'action': '<=50K', 'lifetime': 32561, 'id': 42267, 'condition': {'SEX': 0}, 'accuracy': 0.8906220984215413}
+{'experience': 271, 'action': '<=50K', 'lifetime': 32556, 'id': 42294, 'condition': {'RACE': 3}, 'accuracy': 0.9077490774907749}
+{'experience': 5068, 'action': '<=50K', 'lifetime': 32559, 'id': 42300, 'condition': {'RELATIONSHIP': 1}, 'accuracy': 0.9867797947908445}
+{'experience': 168, 'action': '<=50K', 'lifetime': 32559, 'id': 42304, 'condition': {'EDUCATION': 11}, 'accuracy': 0.9642857142857143}
+{'experience': 311, 'action': '<=50K', 'lifetime': 32560, 'id': 42309, 'condition': {'RACE': 2}, 'accuracy': 0.8842443729903537}
+{'experience': 581, 'action': '>50K', 'lifetime': 32560, 'id': 42311, 'condition': {'CAPITAL_GAIN': [9075.413389870766, 23227.179047214486, 1000, 1000]}, 'accuracy': 0.9879518072289156}
+{'experience': 10683, 'action': '<=50K', 'lifetime': 32559, 'id': 42314, 'condition': {'MARITAL_STATUS': 2}, 'accuracy': 0.9540391275858842}
+{'experience': 271, 'action': '<=50K', 'lifetime': 32560, 'id': 42316, 'condition': {'RACE': 3}, 'accuracy': 0.9077490774907749}
+{'experience': 10682, 'action': '<=50K', 'lifetime': 32558, 'id': 42324, 'condition': {'MARITAL_STATUS': 2}, 'accuracy': 0.9540348249391499}
+{'experience': 555, 'action': '>50K', 'lifetime': 32559, 'id': 42328, 'condition': {'CAPITAL_GAIN': [9658.491588120281, 23459.07296805016, 1000, 1000]}, 'accuracy': 0.9873873873873874}
+{'experience': 2002, 'action': '<=50K', 'lifetime': 32561, 'id': 42329, 'condition': {'OCCUPATION': 7}, 'accuracy': 0.8755622188905547}
+{'experience': 21192, 'action': '<=50K', 'lifetime': 32559, 'id': 42342, 'condition': {'HOURS_PER_WEEK': [8.236878232483171, 40.254104273449585, 0.5, 0.5], 'EDUCATION_NUM': [5.792555587058041, 17.201363995180447, 1, 1]}, 'accuracy': 0.8164786937850974}
+{'experience': 981, 'action': '<=50K', 'lifetime': 32558, 'id': 42355, 'condition': {'RELATIONSHIP': 4}, 'accuracy': 0.9622833843017329}
+{'experience': 7322, 'action': '<=50K', 'lifetime': 32560, 'id': 42366, 'condition': {'HOURS_PER_WEEK': [8.258192283338955, 39.066797755132086, 0.5, 0.5]}, 'accuracy': 0.9052171537831194}
+{'experience': 30373, 'action': '<=50K', 'lifetime': 32560, 'id': 42372, 'condition': {'EDUCATION_NUM': [4.133103615069487, 14.236019949288496, 1, 1]}, 'accuracy': 0.7679441590939022}
+{'experience': 7323, 'action': '<=50K', 'lifetime': 32560, 'id': 42374, 'condition': {'HOURS_PER_WEEK': [8.50494523232862, 39.88298342415805, 0.5, 0.5]}, 'accuracy': 0.9052300969548}
+{'experience': 4441, 'action': '<=50K', 'lifetime': 32557, 'id': 42379, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8959693762666067}
+{'experience': 10770, 'action': '<=50K', 'lifetime': 32558, 'id': 42397, 'condition': {'SEX': 0}, 'accuracy': 0.8907048008171604}
+{'experience': 551, 'action': '<=50K', 'lifetime': 32559, 'id': 42400, 'condition': {'RELATIONSHIP': 4, 'SEX': 1}, 'accuracy': 0.9582577132486388}
+{'experience': 5068, 'action': '<=50K', 'lifetime': 32561, 'id': 42401, 'condition': {'RELATIONSHIP': 1}, 'accuracy': 0.9867797947908445}
+{'experience': 271, 'action': '<=50K', 'lifetime': 32559, 'id': 42406, 'condition': {'RACE': 3}, 'accuracy': 0.9077490774907749}
+{'experience': 8305, 'action': '<=50K', 'lifetime': 32561, 'id': 42407, 'condition': {'RELATIONSHIP': 3}, 'accuracy': 0.8969295605057195}
+{'experience': 418, 'action': '<=50K', 'lifetime': 32561, 'id': 42408, 'condition': {'MARITAL_STATUS': 5}, 'accuracy': 0.9186602870813397}
+{'experience': 494, 'action': '>50K', 'lifetime': 32560, 'id': 42410, 'condition': {'CAPITAL_GAIN': [10775.97305291523, 23658.76374954919, 1000, 1000]}, 'accuracy': 0.9979757085020243}
+{'experience': 29859, 'action': '<=50K', 'lifetime': 32560, 'id': 42412, 'condition': {'EDUCATION_NUM': [5.780809025179656, 14.661378405707689, 1, 1]}, 'accuracy': 0.7648201487038649}
+{'experience': 3124, 'action': '<=50K', 'lifetime': 32560, 'id': 42414, 'condition': {'RACE': 4}, 'accuracy': 0.8761203585147247}
+{'experience': 933, 'action': '<=50K', 'lifetime': 32560, 'id': 42417, 'condition': {'EDUCATION': 12}, 'accuracy': 0.9335476956055734}
+{'experience': 311, 'action': '<=50K', 'lifetime': 32561, 'id': 42418, 'condition': {'RACE': 2}, 'accuracy': 0.8842443729903537}
+{'experience': 3124, 'action': '<=50K', 'lifetime': 32560, 'id': 42420, 'condition': {'RACE': 4}, 'accuracy': 0.8761203585147247}
+{'experience': 27204, 'action': '<=50K', 'lifetime': 32561, 'id': 42421, 'condition': {'EDUCATION_NUM': [6.040646140575172, 13.767874472033048, 1, 1]}, 'accuracy': 0.7793993309561446}
+{'experience': 213, 'action': '<=50K', 'lifetime': 32558, 'id': 42428, 'condition': {'RACE': 3, 'WORKCLASS': 0}, 'accuracy': 0.9389671361502347}
+{'experience': 433, 'action': '<=50K', 'lifetime': 32561, 'id': 42429, 'condition': {'EDUCATION': 9}, 'accuracy': 0.9237875288683602}
+{'experience': 418, 'action': '<=50K', 'lifetime': 32559, 'id': 42432, 'condition': {'MARITAL_STATUS': 5}, 'accuracy': 0.9186602870813397}
+{'experience': 555, 'action': '>50K', 'lifetime': 32559, 'id': 42436, 'condition': {'CAPITAL_GAIN': [10234.255196626687, 24793.16054333222, 1000, 1000]}, 'accuracy': 0.9873873873873874}
+{'experience': 4726, 'action': '<=50K', 'lifetime': 32561, 'id': 42437, 'condition': {'AGE': [21.90210884683541, 62.369969141800716, 2, 2], 'HOURS_PER_WEEK': [7.396119351808464, 39.70037412064674, 0.5, 0.5]}, 'accuracy': 0.8736775285653829}
+{'experience': 888, 'action': '<=50K', 'lifetime': 32559, 'id': 42445, 'condition': {'MARITAL_STATUS': 4, 'EDUCATION_NUM': [4.785657099018932, 15.133338079838502, 1, 1]}, 'accuracy': 0.9087837837837838}
+{'experience': 8304, 'action': '<=50K', 'lifetime': 32560, 'id': 42449, 'condition': {'RELATIONSHIP': 3}, 'accuracy': 0.8970375722543352}
+{'experience': 10500, 'action': '<=50K', 'lifetime': 32558, 'id': 42453, 'condition': {'EDUCATION': 3}, 'accuracy': 0.8405562434517573}
+{'experience': 432, 'action': '>50K', 'lifetime': 32558, 'id': 42459, 'condition': {'FNLWGT': [75995.48785605963, 406218.8381438549, 20000, 20000], 'CAPITAL_GAIN': [12254.866009795505, 24554.291872378457, 1000, 1000]}, 'accuracy': 1.0}
+{'experience': 102, 'action': '>50K', 'lifetime': 32560, 'id': 42461, 'condition': {'CAPITAL_GAIN': [9855.962757472285, 21383.100096505637, 1000, 1000], 'SEX': 0}, 'accuracy': 0.9901960784313726}
+{'experience': 271, 'action': '<=50K', 'lifetime': 32561, 'id': 42462, 'condition': {'RACE': 3}, 'accuracy': 0.9077490774907749}
+{'experience': 580, 'action': '>50K', 'lifetime': 32558, 'id': 42467, 'condition': {'CAPITAL_GAIN': [9057.012239984138, 24454.447702553527, 1000, 1000]}, 'accuracy': 0.9879310344827587}
+{'experience': 4443, 'action': '<=50K', 'lifetime': 32559, 'id': 42470, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8957911321179384}
+{'experience': 8305, 'action': '<=50K', 'lifetime': 32558, 'id': 42476, 'condition': {'RELATIONSHIP': 3}, 'accuracy': 0.8969295605057195}
+{'experience': 4443, 'action': '<=50K', 'lifetime': 32559, 'id': 42483, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8957911321179384}
+{'experience': 27201, 'action': '<=50K', 'lifetime': 32557, 'id': 42492, 'condition': {'EDUCATION_NUM': [6.002768176830812, 13.948455278835144, 1, 1]}, 'accuracy': 0.7794117647058824}
+{'experience': 4443, 'action': '<=50K', 'lifetime': 32559, 'id': 42496, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8957911321179384}
+{'experience': 430, 'action': '<=50K', 'lifetime': 32559, 'id': 42499, 'condition': {'RELATIONSHIP': 4, 'SEX': 0}, 'accuracy': 0.9674418604651163}
+{'experience': 994, 'action': '<=50K', 'lifetime': 32558, 'id': 42504, 'condition': {'OCCUPATION': 9}, 'accuracy': 0.8843058350100603}
+{'experience': 22683, 'action': '<=50K', 'lifetime': 32559, 'id': 42509, 'condition': {'HOURS_PER_WEEK': [7.7779229503561895, 40.714597514069126, 0.5, 0.5]}, 'accuracy': 0.8258530993739529}
+{'experience': 10771, 'action': '<=50K', 'lifetime': 32561, 'id': 42510, 'condition': {'SEX': 0}, 'accuracy': 0.8906220984215413}
+{'experience': 10769, 'action': '<=50K', 'lifetime': 32559, 'id': 42515, 'condition': {'SEX': 0}, 'accuracy': 0.8906017830609212}
+{'experience': 993, 'action': '<=50K', 'lifetime': 32560, 'id': 42517, 'condition': {'MARITAL_STATUS': 4}, 'accuracy': 0.9144008056394763}
+{'experience': 22685, 'action': '<=50K', 'lifetime': 32561, 'id': 42518, 'condition': {'HOURS_PER_WEEK': [7.8948028321233945, 40.24137939965855, 0.5, 0.5]}, 'accuracy': 0.8258243695997178}
+{'experience': 7468, 'action': '<=50K', 'lifetime': 32558, 'id': 42525, 'condition': {'HOURS_PER_WEEK': [7.755261430672422, 39.80501629408601, 0.5, 0.5]}, 'accuracy': 0.9055972147830744}
+{'experience': 4098, 'action': '<=50K', 'lifetime': 32557, 'id': 42540, 'condition': {'OCCUPATION': 1}, 'accuracy': 0.7733040507564666}
+{'experience': 168, 'action': '<=50K', 'lifetime': 32561, 'id': 42541, 'condition': {'EDUCATION': 11}, 'accuracy': 0.9642857142857143}
+{'experience': 817, 'action': '<=50K', 'lifetime': 32560, 'id': 42544, 'condition': {'HOURS_PER_WEEK': [7.943991429574953, 40.719433915947455, 0.5, 0.5], 'RELATIONSHIP': 4}, 'accuracy': 0.9742962056303549}
+{'experience': 7430, 'action': '<=50K', 'lifetime': 32559, 'id': 42550, 'condition': {'HOURS_PER_WEEK': [7.857752027196825, 38.46212256910283, 0.5, 0.5]}, 'accuracy': 0.9060565275908479}
+{'experience': 2002, 'action': '<=50K', 'lifetime': 32559, 'id': 42554, 'condition': {'OCCUPATION': 7}, 'accuracy': 0.8755622188905547}
+{'experience': 1025, 'action': '<=50K', 'lifetime': 32561, 'id': 42555, 'condition': {'MARITAL_STATUS': 3}, 'accuracy': 0.935609756097561}
+{'experience': 28137, 'action': '<=50K', 'lifetime': 32561, 'id': 42556, 'condition': {'EDUCATION_NUM': [5.686739270568784, 13.796378384839318, 1, 1]}, 'accuracy': 0.7845109468296844}
+{'experience': 277, 'action': '<=50K', 'lifetime': 32559, 'id': 42567, 'condition': {'AGE': [20.490340548212227, 59.72370907990092, 2, 2], 'RACE': 2}, 'accuracy': 0.8772563176895307}
+{'experience': 311, 'action': '<=50K', 'lifetime': 32560, 'id': 42571, 'condition': {'RACE': 2}, 'accuracy': 0.8842443729903537}
+{'experience': 264, 'action': '<=50K', 'lifetime': 32558, 'id': 42578, 'condition': {'AGE': [16.94079615195655, 59.449808845676785, 2, 2], 'RACE': 3}, 'accuracy': 0.9090909090909091}
+{'experience': 929, 'action': '>50K', 'lifetime': 32561, 'id': 42579, 'condition': {'CAPITAL_GAIN': [7430.208430296893, 24130.118194065217, 1000, 1000]}, 'accuracy': 0.9860064585575888}
+{'experience': 1830, 'action': '<=50K', 'lifetime': 32561, 'id': 42580, 'condition': {'AGE': [18.408882559259805, 56.9407917363205, 2, 2], 'OCCUPATION': 7}, 'accuracy': 0.8731547293603061}
+{'experience': 835, 'action': '<=50K', 'lifetime': 32560, 'id': 42595, 'condition': {'WORKCLASS': 4, 'SEX': 0}, 'accuracy': 0.8165467625899281}
+{'experience': 3124, 'action': '<=50K', 'lifetime': 32561, 'id': 42596, 'condition': {'RACE': 4}, 'accuracy': 0.8761203585147247}
+{'experience': 311, 'action': '<=50K', 'lifetime': 32559, 'id': 42600, 'condition': {'RACE': 2}, 'accuracy': 0.8842443729903537}
+{'experience': 311, 'action': '<=50K', 'lifetime': 32559, 'id': 42607, 'condition': {'RACE': 2}, 'accuracy': 0.8842443729903537}
+{'experience': 555, 'action': '>50K', 'lifetime': 32560, 'id': 42609, 'condition': {'CAPITAL_GAIN': [9612.500832245683, 24348.89122055207, 1000, 1000]}, 'accuracy': 0.9873873873873874}
+{'experience': 570, 'action': '>50K', 'lifetime': 32560, 'id': 42611, 'condition': {'CAPITAL_GAIN': [10502.303025257484, 25273.421098652303, 1000, 1000]}, 'accuracy': 0.987719298245614}
+{'experience': 3102, 'action': '<=50K', 'lifetime': 32559, 'id': 42616, 'condition': {'EDUCATION_NUM': [6.346312603398931, 15.698482448164718, 1, 1], 'RELATIONSHIP': 5}, 'accuracy': 0.9361702127659575}
+{'experience': 22540, 'action': '<=50K', 'lifetime': 32560, 'id': 42618, 'condition': {'HOURS_PER_WEEK': [8.082811327025581, 40.14499902146777, 0.5, 0.5]}, 'accuracy': 0.8251918896135587}
+{'experience': 555, 'action': '>50K', 'lifetime': 32560, 'id': 42620, 'condition': {'CAPITAL_GAIN': [10026.168598217122, 23320.712275948674, 1000, 1000]}, 'accuracy': 0.9873873873873874}
+{'experience': 401, 'action': '>50K', 'lifetime': 32560, 'id': 42622, 'condition': {'CAPITAL_GAIN': [10680.16749395857, 24234.521900785527, 1000, 1000], 'EDUCATION_NUM': [6.006372632239613, 14.893030259935975, 1, 1]}, 'accuracy': 0.9975062344139651}
+{'experience': 2502, 'action': '<=50K', 'lifetime': 32561, 'id': 42623, 'condition': {'MARITAL_STATUS': 1, 'EDUCATION_NUM': [6.015640759618228, 15.648204806473471, 1, 1], 'SEX': 0}, 'accuracy': 0.934052757793765}
+{'experience': 555, 'action': '>50K', 'lifetime': 32559, 'id': 42629, 'condition': {'CAPITAL_GAIN': [10212.240221261498, 23137.827476948827, 1000, 1000]}, 'accuracy': 0.9873873873873874}
+{'experience': 1569, 'action': '<=50K', 'lifetime': 32558, 'id': 42636, 'condition': {'RACE': 4, 'SEX': 1}, 'accuracy': 0.8107074569789675}
+{'experience': 581, 'action': '>50K', 'lifetime': 32559, 'id': 42652, 'condition': {'CAPITAL_GAIN': [9298.275275964532, 24547.085359300214, 1000, 1000]}, 'accuracy': 0.9879518072289156}
+{'experience': 636, 'action': '>50K', 'lifetime': 32559, 'id': 42672, 'condition': {'CAPITAL_GAIN': [8456.40794597292, 23113.608595999787, 1000, 1000]}, 'accuracy': 0.9889937106918238}
+{'experience': 22685, 'action': '<=50K', 'lifetime': 32560, 'id': 42674, 'condition': {'HOURS_PER_WEEK': [7.495268847976637, 40.88954554909821, 0.5, 0.5]}, 'accuracy': 0.8258243695997178}
+{'experience': 636, 'action': '>50K', 'lifetime': 32559, 'id': 42680, 'condition': {'CAPITAL_GAIN': [8512.212150531479, 24076.17446630588, 1000, 1000]}, 'accuracy': 0.9889937106918238}
+{'experience': 993, 'action': '<=50K', 'lifetime': 32560, 'id': 42682, 'condition': {'MARITAL_STATUS': 4}, 'accuracy': 0.9144008056394763}
+{'experience': 494, 'action': '>50K', 'lifetime': 32560, 'id': 42684, 'condition': {'CAPITAL_GAIN': [10995.466819734742, 24539.680017047074, 1000, 1000]}, 'accuracy': 0.9979757085020243}
+{'experience': 451, 'action': '>50K', 'lifetime': 32559, 'id': 42689, 'condition': {'CAPITAL_GAIN': [9745.17081260914, 23799.841329790626, 1000, 1000], 'SEX': 1}, 'accuracy': 0.9889135254988913}
+{'experience': 493, 'action': '>50K', 'lifetime': 32559, 'id': 42692, 'condition': {'CAPITAL_GAIN': [10932.94652230387, 24804.902532224525, 1000, 1000]}, 'accuracy': 0.9979716024340771}
+{'experience': 5068, 'action': '<=50K', 'lifetime': 32561, 'id': 42693, 'condition': {'RELATIONSHIP': 1}, 'accuracy': 0.9867797947908445}
+{'experience': 6512, 'action': '<=50K', 'lifetime': 32560, 'id': 42696, 'condition': {'HOURS_PER_WEEK': [8.126304798712948, 39.84984674409886, 0.5, 0.5], 'EDUCATION_NUM': [6.736974601062541, 15.582793765796746, 1, 1]}, 'accuracy': 0.9007985257985258}
+{'experience': 833, 'action': '<=50K', 'lifetime': 32559, 'id': 42700, 'condition': {'FNLWGT': [91887.12460882579, 413632.8908334802, 20000, 20000], 'RELATIONSHIP': 4}, 'accuracy': 0.963985594237695}
+{'experience': 22694, 'action': '<=50K', 'lifetime': 32558, 'id': 42718, 'condition': {'WORKCLASS': 0}, 'accuracy': 0.7813518991804002}
+{'experience': 271, 'action': '<=50K', 'lifetime': 32559, 'id': 42724, 'condition': {'RACE': 3}, 'accuracy': 0.9077490774907749}
+{'experience': 4443, 'action': '<=50K', 'lifetime': 32560, 'id': 42729, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8957911321179384}
+{'experience': 4443, 'action': '<=50K', 'lifetime': 32560, 'id': 42731, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8957911321179384}
+{'experience': 580, 'action': '>50K', 'lifetime': 32560, 'id': 42733, 'condition': {'CAPITAL_GAIN': [9155.141314015436, 24502.484327565646, 1000, 1000]}, 'accuracy': 0.9879310344827587}
+{'experience': 3124, 'action': '<=50K', 'lifetime': 32560, 'id': 42736, 'condition': {'RACE': 4}, 'accuracy': 0.8761203585147247}
+{'experience': 636, 'action': '>50K', 'lifetime': 32559, 'id': 42743, 'condition': {'CAPITAL_GAIN': [7997.400159819962, 23238.120863261767, 1000, 1000]}, 'accuracy': 0.9889937106918238}
+{'experience': 7323, 'action': '<=50K', 'lifetime': 32560, 'id': 42745, 'condition': {'HOURS_PER_WEEK': [8.249778601650469, 39.62103132939396, 0.5, 0.5]}, 'accuracy': 0.9052300969548}
+{'experience': 307, 'action': '<=50K', 'lifetime': 32560, 'id': 42747, 'condition': {'MARITAL_STATUS': 5, 'EDUCATION_NUM': [8.527116310666678, 14.820093369966086, 1, 1]}, 'accuracy': 0.9084967320261438}
+{'experience': 22685, 'action': '<=50K', 'lifetime': 32561, 'id': 42748, 'condition': {'HOURS_PER_WEEK': [7.486323474274815, 40.795193465514416, 0.5, 0.5]}, 'accuracy': 0.8258243695997178}
+{'experience': 22178, 'action': '<=50K', 'lifetime': 32451, 'id': 42758, 'condition': {'HOURS_PER_WEEK': [6.955440534869261, 40.54424946715733, 0.5, 0.5], 'EDUCATION_NUM': [4, 16, 1.6174990004254077, 1.973052667253294]}, 'accuracy': 0.8229246516661406}
+{'experience': 28044, 'action': '<=50K', 'lifetime': 32447, 'id': 42759, 'condition': {'EDUCATION_NUM': [6, 13, 0.7849035118174738, 1.1019431036424077]}, 'accuracy': 0.784545162785722}
+{'experience': 28036, 'action': '<=50K', 'lifetime': 32438, 'id': 42762, 'condition': {'EDUCATION_NUM': [6, 13, 0.7556555395046132, 1.0630937259883055]}, 'accuracy': 0.7845193508114856}
+{'experience': 5855, 'action': '<=50K', 'lifetime': 32437, 'id': 42763, 'condition': {'HOURS_PER_WEEK': [7.959866409225041, 39.69231539748814, 0.5, 0.5], 'EDUCATION_NUM': [5, 12, 0.9368994386930938, 1.2671621696162374]}, 'accuracy': 0.9432963279248505}
+{'experience': 22610, 'action': '<=50K', 'lifetime': 32418, 'id': 42766, 'condition': {'HOURS_PER_WEEK': [7, 40, 0.5, 0.5]}, 'accuracy': 0.8259100358264408}
+{'experience': 22585, 'action': '<=50K', 'lifetime': 32419, 'id': 42767, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5977666419951694, 0.5]}, 'accuracy': 0.8258944385405597}
+{'experience': 18555, 'action': '<=50K', 'lifetime': 32418, 'id': 42769, 'condition': {'HOURS_PER_WEEK': [7, 40, 0.5253419101632788, 0.5], 'FNLWGT': [87623.14626111904, 391490.3742010554, 20000, 20000]}, 'accuracy': 0.8223563652042686}
+{'experience': 25912, 'action': '<=50K', 'lifetime': 32413, 'id': 42771, 'condition': {'EDUCATION_NUM': [8, 13, 1.0263754567032097, 0.9875756068323036]}, 'accuracy': 0.7717571687700204}
+{'experience': 30879, 'action': '<=50K', 'lifetime': 32413, 'id': 42773, 'condition': {'EDUCATION_NUM': [4, 14, 2.125386109261344, 1.0345815709339283]}, 'accuracy': 0.7714230196256234}
+{'experience': 21637, 'action': '<=50K', 'lifetime': 32413, 'id': 42774, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.6503971404965215, 0.5464998518665274], 'EDUCATION_NUM': [5, 17, 0.8685079523444892, 1.416000012250228]}, 'accuracy': 0.8199759659826216}
+{'experience': 28323, 'action': '<=50K', 'lifetime': 32396, 'id': 42782, 'condition': {'AGE': [14, 55, 1.3503222080135335, 1.4562317909395945]}, 'accuracy': 0.7652001977261493}
+{'experience': 6534, 'action': '<=50K', 'lifetime': 32398, 'id': 42783, 'condition': {'AGE': [18, 67, 1.7127770188659226, 1.3078210005344], 'HOURS_PER_WEEK': [8.83904322425787, 39.967320248256065, 0.5, 0.5]}, 'accuracy': 0.9022038567493113}
+{'experience': 14056, 'action': '<=50K', 'lifetime': 32331, 'id': 42784, 'condition': {'EDUCATION_NUM': [7, 12, 0.6695515627197335, 1.3932552954595923], 'SEX': 1}, 'accuracy': 0.7720546385885031}
+{'experience': 30800, 'action': '<=50K', 'lifetime': 32329, 'id': 42786, 'condition': {'EDUCATION_NUM': [4, 14, 1.0763845860583272, 1.2821186612896467]}, 'accuracy': 0.7713237442774116}
+{'experience': 6180, 'action': '<=50K', 'lifetime': 32308, 'id': 42790, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.5, 0.626175513482721], 'EDUCATION_NUM': [8, 19, 1.5044143285225282, 1.9185076689246174]}, 'accuracy': 0.88915857605178}
+{'experience': 17223, 'action': '<=50K', 'lifetime': 32300, 'id': 42792, 'condition': {'FNLWGT': [108638.46454180765, 417541.782334977, 20000, 20000], 'EDUCATION_NUM': [6, 12, 0.5, 1.0859494062924717]}, 'accuracy': 0.8292881198467077}
+{'experience': 6224, 'action': '<=50K', 'lifetime': 32294, 'id': 42794, 'condition': {'AGE': [16, 58, 2.3078973640429887, 2.3763301525445324], 'HOURS_PER_WEEK': [8.158940318612594, 39.869536858478085, 0.5, 0.5]}, 'accuracy': 0.9137210796915167}
+{'experience': 22574, 'action': '<=50K', 'lifetime': 32285, 'id': 42796, 'condition': {'HOURS_PER_WEEK': [6, 40, 0.5522748131782462, 0.5]}, 'accuracy': 0.8260310991006955}
+{'experience': 2836, 'action': '<=50K', 'lifetime': 32286, 'id': 42797, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.7331783175445624, 0.6141828871261223], 'OCCUPATION': 1}, 'accuracy': 0.8120592383638928}
+{'experience': 5282, 'action': '<=50K', 'lifetime': 32261, 'id': 42802, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5, 0.5], 'EDUCATION': 1, 'EDUCATION_NUM': [5, 16, 1.4232907813828546, 1.3145652421237684]}, 'accuracy': 0.858576296857251}
+{'experience': 6287, 'action': '<=50K', 'lifetime': 32259, 'id': 42804, 'condition': {'FNLWGT': [106005, 418307, 13430.530606982415, 12178.097854396425], 'RELATIONSHIP': 3}, 'accuracy': 0.894544297757277}
+{'experience': 10671, 'action': '<=50K', 'lifetime': 32257, 'id': 42805, 'condition': {'SEX': 0}, 'accuracy': 0.8908153701968134}
+{'experience': 8797, 'action': '<=50K', 'lifetime': 32257, 'id': 42806, 'condition': {'HOURS_PER_WEEK': [7.654077344111641, 40.05197031807393, 0.5, 0.5], 'SEX': 0}, 'accuracy': 0.9104138244656662}
+{'experience': 10671, 'action': '<=50K', 'lifetime': 32256, 'id': 42808, 'condition': {'SEX': 0}, 'accuracy': 0.8908153701968134}
+{'experience': 22348, 'action': '<=50K', 'lifetime': 32246, 'id': 42810, 'condition': {'HOURS_PER_WEEK': [8.073642807633991, 41.178920168883536, 0.5, 0.5]}, 'accuracy': 0.8253456839844274}
+{'experience': 19309, 'action': '<=50K', 'lifetime': 32247, 'id': 42811, 'condition': {'HOURS_PER_WEEK': [7, 40, 0.6095770046071036, 0.5], 'FNLWGT': [67505, 394005, 18475.3096602063, 23088.229109393014]}, 'accuracy': 0.8231821006836545}
+{'experience': 17189, 'action': '<=50K', 'lifetime': 32246, 'id': 42812, 'condition': {'FNLWGT': [158125, 355979, 17921.849608047312, 13817.696779781145]}, 'accuracy': 0.7617523853851524}
+{'experience': 3357, 'action': '<=50K', 'lifetime': 32232, 'id': 42813, 'condition': {'EDUCATION': 3, 'SEX': 0}, 'accuracy': 0.9341477949940405}
+{'experience': 6676, 'action': '<=50K', 'lifetime': 32215, 'id': 42815, 'condition': {'EDUCATION_NUM': [7.158408255433756, 13.228527305575698, 1, 1], 'RELATIONSHIP': 3}, 'accuracy': 0.914469742360695}
+{'experience': 10567, 'action': '<=50K', 'lifetime': 32216, 'id': 42816, 'condition': {'MARITAL_STATUS': 2}, 'accuracy': 0.9541023942462383}
+{'experience': 7526, 'action': '<=50K', 'lifetime': 32148, 'id': 42824, 'condition': {'HOURS_PER_WEEK': [5, 39, 0.7531739427657207, 0.6581219745792611]}, 'accuracy': 0.9047302684028701}
+{'experience': 22393, 'action': '<=50K', 'lifetime': 32116, 'id': 42825, 'condition': {'HOURS_PER_WEEK': [8, 41, 0.7273427983956743, 0.552879202273464]}, 'accuracy': 0.8259199714183637}
+{'experience': 906, 'action': '<=50K', 'lifetime': 32105, 'id': 42826, 'condition': {'FNLWGT': [139495, 441991, 21080.687383401564, 22151.007234167297], 'EDUCATION_NUM': [4, 10, 0.6246449562201806, 1.2307032927150576], 'OCCUPATION': 10}, 'accuracy': 0.7958057395143487}
+{'experience': 14319, 'action': '<=50K', 'lifetime': 32104, 'id': 42827, 'condition': {'EDUCATION_NUM': [5, 11, 0.7071083023630055, 2.2029025030605522], 'SEX': 1}, 'accuracy': 0.786577274949368}
+{'experience': 18907, 'action': '<=50K', 'lifetime': 32089, 'id': 42829, 'condition': {'HOURS_PER_WEEK': [7, 41, 0.5, 0.6245590315349451], 'FNLWGT': [77485, 397938, 22053.626128056687, 16246.707724626665]}, 'accuracy': 0.8229133608378293}
+{'experience': 7367, 'action': '<=50K', 'lifetime': 32087, 'id': 42830, 'condition': {'HOURS_PER_WEEK': [8, 39, 0.5, 0.5]}, 'accuracy': 0.9053888964300257}
+{'experience': 7393, 'action': '<=50K', 'lifetime': 32087, 'id': 42831, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.5, 0.5790747165431488]}, 'accuracy': 0.9051805762207493}
+{'experience': 4676, 'action': '<=50K', 'lifetime': 32087, 'id': 42832, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.576668263770476, 0.5699019064168102], 'AGE': [21.774641058096947, 62.449291032723295, 2, 2]}, 'accuracy': 0.8733960650128315}
+{'experience': 7393, 'action': '<=50K', 'lifetime': 32087, 'id': 42833, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.5268457200717134, 0.7189388206780573]}, 'accuracy': 0.9051805762207493}
+{'experience': 22337, 'action': '<=50K', 'lifetime': 32087, 'id': 42834, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.7478631477602704, 0.5020082411931656]}, 'accuracy': 0.8260655444126075}
+{'experience': 6597, 'action': '<=50K', 'lifetime': 32065, 'id': 42836, 'condition': {'HOURS_PER_WEEK': [8, 39, 0.5, 0.5], 'EDUCATION_NUM': [7, 17, 1.2595240233109677, 1.0696726267535694]}, 'accuracy': 0.8964680915567682}
+{'experience': 24496, 'action': '<=50K', 'lifetime': 31969, 'id': 42844, 'condition': {'FNLWGT': [70115, 374000, 17309.609546301024, 18601.98266108629], 'EDUCATION_NUM': [0, 13, 1.4022092678396143, 0.5827747600951471]}, 'accuracy': 0.7900796080832823}
+{'experience': 27619, 'action': '<=50K', 'lifetime': 31962, 'id': 42845, 'condition': {'EDUCATION_NUM': [5.355451926501785, 13.786409132441912, 1, 1]}, 'accuracy': 0.784234919255558}
+{'experience': 7356, 'action': '<=50K', 'lifetime': 31943, 'id': 42847, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.9406648888473291, 0.5]}, 'accuracy': 0.9049755301794453}
+{'experience': 6568, 'action': '<=50K', 'lifetime': 31940, 'id': 42848, 'condition': {'HOURS_PER_WEEK': [8, 38, 0.5, 0.5115288506879911], 'EDUCATION_NUM': [5, 13, 0.5609503915269184, 1.4224210086977525]}, 'accuracy': 0.9229598051157125}
+{'experience': 3584, 'action': '<=50K', 'lifetime': 31926, 'id': 42849, 'condition': {'HOURS_PER_WEEK': [8.415044691248864, 39.33748588510472, 0.5, 0.5], 'MARITAL_STATUS': 2}, 'accuracy': 0.990234375}
+{'experience': 17745, 'action': '<=50K', 'lifetime': 31911, 'id': 42850, 'condition': {'HOURS_PER_WEEK': [7, 40, 0.5, 0.5257108210559769], 'FNLWGT': [95996, 382814, 31628.478304296845, 15477.170331631394]}, 'accuracy': 0.8226442741208295}
+{'experience': 5551, 'action': '<=50K', 'lifetime': 31895, 'id': 42854, 'condition': {'AGE': [17, 66, 1.9290074204560228, 1.2486316916407736], 'RACE': 0, 'HOURS_PER_WEEK': [9, 39, 0.5, 0.65044954608297]}, 'accuracy': 0.9007386056566384}
+{'experience': 4173, 'action': '<=50K', 'lifetime': 31889, 'id': 42855, 'condition': {'EDUCATION_NUM': [6, 9, 0.6718048412387758, 1.7129752814610402], 'SEX': 0}, 'accuracy': 0.9439117929050815}
+{'experience': 324, 'action': '<=50K', 'lifetime': 31876, 'id': 42858, 'condition': {'MARITAL_STATUS': 1, 'RELATIONSHIP': 1}, 'accuracy': 0.9567901234567902}
+{'experience': 910, 'action': '<=50K', 'lifetime': 31853, 'id': 42860, 'condition': {'RACE': 1, 'EDUCATION_NUM': [5, 14, 1.1044671920204177, 1.3553299424745173]}, 'accuracy': 0.7582417582417582}
+{'experience': 4294, 'action': '<=50K', 'lifetime': 31843, 'id': 42861, 'condition': {'AGE': [23, 62, 2.4041181992739955, 2.1323781114089804], 'HOURS_PER_WEEK': [7, 38, 0.5, 0.6333505739603412]}, 'accuracy': 0.8644620400558919}
+{'experience': 19912, 'action': '<=50K', 'lifetime': 31843, 'id': 42862, 'condition': {'FNLWGT': [74966, 379779, 14717.039869980097, 25966.598883015435], 'EDUCATION_NUM': [0, 12, 0.8837388578401525, 0.6797418533750503]}, 'accuracy': 0.8373763246446688}
+{'experience': 6408, 'action': '<=50K', 'lifetime': 31800, 'id': 42864, 'condition': {'AGE': [14, 61, 2.1396948310160075, 3.8878108898989074], 'HOURS_PER_WEEK': [8, 39, 0.5, 0.557368438557774]}, 'accuracy': 0.9099563046192259}
+{'experience': 332, 'action': '<=50K', 'lifetime': 31793, 'id': 42865, 'condition': {'EDUCATION': 9, 'FNLWGT': [88941, 411794, 9350.313217633764, 18091.605272038036]}, 'accuracy': 0.927710843373494}
+{'experience': 20154, 'action': '<=50K', 'lifetime': 31791, 'id': 42866, 'condition': {'HOURS_PER_WEEK': [6, 40, 0.5, 0.8486940436946089], 'EDUCATION_NUM': [7, 18, 1.9590819693854946, 1.4406754519122933]}, 'accuracy': 0.8125837344315983}
+{'experience': 6253, 'action': '<=50K', 'lifetime': 31791, 'id': 42867, 'condition': {'FNLWGT': [103016, 411414, 10425.37954911094, 8329.501473770355], 'RELATIONSHIP': 3}, 'accuracy': 0.893491124260355}
+{'experience': 4343, 'action': '<=50K', 'lifetime': 31784, 'id': 42870, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8963849873359429}
+{'experience': 4212, 'action': '<=50K', 'lifetime': 31785, 'id': 42871, 'condition': {'MARITAL_STATUS': 1, 'EDUCATION_NUM': [4.7507137245226865, 15.536241573299595, 1, 1]}, 'accuracy': 0.8981481481481481}
+{'experience': 22128, 'action': '<=50K', 'lifetime': 31785, 'id': 42872, 'condition': {'HOURS_PER_WEEK': [7.476862198435023, 40.94930695223812, 0.5, 0.5]}, 'accuracy': 0.8258688480137388}
+{'experience': 6782, 'action': '<=50K', 'lifetime': 31767, 'id': 42875, 'condition': {'RELATIONSHIP': 3, 'EDUCATION_NUM': [7, 13, 0.8691726977398803, 1.349075882167627]}, 'accuracy': 0.9153641993512238}
+{'experience': 7441, 'action': '<=50K', 'lifetime': 31759, 'id': 42876, 'condition': {'HOURS_PER_WEEK': [4, 38, 1.1183528712916782, 1.3844674306789257]}, 'accuracy': 0.905254670071227}
+{'experience': 16567, 'action': '<=50K', 'lifetime': 31741, 'id': 42877, 'condition': {'HOURS_PER_WEEK': [6, 41, 0.5, 0.5468682968445244], 'FNLWGT': [109647, 384476, 23977.73206810731, 26265.326279979003]}, 'accuracy': 0.8242786430037427}
+{'experience': 7255, 'action': '<=50K', 'lifetime': 31695, 'id': 42880, 'condition': {'HOURS_PER_WEEK': [7, 38, 0.5, 0.5]}, 'accuracy': 0.9051688490696072}
+{'experience': 7316, 'action': '<=50K', 'lifetime': 31696, 'id': 42881, 'condition': {'HOURS_PER_WEEK': [6, 38, 0.5, 0.5012278322345243]}, 'accuracy': 0.905002733734281}
+{'experience': 6794, 'action': '<=50K', 'lifetime': 31696, 'id': 42882, 'condition': {'HOURS_PER_WEEK': [7, 37, 0.5140359747952602, 0.641130128687345]}, 'accuracy': 0.9108036502796585}
+{'experience': 19172, 'action': '<=50K', 'lifetime': 31682, 'id': 42883, 'condition': {'FNLWGT': [93593, 398751, 9555.48989030944, 23831.300582578602], 'EDUCATION_NUM': [0, 12, 1.7530531485501757, 0.5]}, 'accuracy': 0.8368890511710396}
+{'experience': 3024, 'action': '<=50K', 'lifetime': 31669, 'id': 42886, 'condition': {'RACE': 4}, 'accuracy': 0.8759920634920635}
+{'experience': 3024, 'action': '<=50K', 'lifetime': 31671, 'id': 42887, 'condition': {'RACE': 4}, 'accuracy': 0.8759920634920635}
+{'experience': 1310, 'action': '<=50K', 'lifetime': 31670, 'id': 42889, 'condition': {'HOURS_PER_WEEK': [8, 39, 0.5, 0.5], 'EDUCATION': 1, 'AGE': [20.334167319908275, 61.13295445735649, 2, 2], 'EDUCATION_NUM': [6, 15, 1.5342964250681332, 1.7793751196613068]}, 'accuracy': 0.9236641221374046}
+{'experience': 10225, 'action': '<=50K', 'lifetime': 31624, 'id': 42891, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [3, 15, 0.9347607421662852, 0.5]}, 'accuracy': 0.9567726161369193}
+{'experience': 6144, 'action': '<=50K', 'lifetime': 31623, 'id': 42892, 'condition': {'HOURS_PER_WEEK': [5, 39, 0.6804318636667783, 1.1804855856161882], 'EDUCATION_NUM': [8, 16, 2.8552219496300584, 1.8662888800371753]}, 'accuracy': 0.8878580729166666}
+{'experience': 6486, 'action': '<=50K', 'lifetime': 31596, 'id': 42893, 'condition': {'HOURS_PER_WEEK': [7, 38, 0.5432763951524082, 0.5624939769639026], 'EDUCATION_NUM': [7, 16, 1.1704113193872294, 0.6899031232391755]}, 'accuracy': 0.8960838729571384}
+{'experience': 18996, 'action': '<=50K', 'lifetime': 31550, 'id': 42894, 'condition': {'EDUCATION_NUM': [8, 11, 1.838153801244466, 0.9780889452286274]}, 'accuracy': 0.8234798631218742}
+{'experience': 16734, 'action': '<=50K', 'lifetime': 31543, 'id': 42895, 'condition': {'HOURS_PER_WEEK': [6, 41, 0.5, 0.5], 'FNLWGT': [106371, 382137, 22671.625014835226, 20525.486787983158]}, 'accuracy': 0.8250164345903305}
+{'experience': 7256, 'action': '<=50K', 'lifetime': 31542, 'id': 42896, 'condition': {'HOURS_PER_WEEK': [7, 39, 1.0521809092871857, 0.5272714865255212]}, 'accuracy': 0.9044928335170893}
+{'experience': 19653, 'action': '<=50K', 'lifetime': 31525, 'id': 42897, 'condition': {'FNLWGT': [67045, 419262, 7133.913054953796, 20330.1288245771], 'EDUCATION_NUM': [0, 11, 1.3707361360446941, 0.5]}, 'accuracy': 0.8415937309179727}
+{'experience': 3023, 'action': '<=50K', 'lifetime': 31498, 'id': 42898, 'condition': {'RELATIONSHIP': 5, 'EDUCATION_NUM': [7, 16, 1.1773581008769591, 1.0945991530626658]}, 'accuracy': 0.9328481640754218}
+{'experience': 5660, 'action': '<=50K', 'lifetime': 31474, 'id': 42899, 'condition': {'HOURS_PER_WEEK': [8, 38, 0.5, 0.5], 'EDUCATION_NUM': [3, 11, 0.5, 0.8794478960342403]}, 'accuracy': 0.946643109540636}
+{'experience': 4140, 'action': '<=50K', 'lifetime': 31456, 'id': 42900, 'condition': {'HOURS_PER_WEEK': [6, 39, 0.5, 0.591257418289662], 'AGE': [23, 60, 2.7744610618580388, 1.6337066178037833]}, 'accuracy': 0.8654589371980677}
+{'experience': 203, 'action': '<=50K', 'lifetime': 31410, 'id': 42901, 'condition': {'AGE': [16, 66, 1.965308621089949, 1.153655155227164], 'RACE': 1, 'HOURS_PER_WEEK': [7, 38, 0.5, 0.5644026911964218]}, 'accuracy': 0.8817733990147784}
+{'experience': 18474, 'action': '<=50K', 'lifetime': 31391, 'id': 42902, 'condition': {'EDUCATION_NUM': [9, 11, 2.2408562849307985, 1.3731238857337607]}, 'accuracy': 0.8212526389866291}
+{'experience': 15867, 'action': '<=50K', 'lifetime': 31355, 'id': 42903, 'condition': {'HOURS_PER_WEEK': [5, 41, 0.5, 0.5874005645586136], 'FNLWGT': [118377, 409161, 39426.11351621039, 15278.138786799645]}, 'accuracy': 0.8249086096054457}
+{'experience': 20284, 'action': '<=50K', 'lifetime': 31355, 'id': 42904, 'condition': {'FNLWGT': [51807, 429874, 9742.030463670935, 16432.173153319996], 'EDUCATION_NUM': [0, 11, 2.368596923384703, 0.8553677141335715]}, 'accuracy': 0.842725435093428}
+{'experience': 6887, 'action': '<=50K', 'lifetime': 31325, 'id': 42905, 'condition': {'EDUCATION_NUM': [6, 13, 0.8916388396463367, 1.2204216500804455], 'RELATIONSHIP': 3}, 'accuracy': 0.9176709742994047}
+{'experience': 6838, 'action': '<=50K', 'lifetime': 31323, 'id': 42906, 'condition': {'AGE': [11, 69, 2.4510345496444885, 4.469212027322883], 'HOURS_PER_WEEK': [8, 39, 0.5, 0.5]}, 'accuracy': 0.9071365896460953}
+{'experience': 9646, 'action': '<=50K', 'lifetime': 31320, 'id': 42907, 'condition': {'AGE': [16.075130876372203, 60.302371046072174, 2, 2], 'SEX': 0}, 'accuracy': 0.8890616899948159}
+{'experience': 7380, 'action': '<=50K', 'lifetime': 31317, 'id': 42908, 'condition': {'HOURS_PER_WEEK': [3, 38, 0.9039434624839942, 1.4440446502618924]}, 'accuracy': 0.9052845528455284}
+{'experience': 10184, 'action': '<=50K', 'lifetime': 31249, 'id': 42910, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [1, 15, 0.7368418792413108, 0.5]}, 'accuracy': 0.9569913589945012}
+{'experience': 1640, 'action': '<=50K', 'lifetime': 31248, 'id': 42911, 'condition': {'MARITAL_STATUS': 1, 'EDUCATION_NUM': [5, 15, 0.8597979759139894, 0.8598502579416079], 'SEX': 1}, 'accuracy': 0.8365853658536585}
+{'experience': 7253, 'action': '<=50K', 'lifetime': 31236, 'id': 42912, 'condition': {'HOURS_PER_WEEK': [6, 39, 0.5562835667870424, 0.7354284238052214]}, 'accuracy': 0.9044533296566938}
+{'experience': 7273, 'action': '<=50K', 'lifetime': 31236, 'id': 42913, 'condition': {'HOURS_PER_WEEK': [5, 38, 0.5, 0.5]}, 'accuracy': 0.904716073147257}
+{'experience': 10063, 'action': '<=50K', 'lifetime': 31233, 'id': 42914, 'condition': {'EDUCATION_NUM': [9, 9, 3.5971399298344577, 1.2829746304141652]}, 'accuracy': 0.8411846551381436}
+{'experience': 6612, 'action': '<=50K', 'lifetime': 31204, 'id': 42915, 'condition': {'HOURS_PER_WEEK': [6, 36, 0.5, 0.8734969051861593]}, 'accuracy': 0.91167574107683}
+{'experience': 21214, 'action': '<=50K', 'lifetime': 31195, 'id': 42916, 'condition': {'FNLWGT': [31742, 420786, 10283.443979957256, 14930.518596674558], 'EDUCATION_NUM': [0, 11, 1.5269462433667356, 0.548544568862057]}, 'accuracy': 0.8438693254136614}
+{'experience': 555, 'action': '<=50K', 'lifetime': 31161, 'id': 42917, 'condition': {'EDUCATION_NUM': [7, 8, 1.5111092639259232, 0.9435192159861221], 'SEX': 0}, 'accuracy': 0.9783783783783784}
+{'experience': 15518, 'action': '<=50K', 'lifetime': 31160, 'id': 42918, 'condition': {'HOURS_PER_WEEK': [5, 41, 0.6711446874443362, 0.5], 'FNLWGT': [122662, 422175, 57316.56068929034, 27831.12676264011]}, 'accuracy': 0.8260617387381581}
+{'experience': 2735, 'action': '<=50K', 'lifetime': 31078, 'id': 42920, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5, 0.819068952490943], 'OCCUPATION': 1}, 'accuracy': 0.813162705667276}
+{'experience': 1916, 'action': '<=50K', 'lifetime': 31078, 'id': 42921, 'condition': {'HOURS_PER_WEEK': [5, 37, 0.6591191979651956, 1.4955215709731446], 'EDUCATION_NUM': [10, 10, 5.0644174531509, 2.2594765464502893]}, 'accuracy': 0.9420668058455115}
+{'experience': 256, 'action': '<=50K', 'lifetime': 31074, 'id': 42922, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.5, 0.6982115713816587], 'MARITAL_STATUS': 2, 'OCCUPATION': 6}, 'accuracy': 1.0}
+{'experience': 4243, 'action': '<=50K', 'lifetime': 31070, 'id': 42923, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8958284232854112}
+{'experience': 21486, 'action': '<=50K', 'lifetime': 31053, 'id': 42925, 'condition': {'FNLWGT': [25330, 417391, 10865.449511244911, 8635.016024606757], 'EDUCATION_NUM': [0, 11, 1.8580379748101827, 0.5494972588680631]}, 'accuracy': 0.8438445427042123}
+{'experience': 6385, 'action': '<=50K', 'lifetime': 31044, 'id': 42926, 'condition': {'HOURS_PER_WEEK': [7, 38, 0.5, 0.5709535991215247], 'EDUCATION_NUM': [7, 16, 1.702683274398678, 0.9168365302185387]}, 'accuracy': 0.8964761158966328}
+{'experience': 7271, 'action': '<=50K', 'lifetime': 31021, 'id': 42927, 'condition': {'HOURS_PER_WEEK': [5, 39, 1.6952998154130765, 0.5405444389373156]}, 'accuracy': 0.9044147985146472}
+{'experience': 4510, 'action': '<=50K', 'lifetime': 30962, 'id': 42929, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [2, 15, 0.8766729190954082, 0.6290581893851376], 'SEX': 0}, 'accuracy': 0.9689509869150588}
+{'experience': 2073, 'action': '<=50K', 'lifetime': 30943, 'id': 42930, 'condition': {'HOURS_PER_WEEK': [4, 40, 0.9186441876292001, 0.5090792114276587], 'MARITAL_STATUS': 1, 'FNLWGT': [128903, 442673, 37934.96396692907, 28510.405466708562]}, 'accuracy': 0.9387361312108056}
+{'experience': 17065, 'action': '<=50K', 'lifetime': 30937, 'id': 42931, 'condition': {'FNLWGT': [86763.56220353635, 419304.63634862984, 20000, 20000], 'EDUCATION_NUM': [6, 11, 1.272578615084322, 1.4005055131651232]}, 'accuracy': 0.8338021565869667}
+{'experience': 395, 'action': '<=50K', 'lifetime': 30937, 'id': 42932, 'condition': {'AGE': [13.90953575682358, 59.4935459891977, 2, 2], 'EDUCATION_NUM': [8, 8, 3.9794019852083182, 0.7964176494231793]}, 'accuracy': 0.9316455696202531}
+{'experience': 20255, 'action': '<=50K', 'lifetime': 30902, 'id': 42936, 'condition': {'FNLWGT': [19769, 416352, 7182.6866587812465, 4252.950299396207], 'EDUCATION_NUM': [0, 10, 2.275891597670273, 0.8090892341509514]}, 'accuracy': 0.849906191369606}
+{'experience': 1467, 'action': '<=50K', 'lifetime': 30847, 'id': 42937, 'condition': {'RACE': 4, 'SEX': 0}, 'accuracy': 0.9406952965235174}
+{'experience': 6829, 'action': '<=50K', 'lifetime': 30819, 'id': 42938, 'condition': {'HOURS_PER_WEEK': [3, 37, 0.7540604333856311, 0.7428547229510871]}, 'accuracy': 0.911700102504027}
+{'experience': 1708, 'action': '<=50K', 'lifetime': 30811, 'id': 42939, 'condition': {'AGE': [19, 55, 2.332233898201395, 2.461928059821269], 'OCCUPATION': 7}, 'accuracy': 0.8740480374926772}
+{'experience': 5226, 'action': '<=50K', 'lifetime': 30783, 'id': 42940, 'condition': {'HOURS_PER_WEEK': [8, 37, 0.5, 0.6953320661454553], 'EDUCATION_NUM': [3, 11, 1.085226784930642, 1.3877724275418784]}, 'accuracy': 0.950440107156525}
+{'experience': 6944, 'action': '<=50K', 'lifetime': 30759, 'id': 42941, 'condition': {'AGE': [12, 74, 2.5320522488774158, 5.817968424950164], 'HOURS_PER_WEEK': [7, 39, 0.5141573122467445, 0.5]}, 'accuracy': 0.9055299539170507}
+{'experience': 3848, 'action': '<=50K', 'lifetime': 30755, 'id': 42942, 'condition': {'FNLWGT': [15836, 412560, 9327.52782571676, 4034.0632115260446], 'EDUCATION_NUM': [0, 8, 2.2064109283012674, 0.7468021061040446]}, 'accuracy': 0.9428274428274428}
+{'experience': 2924, 'action': '<=50K', 'lifetime': 30746, 'id': 42943, 'condition': {'RACE': 4}, 'accuracy': 0.8758549931600548}
+{'experience': 6779, 'action': '<=50K', 'lifetime': 30732, 'id': 42946, 'condition': {'HOURS_PER_WEEK': [4, 37, 0.5, 0.5]}, 'accuracy': 0.9114913704086148}
+{'experience': 7094, 'action': '<=50K', 'lifetime': 30733, 'id': 42947, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.6498560238771519, 0.557750290461008]}, 'accuracy': 0.9051310967014379}
+{'experience': 5428, 'action': '<=50K', 'lifetime': 30560, 'id': 42949, 'condition': {'HOURS_PER_WEEK': [6, 38, 0.7073944778263482, 0.6910034386547239], 'AGE': [19, 60, 2.536284061294708, 1.2178564777420402]}, 'accuracy': 0.9003316138540899}
+{'experience': 21500, 'action': '<=50K', 'lifetime': 30550, 'id': 42950, 'condition': {'HOURS_PER_WEEK': [4, 40, 1.3724015445279105, 0.5]}, 'accuracy': 0.8269686962184287}
+{'experience': 5870, 'action': '<=50K', 'lifetime': 30467, 'id': 42951, 'condition': {'HOURS_PER_WEEK': [6, 38, 0.5, 0.5261149351525997], 'EDUCATION_NUM': [8, 16, 1.4726199545784886, 0.7684994374131352]}, 'accuracy': 0.8896081771720613}
+{'experience': 2758, 'action': '<=50K', 'lifetime': 30430, 'id': 42952, 'condition': {'EDUCATION_NUM': [9, 16, 1.5361272201731349, 1.0643545809576196], 'RELATIONSHIP': 5}, 'accuracy': 0.9307469180565627}
+{'experience': 21437, 'action': '<=50K', 'lifetime': 30416, 'id': 42954, 'condition': {'HOURS_PER_WEEK': [3, 40, 0.7202904660290966, 0.5]}, 'accuracy': 0.8273465198731107}
+{'experience': 4143, 'action': '<=50K', 'lifetime': 30326, 'id': 42955, 'condition': {'MARITAL_STATUS': 1}, 'accuracy': 0.8954863625392228}
+{'experience': 21338, 'action': '<=50K', 'lifetime': 30280, 'id': 42956, 'condition': {'HOURS_PER_WEEK': [3, 40, 1.0221530546676876, 0.6505544625747236]}, 'accuracy': 0.8275296433425505}
+{'experience': 6937, 'action': '<=50K', 'lifetime': 30273, 'id': 42957, 'condition': {'AGE': [11, 82, 3.162183122497369, 4.175633689920777], 'HOURS_PER_WEEK': [7, 38, 0.6561300759144791, 0.5]}, 'accuracy': 0.9058670895199654}
+{'experience': 6729, 'action': '<=50K', 'lifetime': 30272, 'id': 42958, 'condition': {'HOURS_PER_WEEK': [3, 37, 0.5, 0.9031857467605209]}, 'accuracy': 0.9121711992866697}
+{'experience': 6958, 'action': '<=50K', 'lifetime': 30258, 'id': 42959, 'condition': {'HOURS_PER_WEEK': [7, 38, 0.5771232197735793, 0.5]}, 'accuracy': 0.9058637539522851}
+{'experience': 7113, 'action': '<=50K', 'lifetime': 30219, 'id': 42960, 'condition': {'HOURS_PER_WEEK': [4, 38, 0.5, 0.5]}, 'accuracy': 0.9058062702094756}
+{'experience': 4171, 'action': '<=50K', 'lifetime': 30181, 'id': 42961, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [2, 13, 0.5, 0.5538454586009454], 'SEX': 0}, 'accuracy': 0.9793764988009592}
+{'experience': 21238, 'action': '<=50K', 'lifetime': 30143, 'id': 42962, 'condition': {'HOURS_PER_WEEK': [3, 40, 1.6855784232803959, 0.5537397583506756]}, 'accuracy': 0.8277063615388237}
+{'experience': 420, 'action': '<=50K', 'lifetime': 30110, 'id': 42963, 'condition': {'HOURS_PER_WEEK': [7, 38, 0.5107731393438242, 0.5], 'MARITAL_STATUS': 1, 'EDUCATION_NUM': [3, 9, 1.193570955475584, 1.0488513724272088]}, 'accuracy': 0.9761904761904762}
+{'experience': 21166, 'action': '<=50K', 'lifetime': 30012, 'id': 42964, 'condition': {'HOURS_PER_WEEK': [2, 40, 1.717526532784049, 0.5]}, 'accuracy': 0.8273092369477911}
+{'experience': 5309, 'action': '<=50K', 'lifetime': 29982, 'id': 42965, 'condition': {'HOURS_PER_WEEK': [6, 37, 0.8991084696388119, 1.0439924459165109], 'AGE': [18, 60, 2.34939719354012, 1.7105593868867783]}, 'accuracy': 0.9142964776794124}
+{'experience': 3358, 'action': '<=50K', 'lifetime': 29977, 'id': 42966, 'condition': {'FNLWGT': [15982, 410305, 12032.924213279819, 2647.257551111181], 'EDUCATION_NUM': [0, 7, 2.150000465939941, 0.5954300011769968]}, 'accuracy': 0.9446098868374032}
+{'experience': 2635, 'action': '<=50K', 'lifetime': 29921, 'id': 42967, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5, 0.5279722321446212], 'OCCUPATION': 1}, 'accuracy': 0.8110056925996205}
+{'experience': 5202, 'action': '<=50K', 'lifetime': 29885, 'id': 42968, 'condition': {'HOURS_PER_WEEK': [5, 37, 0.5, 0.6280615541084924], 'EDUCATION_NUM': [9, 15, 1.4952153050571932, 0.6173076212600054]}, 'accuracy': 0.8985005767012687}
+{'experience': 4183, 'action': '<=50K', 'lifetime': 29861, 'id': 42969, 'condition': {'HOURS_PER_WEEK': [2, 40, 2.33119845695873, 0.7306327647794603], 'RELATIONSHIP': 1}, 'accuracy': 0.9909156108056418}
+{'experience': 6907, 'action': '<=50K', 'lifetime': 29795, 'id': 42971, 'condition': {'AGE': [11, 86, 3.04165319233766, 3.311885423098309], 'HOURS_PER_WEEK': [6, 38, 0.7586805522976123, 0.5125069059838567]}, 'accuracy': 0.9050238888084552}
+{'experience': 6427, 'action': '<=50K', 'lifetime': 29776, 'id': 42972, 'condition': {'HOURS_PER_WEEK': [7, 37, 0.6566749775467126, 0.7879417041791485]}, 'accuracy': 0.911467247549401}
+{'experience': 6583, 'action': '<=50K', 'lifetime': 29756, 'id': 42973, 'condition': {'HOURS_PER_WEEK': [4, 37, 0.6038896956715349, 0.6178454245235232]}, 'accuracy': 0.9112866474251861}
+{'experience': 258, 'action': '<=50K', 'lifetime': 29677, 'id': 42974, 'condition': {'RACE': 3}, 'accuracy': 0.9069767441860465}
+{'experience': 760, 'action': '<=50K', 'lifetime': 29608, 'id': 42977, 'condition': {'MARITAL_STATUS': 4, 'FNLWGT': [78590.5356713501, 401007.744237824, 20000, 20000]}, 'accuracy': 0.9131578947368421}
+{'experience': 148, 'action': '<=50K', 'lifetime': 29498, 'id': 42978, 'condition': {'MARITAL_STATUS': 5, 'EDUCATION_NUM': [6, 15, 0.6543776087144016, 1.0796249866181709], 'SEX': 1}, 'accuracy': 0.8851351351351351}
+{'experience': 201, 'action': '<=50K', 'lifetime': 29486, 'id': 42979, 'condition': {'HOURS_PER_WEEK': [4, 36, 0.6278461808475925, 1.8144633835508643], 'EDUCATION_NUM': [12, 12, 5.546387494193197, 2.0887956735044204]}, 'accuracy': 0.94}
+{'experience': 5356, 'action': '<=50K', 'lifetime': 29452, 'id': 42980, 'condition': {'HOURS_PER_WEEK': [5, 36, 1.0940422958385705, 1.634771124716094], 'AGE': [17, 59, 2.2009957384826215, 2.602611594602898]}, 'accuracy': 0.9202763256161315}
+{'experience': 2658, 'action': '<=50K', 'lifetime': 29441, 'id': 42981, 'condition': {'RELATIONSHIP': 5, 'EDUCATION_NUM': [9, 16, 0.939560530171754, 1.228597762912394]}, 'accuracy': 0.9296463506395787}
+{'experience': 4277, 'action': '<=50K', 'lifetime': 29391, 'id': 42982, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [1, 14, 0.5, 0.5], 'SEX': 0}, 'accuracy': 0.9719363891487371}
+{'experience': 6381, 'action': '<=50K', 'lifetime': 29367, 'id': 42983, 'condition': {'AGE': [6, 88, 3.7647481715781, 3.8259668877256066], 'HOURS_PER_WEEK': [6, 37, 0.767879692172709, 0.6340845113732412]}, 'accuracy': 0.9106723084156089}
+{'experience': 794, 'action': '<=50K', 'lifetime': 29352, 'id': 42984, 'condition': {'MARITAL_STATUS': 4, 'EDUCATION_NUM': [5, 16, 1.0442304527940705, 1.0039221469674944]}, 'accuracy': 0.906801007556675}
+{'experience': 2302, 'action': '<=50K', 'lifetime': 29342, 'id': 42985, 'condition': {'HOURS_PER_WEEK': [3, 40, 1.4770652316577397, 0.5524795637102051], 'MARITAL_STATUS': 1, 'FNLWGT': [101190, 445632, 26465.182018742198, 32512.278492159065]}, 'accuracy': 0.9370112945264987}
+{'experience': 6169, 'action': '<=50K', 'lifetime': 29309, 'id': 42987, 'condition': {'HOURS_PER_WEEK': [8, 36, 0.7037788346857664, 0.5292028972917121]}, 'accuracy': 0.9126276544010374}
+{'experience': 6384, 'action': '<=50K', 'lifetime': 29310, 'id': 42988, 'condition': {'HOURS_PER_WEEK': [3, 36, 1.3650626574400873, 0.5456313597895636]}, 'accuracy': 0.9125939849624061}
+{'experience': 9621, 'action': '<=50K', 'lifetime': 29297, 'id': 42989, 'condition': {'MARITAL_STATUS': 2}, 'accuracy': 0.95385095104459}
+{'experience': 1463, 'action': '<=50K', 'lifetime': 29176, 'id': 42990, 'condition': {'FNLWGT': [17195, 413306, 9538.083311846462, 2413.0487824299103], 'EDUCATION_NUM': [0, 5, 2.200133673190558, 0.5286483477587902]}, 'accuracy': 0.9466848940533151}
+{'experience': 893, 'action': '<=50K', 'lifetime': 29168, 'id': 42991, 'condition': {'OCCUPATION': 9}, 'accuracy': 0.8846584546472565}
+{'experience': 2180, 'action': '<=50K', 'lifetime': 29164, 'id': 42992, 'condition': {'HOURS_PER_WEEK': [1, 38, 2.9911325985770896, 0.5], 'RELATIONSHIP': 1}, 'accuracy': 0.9958715596330275}
+{'experience': 573, 'action': '>50K', 'lifetime': 29143, 'id': 42993, 'condition': {'CAPITAL_GAIN': [7781, 24950, 1038.5262199775568, 1976.7323255171768]}, 'accuracy': 0.9860383944153578}
+{'experience': 1558, 'action': '<=50K', 'lifetime': 29073, 'id': 42995, 'condition': {'AGE': [18, 52, 2.5504432167681164, 2.018522416463696], 'OCCUPATION': 7}, 'accuracy': 0.8766859344894027}
+{'experience': 9521, 'action': '<=50K', 'lifetime': 28982, 'id': 42996, 'condition': {'MARITAL_STATUS': 2}, 'accuracy': 0.9539964289465392}
+{'experience': 3477, 'action': '<=50K', 'lifetime': 28902, 'id': 42998, 'condition': {'HOURS_PER_WEEK': [9, 40, 0.5473366949979207, 0.5], 'EDUCATION': 1, 'AGE': [22, 60, 2.447476205153307, 1.7373152000424603], 'EDUCATION_NUM': [7, 13, 1.9270090091406813, 1.7758327672212448]}, 'accuracy': 0.815645671555939}
+{'experience': 4925, 'action': '<=50K', 'lifetime': 28842, 'id': 43001, 'condition': {'HOURS_PER_WEEK': [5, 35, 0.9566436571369601, 1.7474299004757627], 'AGE': [13, 56, 2.0106962195325817, 2.528131050869412]}, 'accuracy': 0.9299492385786802}
+{'experience': 5898, 'action': '<=50K', 'lifetime': 28831, 'id': 43003, 'condition': {'HOURS_PER_WEEK': [7, 35, 0.5, 0.5]}, 'accuracy': 0.9159036961681926}
+{'experience': 376, 'action': '<=50K', 'lifetime': 28639, 'id': 43006, 'condition': {'HOURS_PER_WEEK': [8, 39, 0.5, 0.5], 'OCCUPATION': 1}, 'accuracy': 0.9122340425531915}
+{'experience': 695, 'action': '<=50K', 'lifetime': 28595, 'id': 43008, 'condition': {'FNLWGT': [160909, 466145, 22131.01646722681, 27309.306678330984], 'EDUCATION_NUM': [5, 10, 0.6303673261199471, 1.9937021002850965], 'OCCUPATION': 10}, 'accuracy': 0.7884892086330936}
+{'experience': 1336, 'action': '<=50K', 'lifetime': 28489, 'id': 43009, 'condition': {'RACE': 4, 'SEX': 1}, 'accuracy': 0.8091317365269461}
+{'experience': 671, 'action': '<=50K', 'lifetime': 28417, 'id': 43010, 'condition': {'EDUCATION_NUM': [8, 17, 1.3449548103862186, 1.3934544382416163], 'RELATIONSHIP': 4}, 'accuracy': 0.9582712369597616}
+{'experience': 4730, 'action': '<=50K', 'lifetime': 28387, 'id': 43011, 'condition': {'HOURS_PER_WEEK': [6, 34, 0.5, 0.5]}, 'accuracy': 0.9300211416490486}
+{'experience': 3796, 'action': '<=50K', 'lifetime': 28320, 'id': 43013, 'condition': {'HOURS_PER_WEEK': [5, 33, 1.2722200696362829, 1.706730307531552], 'AGE': [16, 55, 1.9803257667576073, 3.8287379686858323]}, 'accuracy': 0.9457323498419389}
+{'experience': 717, 'action': '<=50K', 'lifetime': 28292, 'id': 43014, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5, 0.5], 'RELATIONSHIP': 4}, 'accuracy': 0.9762900976290098}
+{'experience': 676, 'action': '<=50K', 'lifetime': 27994, 'id': 43018, 'condition': {'HOURS_PER_WEEK': [4, 39, 1.207990851304161, 0.5061426078379994], 'MARITAL_STATUS': 1, 'FNLWGT': [92031, 466251, 31145.131563865958, 23158.679448419018]}, 'accuracy': 0.9571005917159763}
+{'experience': 788, 'action': '>50K', 'lifetime': 27754, 'id': 43021, 'condition': {'CAPITAL_GAIN': [7325, 23955, 1018.974417425091, 1072.1417264395216]}, 'accuracy': 0.9860406091370558}
+{'experience': 492, 'action': '>50K', 'lifetime': 27755, 'id': 43022, 'condition': {'CAPITAL_GAIN': [8622, 24808, 1532.195040626535, 923.8899818998085]}, 'accuracy': 0.9898373983739838}
+{'experience': 536, 'action': '>50K', 'lifetime': 27755, 'id': 43023, 'condition': {'CAPITAL_GAIN': [8437, 24250, 682.8123740224698, 1299.7355320521863]}, 'accuracy': 0.9906716417910447}
+{'experience': 3520, 'action': '<=50K', 'lifetime': 27531, 'id': 43025, 'condition': {'HOURS_PER_WEEK': [4, 31, 1.5600794948470005, 1.4415074099163827], 'AGE': [17, 56, 1.670805134158974, 5.073375450629721]}, 'accuracy': 0.9488636363636364}
+{'experience': 956, 'action': '<=50K', 'lifetime': 27240, 'id': 43026, 'condition': {'FNLWGT': [14664, 410743, 9749.74771030259, 2228.9644660676895], 'EDUCATION_NUM': [0, 4, 4.145850763864349, 0.5]}, 'accuracy': 0.9497907949790795}
+{'experience': 2323, 'action': '<=50K', 'lifetime': 27041, 'id': 43028, 'condition': {'AGE': [19, 58, 0.7537409339888417, 1.7582542989547822], 'RACE': 4}, 'accuracy': 0.871717606543263}
+{'experience': 5434, 'action': '<=50K', 'lifetime': 26957, 'id': 43029, 'condition': {'HOURS_PER_WEEK': [7.848502086888966, 39.742562762552105, 0.5, 0.5], 'EDUCATION_NUM': [6.6604751343598485, 14.637081697677436, 1, 1]}, 'accuracy': 0.9059624585940376}
+{'experience': 521, 'action': '>50K', 'lifetime': 26858, 'id': 43030, 'condition': {'CAPITAL_GAIN': [8511, 22998, 804.7019278746135, 833.7122279942203]}, 'accuracy': 0.9904030710172744}
+{'experience': 404, 'action': '>50K', 'lifetime': 26858, 'id': 43031, 'condition': {'AGE': [20.29625138984286, 61.35421507741089, 2, 2], 'CAPITAL_GAIN': [9447, 26790, 1097.5952343473691, 717.5869871749887]}, 'accuracy': 1.0}
+{'experience': 481, 'action': '>50K', 'lifetime': 26858, 'id': 43032, 'condition': {'CAPITAL_GAIN': [9283, 23884, 680.5836148086021, 867.6357776518054]}, 'accuracy': 0.9896049896049897}
+{'experience': 754, 'action': '>50K', 'lifetime': 26858, 'id': 43033, 'condition': {'CAPITAL_GAIN': [7643, 22930, 791.2739806733606, 697.7156274751691]}, 'accuracy': 0.9920424403183024}
+{'experience': 3271, 'action': '<=50K', 'lifetime': 26842, 'id': 43034, 'condition': {'HOURS_PER_WEEK': [2, 31, 1.0322659581193434, 1.7653138230306427], 'AGE': [17, 50, 1.51221550194551, 7.777487116089759]}, 'accuracy': 0.9565881993274228}
+{'experience': 520, 'action': '>50K', 'lifetime': 26834, 'id': 43035, 'condition': {'CAPITAL_GAIN': [8328, 24387, 793.0075472337761, 1037.9805062975918]}, 'accuracy': 0.9903846153846154}
+{'experience': 459, 'action': '>50K', 'lifetime': 26769, 'id': 43036, 'condition': {'CAPITAL_GAIN': [9557, 24360, 1000.563005409981, 900.3085987322187]}, 'accuracy': 0.9891067538126361}
+{'experience': 399, 'action': '>50K', 'lifetime': 26769, 'id': 43037, 'condition': {'EDUCATION_NUM': [5.79287831608242, 15.49754144723919, 1, 1], 'CAPITAL_GAIN': [10574, 25248, 1269.841259082594, 1167.2503600920516]}, 'accuracy': 1.0}
+{'experience': 351, 'action': '>50K', 'lifetime': 26769, 'id': 43038, 'condition': {'FNLWGT': [111376.36664083267, 413488.2064768486, 20000, 20000], 'CAPITAL_GAIN': [9727, 24148, 1189.8929436611959, 1233.3101466915916]}, 'accuracy': 0.9886039886039886}
+{'experience': 455, 'action': '>50K', 'lifetime': 26769, 'id': 43039, 'condition': {'CAPITAL_GAIN': [9813, 24665, 1313.7932801213217, 730.0811655807177]}, 'accuracy': 0.989010989010989}
+{'experience': 455, 'action': '>50K', 'lifetime': 26769, 'id': 43040, 'condition': {'CAPITAL_GAIN': [9880, 23775, 1034.5801248565617, 810.8594644726468]}, 'accuracy': 0.989010989010989}
+{'experience': 5613, 'action': '<=50K', 'lifetime': 26463, 'id': 43041, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.5, 0.5], 'EDUCATION_NUM': [6, 14, 1.2120079544931106, 1.5452349359551063]}, 'accuracy': 0.910030286834135}
+{'experience': 1236, 'action': '<=50K', 'lifetime': 26195, 'id': 43043, 'condition': {'RACE': 4, 'SEX': 1}, 'accuracy': 0.8090614886731392}
+{'experience': 441, 'action': '>50K', 'lifetime': 26132, 'id': 43044, 'condition': {'CAPITAL_GAIN': [10451, 23191, 1279.4849724300468, 1001.4959772628235]}, 'accuracy': 0.9909297052154195}
+{'experience': 394, 'action': '>50K', 'lifetime': 26132, 'id': 43045, 'condition': {'CAPITAL_GAIN': [11220, 23896, 1051.418412291587, 1232.425120443457]}, 'accuracy': 1.0}
+{'experience': 6084, 'action': '<=50K', 'lifetime': 26004, 'id': 43048, 'condition': {'HOURS_PER_WEEK': [5, 39, 0.5, 0.5473476161708501], 'EDUCATION_NUM': [2, 16, 0.7466785251307512, 1.451279356435132]}, 'accuracy': 0.9040105193951348}
+{'experience': 2151, 'action': '<=50K', 'lifetime': 25832, 'id': 43049, 'condition': {'AGE': [20, 57, 1.1585436554872415, 4.256039815822786], 'RACE': 4}, 'accuracy': 0.8684332868433287}
+{'experience': 793, 'action': '<=50K', 'lifetime': 25793, 'id': 43050, 'condition': {'OCCUPATION': 9}, 'accuracy': 0.880201765447667}
+{'experience': 331, 'action': '<=50K', 'lifetime': 25726, 'id': 43051, 'condition': {'HOURS_PER_WEEK': [6, 39, 0.6577516109080521, 0.6592345225673545], 'WORKCLASS': 4}, 'accuracy': 0.8121212121212121}
+{'experience': 5949, 'action': '<=50K', 'lifetime': 25594, 'id': 43052, 'condition': {'HOURS_PER_WEEK': [5, 39, 0.5, 0.5807873445858261], 'EDUCATION_NUM': [1, 15, 0.9174648320327193, 1.0449981229376482]}, 'accuracy': 0.9083879643637586}
+{'experience': 630, 'action': '<=50K', 'lifetime': 25333, 'id': 43055, 'condition': {'MARITAL_STATUS': 4, 'FNLWGT': [92275, 381073, 25546.921095662135, 18115.489736016658]}, 'accuracy': 0.9095238095238095}
+{'experience': 5945, 'action': '<=50K', 'lifetime': 25165, 'id': 43056, 'condition': {'HOURS_PER_WEEK': [4, 39, 0.5, 1.3487363561418113], 'EDUCATION_NUM': [1, 16, 1.4203556565535118, 1.2442895228553381]}, 'accuracy': 0.9046257359125316}
+{'experience': 342, 'action': '>50K', 'lifetime': 25145, 'id': 43057, 'condition': {'EDUCATION_NUM': [5, 14, 0.6944773096739945, 1.1537824228637799], 'CAPITAL_GAIN': [9902, 24498, 944.4034989490071, 806.1300544423499]}, 'accuracy': 0.9941520467836257}
+{'experience': 318, 'action': '<=50K', 'lifetime': 25128, 'id': 43058, 'condition': {'MARITAL_STATUS': 5}, 'accuracy': 0.9213836477987422}
+{'experience': 318, 'action': '<=50K', 'lifetime': 25128, 'id': 43059, 'condition': {'MARITAL_STATUS': 5}, 'accuracy': 0.9213836477987422}
+{'experience': 330, 'action': '<=50K', 'lifetime': 24992, 'id': 43060, 'condition': {'RELATIONSHIP': 4, 'SEX': 0}, 'accuracy': 0.9696969696969697}
+{'experience': 17253, 'action': '<=50K', 'lifetime': 24735, 'id': 43063, 'condition': {'HOURS_PER_WEEK': [4, 40, 0.6988056615443061, 1.3893275666027225], 'EDUCATION_NUM': [2, 15, 2.566545012912729, 1.1331403032827885]}, 'accuracy': 0.8303964757709251}
+{'experience': 612, 'action': '<=50K', 'lifetime': 24616, 'id': 43064, 'condition': {'RELATIONSHIP': 4, 'EDUCATION_NUM': [7, 17, 1.3549478789658616, 1.046607793342315]}, 'accuracy': 0.9558823529411765}
+{'experience': 4726, 'action': '<=50K', 'lifetime': 24590, 'id': 43065, 'condition': {'HOURS_PER_WEEK': [5, 38, 0.5, 1.7340877706599613], 'EDUCATION_NUM': [1, 12, 3.233197808744874, 1.5705215871677456]}, 'accuracy': 0.9454083791790098}
+{'experience': 1969, 'action': '<=50K', 'lifetime': 24558, 'id': 43066, 'condition': {'AGE': [24, 65, 0.8752783786153573, 4.4119175953935414], 'RACE': 4}, 'accuracy': 0.8542407313357034}
+{'experience': 617, 'action': '<=50K', 'lifetime': 24464, 'id': 43068, 'condition': {'HOURS_PER_WEEK': [8, 40, 0.5, 0.6613461143919552], 'RELATIONSHIP': 4}, 'accuracy': 0.9756888168557536}
+{'experience': 856, 'action': '<=50K', 'lifetime': 24350, 'id': 43069, 'condition': {'FNLWGT': [16888, 411824, 9515.82857046094, 3815.1752114314563], 'EDUCATION_NUM': [0, 4, 2.982022851629718, 0.5]}, 'accuracy': 0.9532710280373832}
+{'experience': 4576, 'action': '<=50K', 'lifetime': 24112, 'id': 43070, 'condition': {'HOURS_PER_WEEK': [7, 39, 0.5, 1.119260715043591], 'EDUCATION_NUM': [0, 12, 2.9851032281696237, 2.175849083618921]}, 'accuracy': 0.9449300699300699}
+{'experience': 1161, 'action': '<=50K', 'lifetime': 24075, 'id': 43072, 'condition': {'RACE': 4, 'SEX': 0}, 'accuracy': 0.9414298018949182}
+{'experience': 461, 'action': '<=50K', 'lifetime': 23661, 'id': 43074, 'condition': {'HOURS_PER_WEEK': [3, 39, 1.4265067217321348, 0.5208565712468273], 'MARITAL_STATUS': 1, 'FNLWGT': [130212, 457699, 36214.44014522487, 19386.401780603122]}, 'accuracy': 0.9587852494577006}
+{'experience': 278, 'action': '<=50K', 'lifetime': 23587, 'id': 43075, 'condition': {'HOURS_PER_WEEK': [7, 37, 0.5, 0.5], 'MARITAL_STATUS': 1, 'EDUCATION_NUM': [4, 9, 1.124279670366647, 1.3115343957407248]}, 'accuracy': 0.9748201438848921}
+{'experience': 5059, 'action': '<=50K', 'lifetime': 23436, 'id': 43076, 'condition': {'HOURS_PER_WEEK': [6, 37, 0.620913725914241, 2.0790827297827073], 'EDUCATION_NUM': [0, 15, 4.611124979683029, 2.439094301911656]}, 'accuracy': 0.9148052974896225}
+{'experience': 244, 'action': '<=50K', 'lifetime': 23423, 'id': 43077, 'condition': {'HOURS_PER_WEEK': [7, 38, 0.5780860181099575, 1.1560878488252118], 'RELATIONSHIP': 4}, 'accuracy': 0.9631147540983607}
+{'experience': 449, 'action': '>50K', 'lifetime': 23316, 'id': 43078, 'condition': {'CAPITAL_GAIN': [8349, 24102, 1060.4130618160686, 675.0967856843953]}, 'accuracy': 0.9933184855233853}
+{'experience': 1911, 'action': '<=50K', 'lifetime': 23081, 'id': 43081, 'condition': {'AGE': [23, 63, 0.5430943144236491, 6.938439967853322], 'RACE': 4}, 'accuracy': 0.8623757195185766}
+{'experience': 3883, 'action': '<=50K', 'lifetime': 22981, 'id': 43082, 'condition': {'HOURS_PER_WEEK': [0, 34, 0.8324186531429674, 2.0465583401271155], 'EDUCATION_NUM': [0, 14, 4.588849817026454, 1.9415750940789218]}, 'accuracy': 0.9381921194952356}
+{'experience': 825, 'action': '>50K', 'lifetime': 22641, 'id': 43083, 'condition': {'CAPITAL_GAIN': [7227, 24382, 599.0238887167818, 1124.2952478088955]}, 'accuracy': 0.9903030303030304}
+{'experience': 210, 'action': '<=50K', 'lifetime': 22409, 'id': 43084, 'condition': {'RACE': 2}, 'accuracy': 0.8809523809523809}
+{'experience': 210, 'action': '<=50K', 'lifetime': 22408, 'id': 43086, 'condition': {'RACE': 2}, 'accuracy': 0.8809523809523809}
+{'experience': 3437, 'action': '<=50K', 'lifetime': 22392, 'id': 43089, 'condition': {'HOURS_PER_WEEK': [0, 30, 0.6134749417011564, 2.6656673146284025], 'EDUCATION_NUM': [0, 13, 6.784559887887938, 2.0479153007790476]}, 'accuracy': 0.944137329066046}
+{'experience': 692, 'action': '<=50K', 'lifetime': 22351, 'id': 43090, 'condition': {'OCCUPATION': 9}, 'accuracy': 0.8757225433526011}
+{'experience': 6215, 'action': '<=50K', 'lifetime': 22263, 'id': 43093, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [8, 14, 0.7618078010668918, 1.5458803562530268]}, 'accuracy': 0.9544650040225261}
+{'experience': 6509, 'action': '<=50K', 'lifetime': 21891, 'id': 43096, 'condition': {'MARITAL_STATUS': 2, 'EDUCATION_NUM': [7, 14, 1.077134371674382, 1.909464445342303]}, 'accuracy': 0.9563681056998002}
+{'experience': 387, 'action': '>50K', 'lifetime': 21888, 'id': 43097, 'condition': {'CAPITAL_GAIN': [9176, 22691, 823.6642112590257, 794.3183354377384]}, 'accuracy': 0.9948320413436692}
+{'experience': 233, 'action': '>50K', 'lifetime': 21861, 'id': 43098, 'condition': {'WORKCLASS': 0, 'CAPITAL_GAIN': [9244, 22865, 671.5221908790791, 748.8958817320034]}, 'accuracy': 0.9957081545064378}
+{'experience': 2252, 'action': '<=50K', 'lifetime': 21782, 'id': 43099, 'condition': {'HOURS_PER_WEEK': [0, 28, 0.5133353670742775, 1.8835117717308898], 'EDUCATION_NUM': [0, 11, 5.409532669514495, 1.3316325541578846]}, 'accuracy': 0.9622557726465364}
+{'experience': 1935, 'action': '<=50K', 'lifetime': 21779, 'id': 43100, 'condition': {'AGE': [21, 66, 0.5958186942342345, 16.6997111619463], 'RACE': 4}, 'accuracy': 0.8666666666666667}
+{'experience': 7437, 'action': '<=50K', 'lifetime': 21765, 'id': 43101, 'condition': {'AGE': [10, 59, 2.444746722547642, 1.3682925843406881], 'EDUCATION_NUM': [7, 9, 3.7684263413300387, 1.1840170560408705]}, 'accuracy': 0.8574502420656267}
+{'experience': 1038, 'action': '<=50K', 'lifetime': 21722, 'id': 43102, 'condition': {'RACE': 4, 'SEX': 1}, 'accuracy': 0.8082851637764933}
+{'experience': 365, 'action': '>50K', 'lifetime': 21665, 'id': 43103, 'condition': {'CAPITAL_GAIN': [10291, 23447, 658.5776010655354, 762.8959076742817]}, 'accuracy': 0.9945205479452055}
+{'experience': 1577, 'action': '<=50K', 'lifetime': 21492, 'id': 43105, 'condition': {'AGE': [12, 60, 2.218815471885192, 1.289851945041463], 'EDUCATION_NUM': [6, 8, 4.500614564692538, 1.2802711881306734]}, 'accuracy': 0.9391249207355739}
+{'experience': 134, 'action': '<=50K', 'lifetime': 21443, 'id': 43106, 'condition': {'FNLWGT': [21951, 418209, 9606.611085940302, 3078.594512747252], 'EDUCATION_NUM': [0, 2, 2.325914386597199, 0.5]}, 'accuracy': 0.9776119402985075}
+{'experience': 406, 'action': '>50K', 'lifetime': 20977, 'id': 43107, 'condition': {'CAPITAL_GAIN': [8498, 24379, 1137.599782348199, 748.763832150274]}, 'accuracy': 0.9975369458128078}
+{'experience': 2184, 'action': '<=50K', 'lifetime': 20895, 'id': 43108, 'condition': {'HOURS_PER_WEEK': [0, 27, 0.6782129004578545, 1.9677311781031104], 'EDUCATION_NUM': [2, 12, 4.871638217457949, 1.525748048045671]}, 'accuracy': 0.9624542124542125}
+{'experience': 371, 'action': '>50K', 'lifetime': 20860, 'id': 43109, 'condition': {'CAPITAL_GAIN': [9292, 24228, 1018.2355711956761, 916.5512292787296]}, 'accuracy': 0.9973045822102425}
+{'experience': 371, 'action': '>50K', 'lifetime': 20860, 'id': 43110, 'condition': {'CAPITAL_GAIN': [9133, 23061, 1297.4131432856366, 663.493358110121]}, 'accuracy': 0.9973045822102425}
+{'experience': 561, 'action': '<=50K', 'lifetime': 20768, 'id': 43111, 'condition': {'MARITAL_STATUS': 4, 'FNLWGT': [73161, 373634, 24464.79036993294, 31753.56391757946]}, 'accuracy': 0.910873440285205}
+{'experience': 1938, 'action': '<=50K', 'lifetime': 20738, 'id': 43112, 'condition': {'AGE': [0, 63, 0.5, 21.500733873328628], 'RACE': 4}, 'accuracy': 0.8751289989680082}
+{'experience': 1101, 'action': '<=50K', 'lifetime': 20690, 'id': 43113, 'condition': {'FNLWGT': [182819, 455858, 13521.085397282894, 40329.28462356629], 'EDUCATION_NUM': [4, 15, 0.5261500940475898, 2.6373129746689177], 'OCCUPATION': 8}, 'accuracy': 0.8692098092643051}
+{'experience': 241, 'action': '<=50K', 'lifetime': 20476, 'id': 43114, 'condition': {'EDUCATION': 9, 'FNLWGT': [63124, 393984, 8552.974558187581, 15332.782520776307]}, 'accuracy': 0.921161825726141}
+{'experience': 7647, 'action': '<=50K', 'lifetime': 20138, 'id': 43116, 'condition': {'AGE': [13, 59, 4.412935504482479, 0.8283882407533094], 'EDUCATION_NUM': [5, 9, 3.3850631048921658, 1.0657373706108286]}, 'accuracy': 0.8688202981951347}
+{'experience': 13114, 'action': '<=50K', 'lifetime': 19857, 'id': 43119, 'condition': {'AGE': [14, 59, 4.750390416586201, 0.6660341888168573], 'EDUCATION_NUM': [5, 12, 3.769214638860964, 1.0439187722733374]}, 'accuracy': 0.8357355296270876}
+{'experience': 1660, 'action': '<=50K', 'lifetime': 19811, 'id': 43120, 'condition': {'HOURS_PER_WEEK': [7, 40, 0.6612659037134799, 0.8632859345355725], 'RELATIONSHIP': 5}, 'accuracy': 0.9602409638554217}
+{'experience': 171, 'action': '<=50K', 'lifetime': 19787, 'id': 43123, 'condition': {'RACE': 3}, 'accuracy': 0.8947368421052632}
+{'experience': 171, 'action': '<=50K', 'lifetime': 19788, 'id': 43124, 'condition': {'RACE': 3}, 'accuracy': 0.8947368421052632}
+{'experience': 312, 'action': '>50K', 'lifetime': 19733, 'id': 43126, 'condition': {'AGE': [21, 62, 0.7996651367166591, 3.406415165011804], 'CAPITAL_GAIN': [9130, 26932, 885.6871609204974, 633.4750823492121]}, 'accuracy': 1.0}
+{'experience': 157, 'action': '<=50K', 'lifetime': 19716, 'id': 43127, 'condition': {'AGE': [20, 61, 1.5730388495219145, 1.4567352426033673], 'RACE': 3}, 'accuracy': 0.8853503184713376}
+{'experience': 2983, 'action': '<=50K', 'lifetime': 19709, 'id': 43128, 'condition': {'AGE': [13, 59, 4.152467806219873, 0.8508685648466334], 'HOURS_PER_WEEK': [7.6720249123615405, 39.16865884504667, 0.5, 0.5], 'EDUCATION_NUM': [5, 11, 3.1700037680192215, 0.8061497985685084]}, 'accuracy': 0.9520616828695944}
+{'experience': 2031, 'action': '<=50K', 'lifetime': 19645, 'id': 43130, 'condition': {'HOURS_PER_WEEK': [1, 29, 0.5427180257254736, 1.7475172822688616], 'EDUCATION_NUM': [3, 11, 5.871096535647387, 1.3810045150616213]}, 'accuracy': 0.9630723781388478}
+{'experience': 5888, 'action': '<=50K', 'lifetime': 19639, 'id': 43131, 'condition': {'AGE': [16, 33, 0.5645681706788186, 20.070988723643797], 'FNLWGT': [109711.14604095508, 389787.9161023778, 20000, 20000]}, 'accuracy': 0.9016644021739131}
+{'experience': 949, 'action': '<=50K', 'lifetime': 19614, 'id': 43132, 'condition': {'RACE': 4, 'SEX': 0}, 'accuracy': 0.9420442571127503}
+{'experience': 386, 'action': '>50K', 'lifetime': 19556, 'id': 43133, 'condition': {'CAPITAL_GAIN': [8413, 22145, 1032.7713705393467, 1107.2365399128041]}, 'accuracy': 0.9974093264248705}
+{'experience': 166, 'action': '<=50K', 'lifetime': 19464, 'id': 43134, 'condition': {'AGE': [13, 62, 2.148429638216856, 2.102131053762477], 'RACE': 3}, 'accuracy': 0.891566265060241}
+{'experience': 5315, 'action': '<=50K', 'lifetime': 19288, 'id': 43135, 'condition': {'AGE': [27, 39, 0.6124133485059254, 19.246325471629618], 'FNLWGT': [89615, 398979, 29644.506518168553, 19284.629424999446]}, 'accuracy': 0.7586077140169332}
+{'experience': 208, 'action': '>50K', 'lifetime': 19113, 'id': 43136, 'condition': {'CAPITAL_GAIN': [11213, 25766, 1244.817692941727, 1015.2732339385446], 'EDUCATION_NUM': [5, 13, 1.4254966704903136, 1.2962702143424103]}, 'accuracy': 1.0}
+{'experience': 313, 'action': '<=50K', 'lifetime': 18956, 'id': 43138, 'condition': {'AGE': [19, 19, 1.0152534065200034, 20.595709511017755], 'FNLWGT': [99750, 384396, 30280.595577707136, 26805.388601323408]}, 'accuracy': 0.9968051118210862}
+{'experience': 754, 'action': '<=50K', 'lifetime': 18804, 'id': 43140, 'condition': {'FNLWGT': [205873, 557297, 19786.37265354987, 42656.02763805978], 'EDUCATION_NUM': [4, 16, 0.5, 3.234882883034319], 'OCCUPATION': 8}, 'accuracy': 0.8580901856763926}
+{'experience': 1898, 'action': '<=50K', 'lifetime': 18753, 'id': 43141, 'condition': {'HOURS_PER_WEEK': [1, 26, 0.5258169046959886, 1.0632044627732045], 'EDUCATION_NUM': [1, 11, 5.830557475513234, 1.255994251873534]}, 'accuracy': 0.9631190727081138}
+{'experience': 330, 'action': '>50K', 'lifetime': 18665, 'id': 43142, 'condition': {'CAPITAL_GAIN': [9395, 23957, 1076.201175503135, 1353.9154649438462]}, 'accuracy': 0.996969696969697}
+{'experience': 543, 'action': '<=50K', 'lifetime': 18605, 'id': 43143, 'condition': {'HOURS_PER_WEEK': [6, 39, 0.7592483941091819, 1.4760410838949576], 'RELATIONSHIP': 5}, 'accuracy': 0.9613259668508287}
+{'experience': 243, 'action': '>50K', 'lifetime': 18392, 'id': 43145, 'condition': {'FNLWGT': [118284, 418638, 23013.323896312148, 16816.752803562224], 'CAPITAL_GAIN': [10011, 24074, 1345.7790414349524, 864.4860071760822]}, 'accuracy': 0.9958847736625515}
+{'experience': 158, 'action': '<=50K', 'lifetime': 17918, 'id': 43146, 'condition': {'RACE': 3}, 'accuracy': 0.8860759493670886}
+{'experience': 1423, 'action': '<=50K', 'lifetime': 17872, 'id': 43147, 'condition': {'HOURS_PER_WEEK': [1, 23, 0.5, 0.9731492057965762], 'EDUCATION_NUM': [2, 12, 4.604893212822994, 1.4949717419727024]}, 'accuracy': 0.9620520028109627}
+{'experience': 642, 'action': '>50K', 'lifetime': 17611, 'id': 43149, 'condition': {'CAPITAL_GAIN': [7152, 24340, 905.1067091514948, 688.4443769423502]}, 'accuracy': 0.9906542056074766}
+{'experience': 112, 'action': '>50K', 'lifetime': 17484, 'id': 43150, 'condition': {'CAPITAL_GAIN': [9294, 22092, 693.1371403681841, 680.8718535804617], 'EDUCATION_NUM': [6, 12, 0.5, 1.1452584016315825]}, 'accuracy': 1.0}
+{'experience': 311, 'action': '<=50K', 'lifetime': 17394, 'id': 43151, 'condition': {'RELATIONSHIP': 4, 'SEX': 1}, 'accuracy': 0.9485530546623794}
+{'experience': 249, 'action': '<=50K', 'lifetime': 17182, 'id': 43153, 'condition': {'MARITAL_STATUS': 4, 'FNLWGT': [66426, 440446, 22708.095606025807, 28087.85825330539], 'RELATIONSHIP': 3}, 'accuracy': 0.9236947791164659}
+{'experience': 3546, 'action': '<=50K', 'lifetime': 16568, 'id': 43158, 'condition': {'AGE': [23, 65, 2.6593876389143576, 2.310060281004526], 'MARITAL_STATUS': 2}, 'accuracy': 0.9334461364918217}
+{'experience': 1209, 'action': '<=50K', 'lifetime': 16564, 'id': 43159, 'condition': {'HOURS_PER_WEEK': [1, 21, 0.550508934740722, 0.9101254767906941], 'EDUCATION_NUM': [2, 10, 5.9644621032924965, 1.5085329805667926]}, 'accuracy': 0.9660876757650951}
+{'experience': 483, 'action': '<=50K', 'lifetime': 16359, 'id': 43160, 'condition': {'FNLWGT': [227352, 554743, 31724.590002228182, 70031.05220104239], 'EDUCATION_NUM': [8, 17, 0.5, 3.94846575459442], 'OCCUPATION': 8}, 'accuracy': 0.8530020703933747}
+{'experience': 2153, 'action': '<=50K', 'lifetime': 16130, 'id': 43161, 'condition': {'AGE': [17, 66, 2.0538419899618576, 2.366707452287378], 'MARITAL_STATUS': 1}, 'accuracy': 0.8936367858801673}
+{'experience': 1807, 'action': '<=50K', 'lifetime': 15931, 'id': 43162, 'condition': {'AGE': [15, 65, 2.293765665925757, 1.2748602149307902], 'HOURS_PER_WEEK': [6, 38, 0.7171142774723064, 0.5], 'SEX': 0}, 'accuracy': 0.9214167127836193}
+{'experience': 458, 'action': '>50K', 'lifetime': 15879, 'id': 43163, 'condition': {'CAPITAL_GAIN': [7664, 22406, 804.816097568624, 658.7374687092288]}, 'accuracy': 0.9956331877729258}
+{'experience': 292, 'action': '<=50K', 'lifetime': 15816, 'id': 43164, 'condition': {'HOURS_PER_WEEK': [7, 35, 0.6925799227947628, 0.5], 'EDUCATION_NUM': [5, 8, 1.2787283962538896, 1.1112109102987242], 'SEX': 1}, 'accuracy': 0.9828767123287672}
+{'experience': 1108, 'action': '<=50K', 'lifetime': 15366, 'id': 43165, 'condition': {'HOURS_PER_WEEK': [0, 20, 0.5, 0.5], 'EDUCATION_NUM': [0, 10, 7.210035598478753, 2.06161238928157]}, 'accuracy': 0.9657039711191335}
+{'experience': 2046, 'action': '<=50K', 'lifetime': 15301, 'id': 43166, 'condition': {'AGE': [19, 65, 2.326265856149223, 1.8794218496014177], 'MARITAL_STATUS': 1}, 'accuracy': 0.8919843597262952}
+{'experience': 243, 'action': '>50K', 'lifetime': 15275, 'id': 43168, 'condition': {'CAPITAL_GAIN': [10534, 23151, 764.8811524431576, 625.6081322668736]}, 'accuracy': 0.9958847736625515}
+{'experience': 443, 'action': '<=50K', 'lifetime': 15244, 'id': 43170, 'condition': {'HOURS_PER_WEEK': [4, 38, 0.796232585183965, 0.9476018929785802], 'RELATIONSHIP': 5}, 'accuracy': 0.9593679458239278}
+{'experience': 1696, 'action': '<=50K', 'lifetime': 15070, 'id': 43171, 'condition': {'AGE': [17, 64, 1.7001509270127342, 1.786293286952669], 'HOURS_PER_WEEK': [6, 38, 0.6887976467094584, 0.5], 'SEX': 0}, 'accuracy': 0.9215801886792453}
+{'experience': 269, 'action': '>50K', 'lifetime': 14886, 'id': 43172, 'condition': {'CAPITAL_GAIN': [9568, 25762, 1141.0332509808834, 1503.2743394408913]}, 'accuracy': 0.9962825278810409}
+{'experience': 261, 'action': '>50K', 'lifetime': 14886, 'id': 43173, 'condition': {'CAPITAL_GAIN': [9540, 22675, 1542.879982379637, 542.1103548090689]}, 'accuracy': 0.9961685823754789}
+{'experience': 1946, 'action': '<=50K', 'lifetime': 14619, 'id': 43174, 'condition': {'AGE': [18, 65, 2.5775687810506676, 2.363811289906299], 'MARITAL_STATUS': 1}, 'accuracy': 0.8910585817060637}
+{'experience': 431, 'action': '>50K', 'lifetime': 14587, 'id': 43175, 'condition': {'CAPITAL_GAIN': [7323, 23565, 1039.5360195012793, 642.3939331913808]}, 'accuracy': 0.988399071925754}
+{'experience': 533, 'action': '>50K', 'lifetime': 14319, 'id': 43177, 'condition': {'CAPITAL_GAIN': [7282, 21576, 842.3659259963064, 1578.6002618690807]}, 'accuracy': 0.9906191369606003}
+{'experience': 1596, 'action': '<=50K', 'lifetime': 14236, 'id': 43178, 'condition': {'AGE': [15, 64, 1.1013065209329218, 2.232055492119792], 'HOURS_PER_WEEK': [6, 38, 0.5, 0.5], 'SEX': 0}, 'accuracy': 0.9223057644110275}
+{'experience': 629, 'action': '<=50K', 'lifetime': 13872, 'id': 43180, 'condition': {'HOURS_PER_WEEK': [0, 20, 0.5, 0.62829953550535], 'EDUCATION_NUM': [0, 9, 5.702589983362358, 3.734880208738582]}, 'accuracy': 0.9809220985691574}
+{'experience': 4503, 'action': '<=50K', 'lifetime': 13833, 'id': 43181, 'condition': {'AGE': [17, 64, 3.046404521499173, 2.2367295181043163], 'MARITAL_STATUS': 2}, 'accuracy': 0.9549189429269376}
+{'experience': 1483, 'action': '<=50K', 'lifetime': 13365, 'id': 43183, 'condition': {'AGE': [17, 63, 0.8451050005760818, 2.801757644445879], 'HOURS_PER_WEEK': [6, 38, 0.5612463859215506, 0.7015261585565835], 'SEX': 0}, 'accuracy': 0.9217801753202967}
+{'experience': 177, 'action': '>50K', 'lifetime': 13263, 'id': 43184, 'condition': {'AGE': [26.996880792246078, 61.91491475633202, 2, 2], 'CAPITAL_GAIN': [12551, 23604, 1459.6145274283556, 1231.4925454853842]}, 'accuracy': 1.0}
+{'experience': 211, 'action': '>50K', 'lifetime': 13194, 'id': 43185, 'condition': {'AGE': [18, 62, 1.08413973035598, 2.526586430375108], 'CAPITAL_GAIN': [9508, 26002, 711.4684904990746, 525.1136959790377]}, 'accuracy': 1.0}
+{'experience': 213, 'action': '<=50K', 'lifetime': 13008, 'id': 43186, 'condition': {'FNLWGT': [288786, 724855, 48152.97983308375, 76784.57692645806], 'EDUCATION_NUM': [3, 14, 0.6448946162345446, 5.453614003744665], 'OCCUPATION': 8}, 'accuracy': 0.8497652582159625}
+{'experience': 1390, 'action': '<=50K', 'lifetime': 12600, 'id': 43187, 'condition': {'AGE': [14, 62, 0.9343864660243, 3.0013831418661416], 'HOURS_PER_WEEK': [5, 38, 0.5502817475542997, 1.1375114892610079], 'SEX': 0}, 'accuracy': 0.9244604316546763}
+{'experience': 308, 'action': '<=50K', 'lifetime': 12548, 'id': 43188, 'condition': {'HOURS_PER_WEEK': [5, 37, 0.7769111365966109, 0.8824198471220838], 'RELATIONSHIP': 5}, 'accuracy': 0.9577922077922078}
+{'experience': 251, 'action': '>50K', 'lifetime': 12409, 'id': 43189, 'condition': {'CAPITAL_GAIN': [7888, 22570, 924.8197734185911, 551.1602236523365]}, 'accuracy': 0.9920318725099602}
+{'experience': 136, 'action': '>50K', 'lifetime': 11749, 'id': 43192, 'condition': {'FNLWGT': [54572.363443813694, 402244.491907777, 20000, 20000], 'WORKCLASS': 0, 'CAPITAL_GAIN': [8600, 22699, 688.1554970024882, 668.6288935240515]}, 'accuracy': 0.9926470588235294}
+{'experience': 1007, 'action': '<=50K', 'lifetime': 11676, 'id': 43193, 'condition': {'HOURS_PER_WEEK': [0, 20, 0.6467710576958051, 0.5], 'EDUCATION_NUM': [0, 13, 5.847926338776591, 2.38869077457035]}, 'accuracy': 0.9503475670307845}
+{'experience': 214, 'action': '>50K', 'lifetime': 11633, 'id': 43194, 'condition': {'CAPITAL_GAIN': [9030, 23317, 677.8403567940483, 1587.2885163212618]}, 'accuracy': 0.9953271028037384}
+{'experience': 1106, 'action': '<=50K', 'lifetime': 11570, 'id': 43196, 'condition': {'AGE': [10, 62, 0.9196836797054881, 1.9060665944707809], 'HOURS_PER_WEEK': [5, 39, 0.5082266413098455, 1.1906854866178933], 'SEX': 1}, 'accuracy': 0.8933092224231465}
+{'experience': 109, 'action': '<=50K', 'lifetime': 11570, 'id': 43197, 'condition': {'RACE': 2}, 'accuracy': 0.8715596330275229}
+{'experience': 109, 'action': '<=50K', 'lifetime': 11570, 'id': 43198, 'condition': {'RACE': 2}, 'accuracy': 0.8715596330275229}
+{'experience': 211, 'action': '<=50K', 'lifetime': 11541, 'id': 43199, 'condition': {'RELATIONSHIP': 4, 'SEX': 1}, 'accuracy': 0.957345971563981}
+{'experience': 226, 'action': '>50K', 'lifetime': 11094, 'id': 43201, 'condition': {'CAPITAL_GAIN': [8234, 23993, 929.8098933558291, 1445.9148279583558]}, 'accuracy': 1.0}
+{'experience': 135, 'action': '<=50K', 'lifetime': 11018, 'id': 43202, 'condition': {'EDUCATION': 9, 'FNLWGT': [73014, 402246, 7565.325080477803, 10138.823708049229]}, 'accuracy': 0.9333333333333333}
+{'experience': 553, 'action': '<=50K', 'lifetime': 10548, 'id': 43205, 'condition': {'HOURS_PER_WEEK': [0, 19, 0.7159695747380925, 0.644791382848711], 'EDUCATION_NUM': [0, 14, 7.074400935897471, 3.227091615454179]}, 'accuracy': 0.945750452079566}
+{'experience': 1043, 'action': '<=50K', 'lifetime': 10485, 'id': 43206, 'condition': {'AGE': [10, 66, 0.8767730051847511, 1.5266167210031754], 'HOURS_PER_WEEK': [6, 38, 0.5, 1.2570084409045053], 'SEX': 1}, 'accuracy': 0.8906999041227229}
+{'experience': 130, 'action': '>50K', 'lifetime': 10154, 'id': 43207, 'condition': {'FNLWGT': [134348, 414711, 39880.04238705291, 16393.489301917987], 'CAPITAL_GAIN': [9656, 24420, 907.2518837334588, 1154.2120542592086]}, 'accuracy': 1.0}
+{'experience': 106, 'action': '>50K', 'lifetime': 9650, 'id': 43209, 'condition': {'EDUCATION_NUM': [5, 13, 1.482107616476222, 1.4498883096196522], 'CAPITAL_GAIN': [11957, 25129, 1348.0510350854488, 891.8615786623994]}, 'accuracy': 1.0}
+{'experience': 165, 'action': '>50K', 'lifetime': 9179, 'id': 43211, 'condition': {'CAPITAL_GAIN': [11023, 28020, 1228.8019924635928, 955.0260332014631]}, 'accuracy': 1.0}
+{'experience': 130, 'action': '>50K', 'lifetime': 8839, 'id': 43215, 'condition': {'CAPITAL_GAIN': [9942, 23482, 510.7427161260655, 650.5733460529214], 'SEX': 1}, 'accuracy': 1.0}
+{'experience': 463, 'action': '<=50K', 'lifetime': 8802, 'id': 43216, 'condition': {'HOURS_PER_WEEK': [0, 19, 0.912826471691384, 0.5044131299372117], 'EDUCATION_NUM': [0, 20, 6.2910352340640765, 1.5745370269272143]}, 'accuracy': 0.9352051835853131}
+{'experience': 1261, 'action': '<=50K', 'lifetime': 8310, 'id': 43218, 'condition': {'HOURS_PER_WEEK': [5, 36, 0.6989471132364747, 1.2985196409402053], 'AGE': [18.82481813597624, 57.69651868127364, 2, 2]}, 'accuracy': 0.9199048374306106}
+{'experience': 150, 'action': '>50K', 'lifetime': 7780, 'id': 43220, 'condition': {'CAPITAL_GAIN': [8542, 23298, 1040.509566483708, 960.2794258825735]}, 'accuracy': 1.0}
+{'experience': 112, 'action': '>50K', 'lifetime': 7167, 'id': 43223, 'condition': {'AGE': [12, 64, 1.5884104486554393, 1.4042406758394042], 'CAPITAL_GAIN': [9463, 24509, 715.0495759706068, 497.24600285125996]}, 'accuracy': 1.0}
+{'experience': 360, 'action': '<=50K', 'lifetime': 6724, 'id': 43224, 'condition': {'HOURS_PER_WEEK': [0, 18, 0.6872814875964909, 0.5], 'EDUCATION_NUM': [1, 22, 5.215050751145794, 2.228264134528224]}, 'accuracy': 0.925}
+{'experience': 985, 'action': '<=50K', 'lifetime': 1729, 'id': 43241, 'condition': {'FNLWGT': [93547, 411315, 1225.8475400790749, 10868.319907522668], 'EDUCATION_NUM': [5, 12, 0.7394997928980508, 0.7780134471478812]}, 'accuracy': 0.8079268292682927}
+{'experience': 535, 'action': '<=50K', 'lifetime': 1575, 'id': 43242, 'condition': {'FNLWGT': [80633, 423226, 1393.8524955557707, 10106.312112672145], 'EDUCATION_NUM': [4, 9, 0.5217315810057943, 0.6211516413299822]}, 'accuracy': 0.8764044943820225}
+{'experience': 428, 'action': '<=50K', 'lifetime': 1261, 'id': 43245, 'condition': {'FNLWGT': [92629, 427954, 1283.4094321626135, 12799.445727089576], 'EDUCATION_NUM': [3, 9, 0.7417440652394696, 0.5756169165882733]}, 'accuracy': 0.8688524590163934}
+{'experience': 334, 'action': '<=50K', 'lifetime': 955, 'id': 43246, 'condition': {'FNLWGT': [89402, 421816, 1722.6476454345136, 13688.181457893967], 'EDUCATION_NUM': [3, 9, 0.7144323451710819, 0.6069162152551213]}, 'accuracy': 0.8738738738738738}
