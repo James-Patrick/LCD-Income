@@ -1,0 +1,23 @@
+# ini: The initial number of classifiers
+# fin: The final number of classifiers
+% err: The error percentage (1 - acc)
+% acc: The accuracy percentage
+l time: The time taken to learn from the training dataset
+l time: The time taken to classify the test dataset
+% majm: The percentages of misses that were meant to be the majority class
+% minm: The percentages of misses that were meant to be the minority class
+t missed: The number of environments that could not be classified (no relevant classifier available)
+================================================================================
+# ini	# fin			% err	% acc	l time	c time	maj m	min m	t missed
+================================================================================
+
+~ USING DUPLICATION ~
+
+200		416.333			0.220	0.780	17.552	6.396	0.001	0.999	0.000
+400		845.000			0.245	0.755	35.798	13.151	0.132	0.868	0.000
+600		1395.333		0.203	0.797	59.716	22.129	0.009	0.991	0.000
+800		1676.333		0.204	0.796	71.478	26.219	0.019	0.981	0.000
+1000	2108.667		0.206	0.794	91.408	33.800	0.026	0.974	0.000
+
+~ NOT USING DUPLICATION ~
+

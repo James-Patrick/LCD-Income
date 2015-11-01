@@ -41,23 +41,13 @@ def getMutantChild(child):
 			value[3] = max(value[3] * math.exp(LEARNING_RATE * random.normalvariate(0, 1)), EPSILON)	# sigma max
 		else:
 
-			#if not continuous, check probability and maybe add new entry		
-			#vl = 1 if isinstance(value, int) else len(value)
+			#if not continuous, check probability and change a value occasionally
 			if random.random() < LEARNING_RATE: #and vl < ENUM_ATTRIBUTES[key]):
-				#new_value = value
-				#if isinstance(value, int):
-				#	new_value = [value]	# Turns it into a list if it's an integer
 				newEntry = random.randint(0, ENUM_ATTRIBUTES[key])				
 				while(child[key] == newEntry): #make sure it's not a duplicate
-					newEntry = random.randint(0, ENUM_ATTRIBUTES[key])
-				
-				#new_value.append(newEntry)
-				
+					newEntry = random.randint(0, ENUM_ATTRIBUTES[key])				
 				child[key] = newEntry
-				#if we didnt add one, maybe we should remove one
-			#elif(random.random() < LEARNING_RATE/vl and vl > 1):
-			#	value.remove(value[random.randrange(vl)])
-			#	child[key] = value
+
 
 			
 			# Also change an entire key occasionally

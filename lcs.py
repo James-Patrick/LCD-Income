@@ -1,30 +1,24 @@
 # -*- coding: utf-8 -*-
 
 # Note: You must run 'pip install enum34' before this will work on Python versions < 3.4.
+# Note: You must also run 'pip install colorama'.
 # By Michael Stewart, James Patrick and Brandon Papalia.
 
 from global_variables import *
-import random_rules
-import lcs_enums
-import ea
+import random_rules, lcs_enums, ea
 
+import time, sys, getopt, ast, random, copy, math, os
 
-import time, sys, getopt, ast, random, copy, math
-
-
-
-''' Colorama (for nicer output) '''
+# Colorama (for nicer output)
 from colorama import init, Fore
 init()
-
-
 
 
 ''' Notes '''
 # After a while, we need to choose a number where the classifier is sufficiently experienced enough to be deleted if it's fitness is too low
 
 
-''' (Not used)
+''' (Not used, but it's useful for reference)
 HEADINGS_DICT = {'age': 'continuous', 
 			'workclass': 'discrete',
 			'fnlwgt': 'continuous',
@@ -46,19 +40,22 @@ LEARNING_FILENAME = 'adult.data'
 TESTING_FILENAME  = 'adult.test.txt' #'adult.data'# 'adult.test.txt'
 HEADINGS = ['age', 'workclass', 'fnlwgt', 'education', 'education-num',	'marital-status', 'occupation', 'relationship', 'race',	'sex', 'capital-gain', 'capital-loss',	'hours-per-week', 'native-country', 'salary']
 CLASS_LABELS = ['<=50K', '>50K']
-NUM_CLASSIFIERS = 1000
+NUM_CLASSIFIERS = 1000	# Initial classifier population
 LEARN_MODE    = 0
 CLASSIFY_MODE = 1
+RESULTS_MODE = 2
 CLASSIFIERS_FILE = "classifiers"
-MAX_CLASSIFIERS = 999999
+
+IMBALANCE_RATIO = 3846.0 / 16281.0			# Ratio of min/maj
+
 COUNT = 0
 USING_EA = True
-USING_IR = True		# Using imbalanced ratio (weight the minority class higher during classification)
+USING_DUPLICATION = True
 
-LEARNING_TIMES = 3
+LEARNING_TIMES = 1			# Number of times the learning dataset is scanned
 
-ACCURACY_CUTOFF = 0.25		# Accuracy required to mutate/be deleted (if unsufficient)
-EXPERIENCE_CUTOFF = 75		# Amount of experience required to mutate
+ACCURACY_CUTOFF = 0.75		# Accuracy required to mutate/be deleted (if unsufficient)
+EXPERIENCE_CUTOFF = 100		# Amount of experience required to mutate
 
 classifiers = []
 total_deleted = 0
@@ -66,10 +63,12 @@ total_classifiers = 0
 
 verbose = False
 
+RESULTS_FILE = "results"
+learning_time = None		# In results mode, time taken for learning to complete
+
 def make_verbose():
 	global verbose
 	verbose = True
-
 
 # A classifier. 
 # Contains a condition, an action, a fitness value
@@ -124,8 +123,9 @@ class Classifier:
 				else:
 					return '<=50K'
 				
-			dc = copy.deepcopy(self)
-			dc.action = flipped_action(self.action)
+			if USING_DUPLICATION:
+				dc = copy.deepcopy(self)
+				dc.action = flipped_action(self.action)
 
 			#dc = Classifier(self.condition, flipped_action(self.action), False)
 		
@@ -135,14 +135,20 @@ class Classifier:
 	def check_condition(self, environment):
 		for k, v in self.condition.items():
 			
-			# If continuous, check whether the value is within minBound and maxBound.
-			# If discrete, check whether the classifier's field matches the environment's field.
+			# If continuous, check whether the value is not within minBound and maxBound.
+			# If discrete, check whether the classifier's field do not match the environment's field.
 			if k in CTS_ATTRIBUTES:
 				if environment.dictionary[k] < v[0] or environment.dictionary[k] > v[1]:
 					return False
 			else:
 				if environment.dictionary[k] != v:
-					return False
+					return False	
+				#if isinstance(v, int):
+				#	if environment.dictionary[k] != v:
+				#		return False	
+				#else:
+				#	if environment.dictionary[k] not in v:
+				#		return False
 		return True	
 
 	def mutate(self):
@@ -152,26 +158,19 @@ class Classifier:
 			new_action	  = copy.deepcopy(self.action)
 			c = Classifier(new_condition, new_action)
 		
-		global classifiers		
-		if len(classifiers) < MAX_CLASSIFIERS:			
-			if (self.experience > EXPERIENCE_CUTOFF and self.accuracy > ACCURACY_CUTOFF):
-			
-				if not self.has_mutated:
-			
-					create_child()
-					self.has_mutated = True					
+		if (self.experience > EXPERIENCE_CUTOFF and self.accuracy > ACCURACY_CUTOFF):
+		
+			if not self.has_mutated:
+		
+				create_child()
+				self.has_mutated = True					
 
-				# Give it a second chance to mutate (more if it's >50K)!
-				#r = random.random()
-				#if r < (750.0/math.pow(len(classifiers), 2)) and self.action == ">50K":
-				#	create_child()
-				#if r < (50.0/math.pow(len(classifiers), 2)) and self.action == "<=50K":
-				#	create_child()		
-						
-							
-							
-					
-
+			#Give it a second chance to mutate if it's >50K!
+			#r = random.random()
+			#if r < (5.0/math.pow(len(classifiers), 3)) and self.action == ">50K":
+			#	create_child()
+			#if r < (5.0/math.pow(len(classifiers), 3)) and self.action == "<=50K":
+			#	create_child()		
 	
 	def check_delete(self):
 		global total_deleted
@@ -200,7 +199,6 @@ class Classifier:
 					self.mutate()
 			else:
 				self.times_wrong += 1
-
 			
 		# If this classifier has met all its conditions on the environment, add +1 experience points and return the classifier's action
 		# (which in this case is either <= 50K or > 50K)
@@ -211,38 +209,27 @@ class Classifier:
 		
 		self.check_delete()
 		self.lifetime = self.lifetime + 1
-		
-			#self.print_details()
-#			return self.action
-#		else:
-#			return None
 	
 	
 	def classify(self, environment):
 		if self.check_condition(environment):
-			return (self.accuracy, self.action)
+			return [self.accuracy, self.action]
 
 	# Prints the details of the classifier in a nice, easy-to-read manner.
 	def print_details(self):
 		if verbose:
-		#	print("{0:<15s} : {1}".format("Classifier #", self.id))
 			print("{0:<15s} : {1}".format("Condition:", self.condition))
 			print("{0:<15s} : {1}".format("Action:", self.action))
-		#	print("{0:<15s} : {1}".format("Prediction:", self.prediction))
 			print("{0:<15s} : {1}".format("Fitness:", self.fitness))
 			print("{0:<15s} : {1}".format("Experience:", self.experience))
 			print("{0:<15s} : {1}".format("Times Correct:", self.times_correct))
-			print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))
-			
+			print("{0:<15s} : {1}".format("Times Wrong:", self.times_wrong))			
 			print("{0:<15s} : {1}".format("Accuracy:", self.accuracy * 100))
-
-		#	print("{0:<15s} : {1}".format("Error:", self.error))		
 			print()
 	
 	# Outputs the classifier's info as a dictionary
 	def to_dictionary(self):
 		to_dict = {}
-	#	to_dict["id"] = self.id
 		to_dict["id"] = self.id
 		to_dict["condition"] = self.condition
 		to_dict["action"] = self.action
@@ -253,8 +240,6 @@ class Classifier:
 
 	# Inputs the classifiers info from a dictionary
 	def read_from_dictionary(self, from_dict):
-	#	self.id = from_dict["id"]
-
 		self.condition = from_dict["condition"]
 		self.action = from_dict["action"]
 		self.accuracy = from_dict["accuracy"]
@@ -287,8 +272,7 @@ class Environment:
 	
 	# Prints the details of the environment in a nice, easy-to-read manner.
 	def print_details(self):
-		if verbose:			#match_set  = []
-			#action_set = []
+		if verbose:
 			for k, v in self.dictionary.items():
 				print("{0:<20s} : {1}".format(k, v))
 			print("----------------------------")
@@ -306,13 +290,13 @@ def main(argv):
 		print('-v verbose (print output)')
 		print('-l Learn mode (default)')
 		print('-c Classify mode')
+		print('-r Results mode')
 
 	mode = LEARN_MODE
 
 	try:
-		opts, args = getopt.getopt(argv, "hvlc")
-	except getopt.GetoptError:			#match_set  = []
-			#action_set = []
+		opts, args = getopt.getopt(argv, "hvlcr")
+	except getopt.GetoptError:
 		print_usage()
 		sys.exit(2)
 	
@@ -326,6 +310,8 @@ def main(argv):
 			mode = LEARN_MODE
 		elif opt == '-c':
 			mode = CLASSIFY_MODE
+		elif opt == '-r':
+			mode = RESULTS_MODE			
 
 
 	# Creates a list of environments.
@@ -347,11 +333,9 @@ def main(argv):
 		def create_classifiers():
 			for x in range(NUM_CLASSIFIERS):
 			  Classifier()
-			#return Classifier.__all__
 
 		# Writes all classifiers to a file, in dictionary format
 		def write_classifiers(output_file, new_classifiers):
-			#global classifiers
 			for c in new_classifiers:
 				output_file.write(str(c.to_dictionary()))
 				output_file.write('\n')
@@ -362,9 +346,6 @@ def main(argv):
 			for c in classifiers:
 				c.learn(environment)
 			
-			#classifiers = Classifier.__all__
-			#return classifiers		# Have to refresh the list every step
-			
 		time_start = time.time()
 	
 		global classifiers
@@ -372,46 +353,39 @@ def main(argv):
 		create_classifiers()
 		count = 0
 		
-		#if verbose:
-		#	for c in classifiers:
-		#		c.print_details()
-		#	print('------------------------------------') 
-
-		
 		for x in xrange(LEARNING_TIMES):
 			count = 0
-			print "\n\n------------------------------"
+			print "\n----------------------------------"
 			print "Learning", x + 1, "/", LEARNING_TIMES
-			print "------------------------------"
+			print "----------------------------------"
 			for x in range(len(environments)):		
-				#new_classifiers = step(environments[x], classifiers);
-				#classifiers = copy.deepcopy(new_classifiers)
-		
-				#sys.stdout.write("X")
 				step(environments[x])
 				count += 1
-				#sys.stdout.write(Fore.WHITE + "X")
 				if count % 500 == 0:
-					print "\n"
-					print "\nStep:", count, "\tClassifiers:", len(classifiers)
-					print "\n"
+					if verbose: print "\n\n"
+					print "Step:", count, "\tClassifiers:", len(classifiers)
+					if verbose: print "\n"
 		
-
-		print("Num classifiers: ", len(classifiers))
-		print("Total deleted: ", total_deleted)
+		print "\n----------------------------------"
+		"Num classifiers:", len(classifiers)
+		"Total deleted:", total_deleted
 		time_end = time.time()
 		total_time = time_end - time_start
-		print(total_time, "seconds")
-
+		print "Total time:", total_time, "seconds"
+		
 		output_file = open(CLASSIFIERS_FILE, "w")
-		print("Tidying up...")
-		print(len(classifiers))
+		print"Tidying up...", len(classifiers), ">>",
 		final_classifiers = list()
 		for c in classifiers:
 			if not (c.experience < EXPERIENCE_CUTOFF or c.accuracy < ACCURACY_CUTOFF):
 				final_classifiers.append(c)
-		print(len(final_classifiers))
-		write_classifiers(output_file, final_classifiers)		
+		print len(final_classifiers)
+		write_classifiers(output_file, final_classifiers)
+		print "----------------------------------\n"
+		
+		if RESULTS_MODE:
+			global learning_time
+			learning_time = total_time
 
 		
 	def do_classify_mode():		
@@ -424,7 +398,7 @@ def main(argv):
 
 		
 		# One timestep. 
-		def step(environment, classifiers, total_seen, total_correct, total_incorrect, total_missed):
+		def step(environment, classifiers, total_seen, total_correct, total_incorrect, total_missed, maj_missed, min_missed):
 			match_set = []
 			for c in classifiers:
 				cl = c.classify(environment)			# [classifier, action, accuracy]
@@ -432,6 +406,15 @@ def main(argv):
 					match_set.append(cl)
 			
 			
+			# Assign more weighting to the minority class if using IR
+			if USING_IR:
+				if len(match_set) > 0:
+					for c in match_set:
+						if c[1] == ">50K":
+							c[0] *= (1 + IMBALANCE_RATIO)
+						else:
+							c[0] *= (1 - IMBALANCE_RATIO)
+
 			sorted_set = sorted(match_set, key=lambda tup: tup[0], reverse = True)
 			if len(sorted_set) > 0:
 				print_char = '.'
@@ -447,12 +430,22 @@ def main(argv):
 				else:
 					correct = False
 					total_incorrect += 1
+					if environment.correct_class == ">50K":
+						min_missed += 1
+					else:
+						maj_missed +=1
 					if verbose:
 						sys.stdout.write(Fore.RED + print_char + Fore.WHITE)
 			else:
-				sys.stdout.write(" ")
+				if verbose:	
+					sys.stdout.write(" ")
 				total_missed += 1
-			return [total_correct, total_incorrect, total_missed]
+				total_incorrect += 1
+				if environment.correct_class == ">50K":
+					min_missed += 1
+				else:
+					maj_missed +=1
+			return [total_correct, total_incorrect, total_missed, maj_missed, min_missed]
 
 
 		environments = create_environments(TESTING_FILENAME)	
@@ -478,12 +471,16 @@ def main(argv):
 		total_incorrect = 0
 		total_missed = 0
 		total_seen = 0
+		maj_missed = 0
+		min_missed = 0
 		for x in range(len(environments)):		
 			total_seen += 1
-			cim = step(environments[x], classifiers, total_seen, total_correct, total_incorrect, total_missed);		
+			cim = step(environments[x], classifiers, total_seen, total_correct, total_incorrect, total_missed, maj_missed, min_missed);		
 			total_correct = cim[0]
 			total_incorrect = cim[1]
 			total_missed = cim[2]
+			maj_missed = cim[3]
+			min_missed = cim[4]
 			
 		print("\n\n")
 		sys.stdout.write("Total:\t\t" + str(total_seen) + "\n")
@@ -495,28 +492,109 @@ def main(argv):
 		print("\n")
 		time_end = time.time()
 		total_time = time_end - time_start
-		print(total_time, "seconds")			
 		
+		if RESULTS_MODE:
+			acc = total_correct * 1.0 / total_seen * 1.0
+			err = 1.0 - acc
+			majm = maj_missed * 1.0 / total_incorrect * 1.0
+			minm = min_missed * 1.0 / total_incorrect * 1.0			
+			global average_results
+			average_results.append([len(classifiers), err, acc, learning_time, total_time, majm, minm, total_missed])
+
+			#acc = "{0:.3f}".format(acc)			
+			#err = "{0:.3f}".format(err)
+			#lt = "{0:.3f}".format(learning_time)
+			#tt = "{0:.3f}".format(total_time)
+			#majm = "{0:.3f}".format(majm)	
+			#minm = "{0:.3f}".format(minm)
+			#results_string = str(NUM_CLASSIFIERS * 2) + "\t\t" + str(len(classifiers)) + "\t\t" + err + "\t" + acc + "\t" + lt + "\t" + tt + "\t" + majm + "\t" + minm + "\t" + str(total_missed) + "\n"
+			#rf.write(results_string)
+		
+		print "Total time:", total_time, "seconds"		
+		
+	
+	# For getting results. Runs a series of tests and logs the performance in a file.
+	def do_results_mode():
+		global rf
+		global NUM_CLASSIFIERS
+		global ACCURACY_CUTOFF
+		rf = open(RESULTS_FILE, "w")
+		rf.write("# ini: The initial number of classifiers\n")
+		rf.write("# fin: The final number of classifiers\n")
+		rf.write("% err: The error percentage (1 - acc)\n")
+		rf.write("% acc: The accuracy percentage\n")
+		rf.write("l time: The time taken to learn from the training dataset\n")
+		rf.write("l time: The time taken to classify the test dataset\n")
+		rf.write("% majm: The percentages of misses that were meant to be the majority class\n")
+		rf.write("% minm: The percentages of misses that were meant to be the minority class\n")
+		rf.write("t missed: The number of environments that could not be classified (no relevant classifier available)\n")
+		rf.write("\nThe top line is without IR, and bottom with IR.\n")
+		rf.write("================================================================================\n")
+		rf.write("# ini\t# fin\t\t% err\t% acc\tl time\tc time\tmaj m\tmin m\tt missed\n")
+		rf.write("================================================================================\n")
+
+		LEARNING_TIMES = 1
+		trial_runs = 3
+
+		def run_test(test_number, test_information):
+			print Fore.CYAN + "\n\n=================================================================================", Fore.WHITE
+			print "Running test", test_number
+			print test_information
+			#print "Initial classifiers:", NUM_CLASSIFIERS * 2, Fore.GREEN
+			#if USING_DUPLICATION:
+			#	print Fore.GREEN + "Using duplication"
+			#else:
+			#	print Fore.RED + "Not using duplication"
+			print Fore.CYAN + "=================================================================================", Fore.WHITE	
+			rf.write("\n" + test_information)
+			rf.write("\n--------------------------------------------------------------------------------\n")
+			global USING_IR
+			global average_results
+			global rf
+			global classifiers
+			for x in [False, True]:
+				USING_IR = x
+				print "Using IR:", USING_IR	
+				print Fore.CYAN + "=================================================================================", Fore.WHITE	
+				average_results = []
+				for y in range(0, trial_runs):
+					classifiers = []
+					print Fore.YELLOW + "Trial", y + 1, Fore.WHITE
+					do_learn_mode()
+					do_classify_mode()
+				avgs = ["{0:.3f}".format(float(sum(col))/len(col)) for col in zip(*average_results)]
+				avgs_string = str(NUM_CLASSIFIERS * 2) + "\t\t" + avgs[0] + "\t\t" + avgs[1] + "\t" + avgs[2] + "\t" + avgs[3] + "\t" + avgs[4] + "\t" + avgs[5] + "\t" + avgs[6] + "\t" + avgs[7] + "\n"
+				rf.write(avgs_string)
+			
+
+		NUM_CLASSIFIERS = 250 # duplicated to 500
+
+		''' Tests: '''
+		# Accuracy cutoff : 0.15
+		# Accuracy cutoff : 0.30
+		# Accuracy cutoff : 0.45
+		# Accuracy cutoff : 0.60
+		# Accuracy cutoff : 0.75
+
+		test_number = 0
+
+		# Accuracy cutoff tests (no IR)
+		for x in range(0, 5):
+			ACCURACY_CUTOFF = (x + 1) * 0.15
+			test_number += 1			
+			test_information = "Accuracy cutoff: " + str(ACCURACY_CUTOFF)
+			run_test(test_number, test_information)		
+	
+		rf.close()	
+	
 	
 	if mode == LEARN_MODE:
 		do_learn_mode()
-	else:
+	elif mode == CLASSIFY_MODE:
 		do_classify_mode()
+	elif mode == RESULTS_MODE:
+		do_results_mode()
 	
 
 if __name__ == "__main__":
-    main(sys.argv[1:])	
-
-
-
-
-
-
-''' Notes '''
-# Look at all classifiers in the match set
-# Look at the classifier in M with highest accuracy
-# Action set = all classifiers with that same class label as action
-# Reward = given when it is part of the action set
-
-# Prediction p , estimate payoff when rule is seen
-# Accuracy relative to others
+    main(sys.argv[1:])
